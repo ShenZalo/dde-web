@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Homepage</title>
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/h-tps.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+			<img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Toyota Production System [TPS]</h1>
+            <p>Selamat datang ke latihan berkaitan Toyota Production System</p>
+            <div class="button-container">
+				<button class="cta-button" onclick="showPopup()"><i class="fa fa-check"></i> Pre-Test</button>
+				<button class="cta-button" onclick="location.href='tps-trainer.html'"><i class="fas fa-user-graduate"></i> Trainers</button> <!-- Button to navigate to Trainer Page -->
+			</div>
+			<button class="cta-button" id="openPopup" style="margin-top:10px"><i class="fa fa-info-circle"></i>Peranan & Tanggungjawab</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/main-tps.png" alt="TPS Image">
+        </div>
+    </section>
+	
+	<!-- Popup Section -->
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<!-- Header -->
+			<div class="popup1-header">
+				<img src="img/P2Logo10x10.png" alt="Logo Left" class="logo">
+				<h2>Pre-Test QR Code</h2>
+				<img src="img/Logo DDE V2.png" alt="Logo Right" class="logo">
+			</div>
+			
+			<!-- Training Details -->
+			<div class="training-details">
+				<h3>Maklumat Latihan</h3>
+				<div class="training-content">
+					<div class="text-section">
+						<p><strong>Tajuk Latihan:</strong> Basic Knowledge of TPS</p>
+						<p><strong>Tempat Latihan:</strong> TPS Dojo Training Room </p>
+						<p><strong>Nama Trainer:</strong> Muhammad Azzahari </p>
+					</div>
+					<div class="qr-section">
+						<img src="img/safety logo.jpg" class="clickable-image" alt="Mesti Selamat" style="width:100%; height:auto;">
+					</div>
+				</div>
+			</div>
+			<!-- QR Code Section -->
+			<div class="popup1-body">
+				<div class="qr-container">
+					<!-- <div class="qr-section">
+						<h3>Kehadiran QR Code</h3>
+						<img src="img/tps-kehadiran-qr.png" class="clickable-image" alt="Kehadiran QR Code">
+					</div> -->
+					<!-- <div class="qr-section">
+						<h3>Kesihatan QR Code</h3>
+						<img src="img/fmds_qr.png" class="clickable-image" alt="Kesihatan QR Code">
+					</div> -->
+					<div class="qr-section">
+						<h3>Pre-test QR Code</h3>
+						<img src="img/tps-pretest-qr.png" class="clickable-image" alt="Pre-test QR Code">
+					</div>
+				</div>
+			</div>
+
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Tutup</button>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- Popup Image Modal with 3 Columns (SV, TM, TL) -->
+	<div id="imagePopup" class="popup-modal">
+		<div class="popup-content">
+			<span class="close-button" id="closePopup">&times;</span>
+			<div class="popup-columns">
+				<!-- SV Column -->
+				<div class="popup-column">
+					<h3>SV (Supervisor)</h3>
+					<img src="img/sv.png" alt="SV" class="popup-image">
+					<h4>Role</h4>
+					<p>1. Buat peraturan & standard<br>2. Kawal abnormaliti.<br>3. Penyelesaian pentas abnormaliti.
+					<br>4. Membuat & menetapkan keputusan<br>5. Pembangunan manusia<br>6. Merancang jadual Genba</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TL & TM</li>
+						<li>Boleh mengajar TL & TM</li>
+						<li>Boleh jalankan pemerhatian proses TL & TM</li>
+						<li>Boleh memberi teguran & motivasi</li>
+						<li>Berfikiran kreatif & ada idea</li>
+						<li>Boleh menjalankan aktiviti TPM hasil sebelum & selepas</li>
+						<li>Boleh membuat TPM Standard & TPM Checksheet</li>
+					</ul>
+				</div>
+
+				<!-- TM Column -->
+				<div class="popup-column">
+					<h3>TL (Team Leader)</h3>
+					<img src="img/TL.png" alt="TM" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Memastikan 4M mengikut standard
+						<br>2. Memberi arahan & memantau Team Member
+						<br>3. Melakukan follow up
+						<br>4. Melaporkan abnormaliti
+						<br>5. Turut serta melakukan aktiviti TPM
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TM</li>
+						<li>Boleh ajar TM</li>
+						<li>Boleh jalankan pemerhatian proses TM</li>
+						<li>Boleh memberikan teguran</li>
+					</ul>
+				</div>
+
+				<!-- TL Column -->
+				<div class="popup-column">
+					<h3>TM (Team Member)</h3>
+					<img src="img/TM.png" alt="TL" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Patuhi peraturan & SOP 
+						<br> 2. Mengamalkan Stop Call & Wait
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh hafal & ingat SOP</li>
+						<li>Boleh membuat penilaian kualiti</li>
+						<li>Boleh lakukan proses mengikut cycle time</li>
+						<li>Boleh mengekalkan 4S</li>
+						<li>Boleh melakukan penjagaan mesin</li>
+						<li>Boleh melakukan kerja lebih masa yang dirancang</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+
+    <!-- Key Focus Section -->
+	<section class="deals-section">
+		 <!-- Introduction -->
+        <div class="introduction-container">
+            <div class="title-container">
+                <img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+                <h1>MARI MULA BELAJAR!</h1>
+                <img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+            </div>
+            <p>Mulai dengan YOSH <b>mesti selamat</b> dan akhiri dengan YOSH <b>1 team 1 goal</b></p>
+        </div>
+		
+		<div class="deals-container">
+			<div class="deal-box">
+				<img src="img/file-info.gif" alt="General">
+				<h3>Safety</h3>
+				<p></p>
+				<button onclick="location.href='safety.html'">Mula</button> <!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/analytics.gif" alt="Step 1">
+				<h3>Introduction to Toyota</h3>
+				<!-- <p><b><span class="blue-text">Pengenalan [Toyota]</span></b></p> -->
+				<button onclick="location.href='tps-intro.html'">Mula</button> <!-- Button to navigate to Step 1 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/home.gif" alt="Step 1">
+				<h3>TPS Structure</h3>
+				<!-- <p><b><span class="blue-text">(Struktur binaan TPS)</span></b></p> -->
+				<button onclick="location.href='tps-structure.html'">Mula</button> <!-- Button to navigate to Step 1 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/games.gif" alt="Step 1">
+				<h3>Memorize, Judgement & Cyclic</h3>
+				<!-- <p><b><span class="blue-text">(Hafal, penilaian dan kitaran kerja)</span></b></p> -->
+				<button onclick="location.href='tps-MJC.html'">Mula</button> <!-- Button to navigate to Step 1 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/scw.gif" alt="Step 1">
+				<h3>Stop, Call & Wait</h3>
+				<!-- <p><b><span class="blue-text">(Berhenti, panggil & tunggu)</span></b></p> -->
+				<button onclick="location.href='tps-SCW.html'">Mula</button> <!-- Button to navigate to Step 1 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/abnormal.gif" alt="Step 1">
+				<h3>Abnormality</h3>
+				<!-- <p><b><span class="blue-text">(Kelainan)</span></b></p> -->
+				<button onclick="location.href='tps-abnormal.html'">Mula</button> <!-- Button to navigate to Step 1 Page -->
+			</div>
+		</div>
+	</section>
+	
+	<br>
+	
+	<div class="eval-section">
+        <h2>SESI PENILAIAN</h2>
+        <!-- QR Codes for Post-Test and Evaluation Form -->
+        <div class="qr-section1">
+            <div class="qr-container1">
+                <img src="img/tps-pretest-qr.png" class="qr-image1 clickable-image" alt="Kehadiran QR Code">
+                <p>Post Test</p>
+            </div>
+            <div class="qr-container1">
+                <img src="img/1 team 1 gold.jpg" class="qr-image1 clickable-image" alt="1 Team 1 Goal">
+                <p>Sebelum tamat kelas</p>
+            </div>
+            <div class="qr-container1">
+                <img src="img/tps-eval-qr.png" class="qr-image1 clickable-image" alt="Pre-test QR Code">
+                <p>Evaluation Form</p>
+            </div>
+        </div>
+    </div>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+		
+	<!-- Fullscreen Modal -->
+    <div id="fullscreen-modal" class="modal-1">
+        <span class="close-button-1">&times;</span>
+        <img class="modal-content-1" id="modal-image" alt="Fullscreen Image">
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts (optional) -->
+   	<script src="js/tps-script.js"></script>
+	<!-- Scripts -->
+	<script>
+		function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+</html>

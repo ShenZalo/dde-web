@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCC Homepage</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Font Awesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Loader -->
+    <link rel="stylesheet" href="../css/loader.css">
+    <script src="../js/loader.js" defer></script>
+</head>
+
+<body>
+    <!-- Loader to hide content until fully loaded -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <span class="loader-text">DDE</span>
+        </div>
+    </div>
+    <main>
+        <!-- Tablet and Above Start Screen  -->
+        <div class="w-full h-screen md:flex flex-row hidden">
+            <div class="relative w-[40%] h-full text-center bg-green-400 rounded-xl">
+                <div class="flex flex-row justify-between bg-white w-19/20 m-5 mx-auto px-8 py-6 rounded-lg">
+                    <img src="img/mestiselamat.jpg" alt="logo" class="w-28 h-auto">
+                    <img src="img/1team1goal.jpg" alt="logo" class="w-28 h-auto">
+                </div>
+                <div class="relative top-[5%]">
+                    <p class="text-white lg:text-2xl">Selamat datang ke kelas</p>
+                    <div class="border-2 border-green-300 rounded-xl mt-[5%] w-fit mx-auto shadow-2xl shadow-green-500">
+                        <div class="border-4 border-green-200 rounded-xl mx-auto bg-green-700">
+                            <h1 class="text-white lg:text-6xl font-bold m-1">QCC</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-full flex flex-row justify-between">
+                    <div class="absolute bottom-[1%] left-[5%] w-[35%] bg-green-300 shadow-green-500 shadow-sm rounded-sm px-4 py-2 hover:bg-green-500 hover:shadow-green-600 transition-all duration-200 cursor-pointer overflow-hidden"
+                        onclick="show(`#attendance-popup`)">
+                        <p class="text-3xl text-white">
+                            <i class="fa-solid fa-user-check"></i><br>Kehadiran
+                        </p>
+                    </div>
+                    <div class="absolute bottom-[1%] right-[5%] w-[30%] bg-green-300 shadow-green-500 shadow-sm rounded-sm px-4 py-2 hover:bg-green-500 hover:shadow-green-600  transition-all duration-200 cursor-pointer overflow-hidden"
+                        onclick="show(`#trainer-popup`)">
+                        <p class="text-3xl text-white"><i class="fa-solid fa-circle-info"></i><br>Pengajar</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-[60%] rounded-xl">
+                <img src="img/intro-bg.gif" alt="QCC" class="w-full h-full rounded-xl">
+            </div>
+        </div>
+
+        <!-- Mobile Start Screen  -->
+        <div class="w-full h-full flex flex-col md:hidden">
+            <div class="relative text-center bg-green-400 rounded-xl">
+                <div class="flex flex-row justify-between bg-white w-19/20 m-5 mx-auto px-8 py-6 rounded-lg">
+                    <img src="img/mestiselamat.jpg" alt="logo" class="w-14 h-auto">
+                    <img src="img/1team1goal.jpg" alt="logo" class="w-14 h-auto">
+                </div>
+                <div class="rounded-full justify-center flex">
+                    <img src="img/intro-bg.gif" alt="karakuri" class="w-64 h-auto object-cover rounded-full">
+                </div>
+                <p class="text-white lg:text-2xl text-[1rem]">Selamat datang ke kelas</p>
+                <div class="border-2 border-green-300 rounded-xl mt-[5%] w-fit mx-auto shadow-2xl shadow-green-500">
+                    <div class="border-4 border-green-200 rounded-xl mx-auto bg-green-700">
+                        <h1 class="text-white lg:text-6xl text-[2rem] font-bold m-1">QCC</h1>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex flex-row justify-around mt-10 mb-5">
+                    <div class="bg-green-600 shadow-green-500 shadow-sm rounded-sm px-4 py-2 hover:bg-green-500 hover:shadow-green-600  transition-all duration-200 cursor-pointer overflow-hidden"
+                        onclick="show(`#attendance-popup`)">
+                        <p class="lg:text-3xl text-[1rem] text-white"><i
+                                class="fa-solid fa-user-check"></i><br>Kehadiran</p>
+                    </div>
+                    <div class="bg-green-600 shadow-green-500 shadow-sm rounded-sm px-4 py-2 hover:bg-green-500 hover:shadow-green-600  transition-all duration-200 cursor-pointer overflow-hidden"
+                        onclick="show(`#trainer-popup`)">
+                        <p class="lg:text-3xl text-[1rem] text-white"><i
+                                class="fa-solid fa-circle-info"></i><br>Pengajar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 bg-stone-200 rounded-4xl w-full p-4">
+            <h2 class="text-[1rem] lg:text-4xl font-bold underline text-center m-10"><i
+                    class="fa-solid fa-thumbtack"></i> Hasil Pembelajaran
+            </h2>
+            <div class="lg:grid flex flex-col grid-cols-2 gap-1 lg:gap-4 justify-items-center mt-2 lg:mt-4">
+                <div class="bg-white rounded-xl flex w-full border-2 border-stone-500">
+                    <img src="img/one.gif" alt="walk-rule" class="lg:w-32 lg:h-32 w-16 h-16 m-4">
+                    <div class="flex flex-col">
+                        <p class="my-auto text-[0.5rem] lg:text-lg"><i class="fa-solid fa-square"></i> Memahami konsep
+                            asas
+                            dan pelaksanaan QCC
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl flex w-full border-2 border-stone-500">
+                    <img src="img/two.gif" alt="look-rule" class="lg:w-32 lg:h-32 w-16 h-16 m-4">
+                    <div class="flex flex-col">
+                        <p class="my-auto text-[0.5rem] lg:text-lg"><i class="fa-solid fa-square"></i> Berkebolehan
+                            memilih alat-alat kawalan kualiti yang
+                            sesuai dalam penyelesaian masalah
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center w-fit mx-auto mt-2">
+                <div
+                    class="bg-white rounded-xl flex w-full border-2 border-stone-500 mx-auto lg:col-start-2 lg:row-start-2">
+                    <img src="img/settings.gif" alt="think-rule" class="lg:w-64 lg:h-64 w-32 h-32 m-4">
+                </div>
+            </div>
+            <div class="lg:grid flex flex-col grid-cols-2 gap-1 lg:gap-4 justify-items-center mt-2 lg:mt-4">
+                <div
+                    class="bg-white rounded-xl flex w-full lg:w-[50%] border-2 border-stone-500 col-span-2 justify-self-center">
+                    <img src="img/three.gif" alt="leave-rule" class="lg:w-32 lg:h-32 w-16 h-16 m-4">
+                    <div class="flex flex-col">
+                        <p class="my-auto text-[0.5rem] lg:text-xl"><i class="fa-solid fa-square"></i> Memberi
+                            pendedahan kepada kumpulan berkaitan pelaksanaan sebenar projek QCC
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 bg-white rounded-4xl w-full p-2 lg:p-4">
+            <div class="flex flex-row justify-between w-full pt-4 px-8 lg:pt-8 lg:px-16">
+                <img src=" img/mestiselamat.jpg" alt="logo" class="w-16 lg:w-32 h-auto">
+                <h2 class="text-[1rem] lg:text-5xl font-bold self-center text-center">MARI MULA <br>BELAJAR!</h2>
+                <img src="img/1team1goal.jpg" alt="logo" class="w-16 lg:w-32 h-auto">
+            </div>
+            <p class="text-center text-[0.7rem] lg:text-2xl">
+                Mulai dengan YOSH <b>mesti selamat</b> dan akhiri dengan YOSH <b>1 team 1 goal</b>
+            </p>
+            <div
+                class="w-full h-auto flex flex-col justify-center mt-4 border-2 bg-stone-200 border-stone-600 rounded-2xl hover:shadow-stone-700 hover:-translate-y-1 hover:shadow-md transition-all duration-200">
+
+                <!-- Header -->
+                <div class="w-full border-b-2">
+                    <h2 class="m-1 text-[1rem] lg:text-4xl text-center font-bold">Module</h2>
+                </div>
+
+                <!-- GRID CONTAINER -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b-2 border-double rounded-2xl">
+
+                    <!-- 1 -->
+                    <div
+                        class="flex flex-col border-2 bg-white border-stone-500 rounded-2xl m-4 p-4 justify-center items-center">
+                        <img src="img/introduction-icon.gif" class="w-16 lg:w-32 h-16 lg:h-32">
+                        <p class="text-amber-900 text-center text-[1rem] lg:text-2xl font-bold mt-2">Pendahuluan</p>
+                        <button
+                            class="bg-amber-900 rounded-xl px-8 py-4 text-white font-bold mt-5 hover:bg-amber-700 transition-all cursor-pointer"
+                            onclick="window.location.href='introduction.html'">
+                            Mula
+                        </button>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="flex flex-col border-2 bg-white border-stone-500 rounded-2xl m-4 p-4 justify-center items-center">
+                        <img src="img/tools-icon.gif" class="w-16 lg:w-32 h-16 lg:h-32">
+                        <p class="text-amber-900 text-center text-[1rem] lg:text-2xl font-bold mt-2">
+                            QC Tools
+                        </p>
+                        <button
+                            class="bg-amber-900 rounded-xl px-8 py-4 text-white font-bold mt-5 hover:bg-amber-700 transition-all cursor-pointer"
+                            onclick="window.location.href='qc-tools.html'">
+                            Mula
+                        </button>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="flex flex-col border-2 bg-white border-stone-500 rounded-2xl m-4 p-4 justify-center items-center">
+                        <img src="img/pdca-icon.gif" class="w-16 lg:w-32 h-16 lg:h-32">
+                        <p class="text-amber-900 text-center text-[1rem] lg:text-2xl font-bold mt-2">
+                            PDCA
+                        </p>
+                        <button
+                            class="bg-amber-900 rounded-xl px-8 py-4 text-white font-bold mt-5 hover:bg-amber-700 transition-all cursor-pointer"
+                            onclick="window.location.href='mechanism-karakuri.html'">
+                            Mula
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Popup -->
+    <section id="attendance-popup" class="popup hidden">
+        <div class="popup-content w-screen h-auto bg-stone-200 rounded-2xl p-4 relative">
+            <div class="flex justify-between items-center">
+                <img src="img/perodua-logo.png" alt="perodua-logo" class="w-28 h-auto m-4">
+                <h2 class="text-4xl text-center font-bold">KEHADIRAN</h2>
+                <img src="img/dde-logo.png" alt="dde-logo" class="w-28 h-auto m-4">
+            </div>
+            <div class="w-full h-auto bg-stone-100 rounded-2xl p-4">
+                <div class="bg-stone-400 justify-center text-center rounded-lg py-8 px-4 mb-4">
+                    <p class="font-bold text-3xl">Maklumat Latihan</p>
+                    <div class="w-[50%] flex flex-col text-left mx-auto">
+                        <p class="mt-10 text-2xl">Tajuk Latihan: Quality Control Circle</p>
+                        <p class="mt-5 text-2xl">Tempat Latihan: QCC Dojo Room</p>
+                        <p class="mt-5 text-2xl">Nama Trainer: Mohamad Boriol Mat Saleh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-full justify-between ">
+                <div class="mt-5 bg-amber-200 text-2xl p-4 rounded-xl shadow-amber-300 shadow-sm hover:bg-amber-300 cursor-pointer transition-all duration-200"
+                    onclick="show(`#kehadiran-qr`)">
+                    <i class="fa-solid fa-qrcode"></i> Scan Kehadiran
+                </div>
+                <div class="mt-5 bg-amber-200 text-2xl p-4 rounded-xl shadow-amber-300 shadow-sm hover:bg-amber-300 cursor-pointer transition-all duration-200"
+                    onclick="show(`#data-participant-qr`)">
+                    <i class="fa-solid fa-qrcode"></i> Scan Data Participant
+                </div>
+                <div class="mt-5 bg-amber-200 text-2xl p-4 rounded-xl shadow-amber-300 shadow-sm hover:bg-amber-300 cursor-pointer transition-all duration-200"
+                    onclick="show(`#prepost-test-qr`)">
+                    <i class="fa-solid fa-qrcode"></i> Scan Pre/Post Test
+                </div>
+            </div>
+            <div class="mt-10 flex w-full h-full justify-center">
+                <button
+                    class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                    <p class="text-white text-2xl font-bold" onclick="hide(`#attendance-popup`)">Tutup</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="qr-popup-container hidden" id="kehadiran-qr" onclick="hide('#kehadiran-qr')">
+        <img src="img/qr-kehadiran.png" alt="Pre-Test QR Code" class="qr-image" />
+    </div>
+
+    <div class="qr-popup-container hidden" id="data-participant-qr" onclick="hide('#data-participant-qr')">
+        <img src="img/qr-data.png" alt="Pre-Test QR Code" class="qr-image" />
+    </div>
+
+    <div class="qr-popup-container hidden" id="prepost-test-qr" onclick="hide('#prepost-test-qr')">
+        <img src="img/qr-pre-post.png" alt="Pre-Test QR Code" class="qr-image" />
+    </div>
+
+    <section id="trainer-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="flex justify-between items-center">
+                <img src="img/perodua-logo.png" alt="perodua-logo" class="w-28 h-auto m-4">
+                <img src="img/dde-logo.png" alt="dde-logo" class="w-28 h-auto m-4">
+            </div>
+            <div class="w-full h-auto bg-stone-100 rounded-2xl p-4">
+                <div class="bg-blue-200 flex flex-col justify-center text-center rounded-lg py-8 px-4 mb-4">
+                    <h2 class="font-bold text-4xl">PROFIL PENGAJAR</h2>
+                    <div class="flex flex-row p-4">
+                        <div class="w-[30%] m-5">
+                            <img src="img/encik-mat.png" alt="encik-mat"
+                                class="rounded-xl shadow-2xl shadow-blue-400 w-80 h-80">
+                        </div>
+                        <div class="w-[70%]">
+                            <p class="mt-5 text-2xl text-left"><b>Nama:</b> Mohamad Boriol Mat Saleh</p>
+                            <p class="mt-5 text-2xl text-left"><b>Syarikat:</b> Perodua Manufacturing Sdn Bhd</p>
+                            <p class="mt-5 text-2xl text-left"><b>Tempoh Perkhidmatan:</b> 25 tahun</p>
+                            <div class="mt-5 text-2xl flex flex-col items-start">
+                                <p class="font-bold mr-4">Pengalaman:</p>
+                                <div class="flex flex-col">
+                                    <p class="underline"><b>Production</b></p>
+                                    <ul class="text-left list-disc list-inside">
+                                        <li>Supervisor</li>
+                                        <li>Team Leader</li>
+                                        <li>Team Member</li>
+                                    </ul>
+                                    <p class="underline"><b>Trainer DDE</b></p>
+                                    <ul class="text-left list-disc list-inside">
+                                        <li>4S Dojo</li>
+                                        <li>Perodua Problem Solving (PPS)</li>
+                                        <li>Quality Control Circle (QCC)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-5 text-2xl flex flex-col items-start">
+                                <p class="font-bold mr-4">Hobi:</p>
+                                <ul class="text-left list-disc list-inside">
+                                    <li>Gym</li>
+                                    <li>Bola Sepak</li>
+                                    <li>Badminto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-red-400 flex flex-col justify-center text-center rounded-lg py-8 px-4 mt-4 mb-4">
+                    <h2 class="font-bold text-4xl">PERKENALKAN DIRI ANDA</h2>
+                    <div class="flex flex-row p-4">
+                        <div class="w-[30%] m-5 ">
+                            <img src="img/anon.png" alt="anon"
+                                class="rounded-xl shadow-2xl bg-white shadow-red-600 w-80 h-80">
+                        </div>
+                        <div class="w-70%">
+                            <p class="mt-5 text-2xl text-left"><b>Nama:</b></p>
+                            <p class="mt-5 text-2xl text-left"><b>Nama Panggilan:</b></p>
+                            <p class="mt-5 text-2xl text-left"><b>Asal/Latar belakang:</b></p>
+                            <p class="mt-5 text-2xl text-left"><b>Syarikat/Jabatan:</b></p>
+                            <p class="mt-5 text-2xl text-left"><b>Pengalaman Bekerja:</b></p>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex justify-center">
+                        <button
+                            class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                            <p class="text-white text-2xl font-bold" onclick="hide(`#trainer-popup`)">Tutup</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="js/global.js"></script>
+
+</html>

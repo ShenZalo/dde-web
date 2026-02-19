@@ -1,0 +1,449 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	 font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-red: #D32F2F;
+    --secondary-gray-dark: #424242;
+    --secondary-gray-light: #E0E0E0;
+    --accent-orange: #FF8A65;
+    --neutral-white: #FFFFFF;
+    --neutral-black: #333333;
+    --neutral-gray: #555555;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-gray-light);
+    color: var(--neutral-black);
+}
+
+.all-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px 100px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============== Header and Navbar ============== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--neutral-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 6px;
+    border: 2px solid var(--primary-red);
+    position: sticky;
+    height: 70px;
+}
+
+.topnav a {
+    color: var(--primary-red);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.topnav a:hover {
+    background-color: var(--accent-orange);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav .image {
+    padding: 4px;
+    width: 70px;
+}
+
+/* ================== logout button ================== */
+/* Logout Button Styles */
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+/* ============= Hero Section ==============*/
+.hero {
+	background-color: #004085;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+	flex-direction: column;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2em;
+}
+		
+/*========== Matlamat TPM Section ==============*/
+.definisi-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.definisi-section h2 {
+    text-align: center;
+    color: var(--neutral-black);
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 30px;
+}
+
+.definisi-content {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Stack items on smaller screens */
+}
+
+.definisi-item {
+    background-color: #ffffff; /* White background for each goal item */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px); /* Responsive flex item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text and icons */
+}
+
+.definisi-icon {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.definisi-item h3 {
+    font-size: 1.5rem; /* Font size for goal titles */
+    color: var(--neutral-black);
+}
+
+.definisi-item p {
+    font-size: 1.2rem; /* Font size for goal descriptions */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .definisi-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+
+
+
+/*========== Matlamat TPM Section ==============*/
+.matlamat {
+    background-color: var(--neutral-white); /* Neutral white for a clean look */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.matlamat h2 {
+    text-align: center;
+    color: var(--primary-red);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.matlamat .section-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* four equal columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: stretch; /* Stretch items to equal height */
+    padding: 20px;
+}
+
+.matlamat .matlamat-point {
+    display: flex;
+    flex-direction: column; /* Ensure icon and text stack vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    max-width: 300px; /* Restrict the width */
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.matlamat .matlamat-point:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.matlamat .matlamat-point i {
+    font-size: 1.8rem;
+    color: var(--primary-red); /* Highlighted icons in primary red */
+    margin-bottom: 10px; /* Add spacing below the icon */
+}
+
+.matlamat .matlamat-point p {
+    font-size: 1.2rem;
+    color: var(--neutral-black);
+    margin: 0;
+    text-align: center; /* Center text for better alignment */
+}
+
+/* Responsive Design for Matlamat Section */
+@media (max-width: 768px) {
+    .matlamat .section-content {
+        grid-template-columns: 1fr; /* Switch to single column on small screens */
+    }
+
+    .matlamat .matlamat-point {
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+}
+
+
+
+/*========== Promosi Section ==========*/
+.promosi-section {
+    background-color: var(--neutral-white); /* Clean background */
+    border-radius: 8px; /* Rounded edges */
+    margin: 20px auto; /* Centered margin */
+    padding: 20px;
+    max-width: 1400px; /* Maintain a reasonable width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align content */
+}
+
+.promosi-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--neutral-black); /* Dark color for contrast */
+    background: var(--secondary-gray-light); /* Light gray background for text */
+    padding: 10px 20px;
+    display: inline-block; /* Fits to content width */
+    border-radius: 5px; /* Smooth corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+}
+
+.promosi-section .image-container {
+    width: 100%;
+    height: calc(100vh - 250px); /* Shorter height to account for the topbar */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.promosi-section .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+	width:50%;
+    border-radius: 8px;
+}
+
+/*======= target ========*/
+.container {
+	text-align: center;
+	border: 2px solid black;
+	padding: 20px;
+	position: relative;
+}
+.main {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.content {
+	text-align: left;
+	margin: 20px auto;
+	max-width: 600px;
+}
+.calculation {
+	border: 2px solid green;
+	padding: 10px;
+	margin: 20px 0;
+}
+.note {
+	font-style: italic;
+	font-size: 14px;
+	color: #555;
+}
+.starburst {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: yellow;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 50%;
+	transform: rotate(-15deg);
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    z-index: 1000;
+    background-color: #fff; /* White background */
+    border: 2px solid var(--primary-red); /* Red border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the popup */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 1000px; /* Fixed width for the popup */
+    text-align: center; /* Center text inside the popup */
+}
+
+.popup button {
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Button padding */
+    background-color: var(--primary-red); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.popup button:hover {
+    background-color: var(--accent-orange);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(5px); /* Add the blur effect */
+}
+
+/* Button Styling */
+.btn-popup {
+    background-color: var(--primary-red); /* Accent color */
+    color: var(--neutral-white); /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-popup i {
+    margin-right: 5px;
+}
+
+.btn-popup:hover {
+    background-color: var(--accent-orange); /* Red background on hover */
+}
+
+
+
+/*======= Footer ========*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navigation-buttons {
+	background-color: var(--neutral-white);
+	border: 2px solid var(--secondary-gray-light);
+	border-radius: 10px;
+	padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: #b71c1c;
+}
+
+

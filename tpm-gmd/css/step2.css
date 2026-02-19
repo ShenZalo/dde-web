@@ -1,0 +1,711 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	 font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-red: #D32F2F;
+    --secondary-gray-dark: #424242;
+    --secondary-gray-light: #E0E0E0;
+    --accent-orange: #FF8A65;
+    --neutral-white: #FFFFFF;
+    --neutral-black: #333333;
+    --neutral-gray: #555555;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+
+body {
+    width: 100%;
+    background: url("../img/man-maintenance.jpg") center/cover no-repeat fixed;
+    margin: 0;
+    overflow-x: hidden;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56 14 14 / 70%); /* Muted Red Overlay */
+    z-index: -1; /* Ensures the overlay is beneath the content */
+}
+
+/* ============== Header and Navbar ============== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--neutral-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 6px;
+    border: 2px solid var(--primary-red);
+    position: sticky;
+    height: 70px;
+}
+
+.topnav a {
+    color: var(--primary-red);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.topnav a:hover {
+    background-color: var(--accent-orange);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav .image {
+    padding: 4px;
+    width: 70px;
+}
+
+/* ================== logout button ================== */
+/* Logout Button Styles */
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+/* ====== Welcome Header Styles =======*/
+
+.welcome-header {
+    background: linear-gradient(to bottom right, #ff5733, #ff8c69); /* Primary color gradient */
+    text-align: center;
+    padding: 60px 0; /* Space above and below the header */
+}
+
+.welcome-header h1 {
+    font-size: 2.5em;
+	color: white;
+}
+
+.welcome-header p {
+    font-size: 1.2em;
+	color: white;
+}
+
+/* ========== Side-by-Side Containers ========== */
+.side-by-side-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /*=====align-items: flex-start;=====*/
+}
+/* ========== General Styles ========== */
+.container {
+    max-width: 1300px;
+    margin: 40px;
+}
+
+.section-title {
+    font-size: 2rem; /* Standardized */
+    color: #ff5733; /* Primary color */
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.section-description {
+    font-size: 1rem; /* Standardized */
+    color: #333;
+    margin-bottom: 30px;
+	text-align: center;
+}
+
+/* ========== Image Gallery ========== */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between images */
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 400px; /* Limit the size of images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* ========== matlamat Section ========== */
+.matlamat-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 85%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Arrange containers side-by-side */
+    gap: 20px; /* Add space between containers */
+    flex-wrap: wrap; /* Make responsive for smaller screens */
+}
+
+/* Tumpuan Containers */
+.matlamat-container {
+    flex: 1; /* Containers share available space */
+    min-width: 300px; /* Prevent containers from becoming too narrow */
+    padding: 20px;
+   background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.matlamat-container h2 {
+    color: #333;
+    font-size: 1.75rem; /* Standardized */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* ==============Tumpuan Containers=========== */
+.tumpuan-section {
+    flex: 1; /* Containers share available space */
+    min-width: 300px; /* Prevent containers from becoming too narrow */
+    padding: 40px;
+    background: linear-gradient(120deg, #ffd199, #ff6666);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tumpuan-section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.75rem; /* Standardized */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.tumpuan {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 40px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tumpuan h2 {
+    text-align: center;
+    color: var(--neutral-black);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+ .tumpuan-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between items */
+}
+
+ .tumpuan-point {
+    padding: 15px;
+    background-color: var(--neutral-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox for image and text */
+    align-items: center; /* Center align items vertically */
+}
+.tumpuan-image {
+    width: 200px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
+.point-span {
+    grid-column: span 2; /* Span across both columns */
+}
+
+
+
+
+
+/*============== Additional Styling for Mencari Tempat Masalah ===================*/
+.mencari-masalah {
+    margin-top: 40px;
+}
+
+.main-sentences {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--neutral-black);
+    font-size: 1rem;
+}
+
+table   {
+            width: 100%;
+            border-collapse: separate; /* Switch to 'separate' to allow border-radius */
+            border-spacing: 0; /* Ensure there are no gaps between cells */
+            margin: 40px auto;
+            border-radius: 10px; /* Rounded corners for the table */
+            overflow: hidden; /* Ensure content respects the border-radius */
+        }
+
+        th, td {
+            border: 1px solid var(--secondary-gray-light);
+            padding: 10px;
+            text-align: left;
+			font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-red);
+            text-align: center;
+            color: white;
+        }
+        
+        td {
+            background-color: white;
+        }
+
+        td:first-child {
+            border-left: none; /* Remove left border for the first cell */
+        }
+        
+        td:last-child {
+            border-right: none; /* Remove right border for the last cell */
+        }
+
+        .masalah-header {
+            background-color: #B6D7A8;
+            color: #333;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+			margin-bottom: 20px;
+        }
+
+        .images-container div {
+            text-align: center;
+            width: 32%;
+        }
+
+        .images-container img {
+            max-width: 100%;
+            border: 1px solid var(--secondary-gray-light);
+            border-radius: 5px;
+        }
+
+        .images-container p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+.popup-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.popup-buttons button {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/*================== pelan tindakan ============================*/
+.pelan-tindakan {
+    flex: 1; /* Containers share available space */
+    padding: 40px;
+    background: linear-gradient(120deg, #ffd199, #ff6666);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+}
+
+.pelan-tindakan h2 {
+    background-color: var(--primary-red);
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pelan-tindakan i {
+    margin: 0px 10px;
+}
+
+.pelan-tindakan ul {
+    list-style: none;
+    padding-left: 20px;
+    background: white;
+}
+
+.pelan-tindakan ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	font-size: 1rem;
+}
+
+.pelan-tindakan li {
+    padding: 15px;
+}
+
+.pelan-tindakan button {
+    margin-left: 350px;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: var(--neutral-white); /* White background */
+    border: 2px solid var(--accent-orange); /* Accent orange border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1100px;
+    text-align: center;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup-image {
+    max-width: 100%;  /* Adjust size as needed */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Ensure it takes up a full line */
+    margin: 10px 0;   /* Add space around the image */
+}
+
+/* Button Styling */
+.popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-orange); /* Accent orange button */
+    color: var(--neutral-white); /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: var(--primary-red); /* Red background on hover */
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(5px); /* Add the blur effect */
+}
+
+/* Button Styling */
+.btn-popup {
+    background-color: var(--primary-red); /* Accent color */
+    color: var(--neutral-white); /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.btn-popup i {
+    margin-right: 5px;
+}
+
+.btn-popup:hover {
+    background-color: var(--accent-orange); /* Red background on hover */
+}
+
+
+/*======= ic implementation ========*/
+.ic-label-implementation {
+      margin-top: 30px;    
+}
+
+.ic-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+	margin: 10px;
+}
+
+.ic-item {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Ensures images don't get too large */
+    height: 200px; /* Fixed height for consistent layout */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.ic-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.ic-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.ic-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+
+.ic-item:hover .ic-desc {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*======= self diagnosis ========*/
+.self-diagnosis-section {
+     margin-top: 30px;   
+}
+
+.self-diagnosis-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.self-diagnosis-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.self-diagnosis-card:hover {
+    transform: scale(1.05);
+}
+
+.self-diagnosis-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.self-diagnosis-card:hover img {
+    opacity: 0.7;
+}
+
+.card-overlay h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-content .point-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between items */
+    margin-top: 20px;
+}
+
+.popup-content h3 {
+    font-size: 1.5rem; /* Text size */
+    color: var(--neutral-black); /* Neutral text color */
+    margin: 0;
+    line-height: 1.5; /* Improve readability */
+}
+
+.popup-content .point {
+    background-color: var(--neutral-white); /* Light background */
+    border: 1px solid var(--secondary-gray-light); /* Border around each point */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center everything */
+    justify-content: center; /* Vertical centering */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.popup-content .point i {
+    font-size: 2rem; /* Size of the icon */
+    color: var(--primary-red); /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.popup-content .point p {
+    font-size: 1.1rem; /* Text size */
+    color: var(--neutral-black); /* Neutral text color */
+    margin: 0;
+    line-height: 1.5; /* Improve readability */
+}
+
+.popup-content .point:hover {
+    background-color: var(--secondary-gray-light); /* Light hover effect */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.popup-content .flow-image-container {
+    margin-top: 20px;
+    text-align: center; /* Center the image */
+}
+
+.popup-content .flow-image {
+    width: 100%; /* Adjust the width as per your image size */
+    max-width: 600px; /* Max width to prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid var(--primary-red); /* Border to make the image stand out */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .popup-content .point-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller columns for narrow screens */
+    }
+}
+
+
+
+
+/*======= Footer ========*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navigation-buttons {
+	background-color: var(--neutral-white);
+	border: 2px solid var(--secondary-gray-light);
+	border-radius: 10px;
+	padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation-buttons button:hover {
+    background-color: #b71c1c;
+}
+
+

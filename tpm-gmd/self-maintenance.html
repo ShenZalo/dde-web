@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>TPM - Self Maintenance</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/selfMain.css">
+</head>
+
+<body>
+
+
+	<!-- Hero Section -->
+	<div class="hero">
+		<h1>TPM - Self Maintenance</h1>
+		<p></p>
+	</div>
+	<section class="all-section">
+
+		<section class="definisi-section">
+			<h2>DEFINISI</h2>
+			<div class="definisi-content">
+				<div class="definisi-item">
+					<img src="img/tpm1.png" alt="Goal 1" class="definisi-icon">
+					<p><span class="highlight">'Self Maintenance' atau Penyelenggaraan Sendiri</span> bertujuan memberi
+						pengetahuan kepada pihak
+						pengeluaran cara untuk mengekalkan peralatan kerja atau mesin yang digunakan dengan melakukan
+						aktiviti pemeriksaan
+						harian, pelinciran penukaran komponen, baikpulih, ketepatan pemeriksaan dan lain-lain tugas
+						penyelenggaraan
+						termasuk mencari abnormaliti.</p>
+				</div>
+			</div>
+		</section>
+
+		<br><br>
+
+		<!-- Matlamat Section -->
+		<section class="tpm-section matlamat">
+			<h2>MATLAMAT</h2>
+			<div class="section-content">
+				<div class="matlamat-point">
+					<i class="fas fa-check-circle"></i>
+					<p>Mengelakkan kerosakan pada peralatan dengan melakukan operasi yang betul
+						dan pemeriksaan harian.</p>
+				</div>
+				<div class="matlamat-point">
+					<i class="fas fa-cogs"></i>
+					<p>Menjadikan peralatan seperti keadaan sebenar melalui pembaikpulihan dan pengurusan
+						yang betul.</p>
+				</div>
+				<div class="matlamat-point">
+					<i class="fas fa-tools"></i>
+					<p>Membentuk keadaan dimana peralatan boleh diselenggara dengan baik.</p>
+				</div>
+				<div class="matlamat-point">
+					<i class="fas fa-lightbulb"></i>
+					<p>Memperkenalkan cara berfikir dan cara kerja.</p>
+				</div>
+			</div>
+		</section>
+
+		<br><br>
+
+		<!--------  Sistem Promosi TPM Section -------->
+		<section class="promosi-section">
+			<h2>SISTEM PROMOSI TPM</h2>
+			<div class="image-container">
+				<img src="img/promosi.png" alt="Sistem Promosi TPM">
+			</div>
+		</section>
+		<button class="btn-popup" onclick="openPopup('target')"> Target Masa</button>
+		<div class="popup" id="target">
+			<div class="container">
+				<div class="main">TARGET MASA MELAKUKAN AKTIVITI 'SELF MAINTENANCE'</div>
+				<div class="starburst">5% ~ 2%</div>
+				<div class="content">
+					<p><span class="highlight">Target Masa</span> (TPM time) yang diperuntukan untuk melakukan aktiviti
+						'Self Maintenance' adalah sebanyak:</p>
+
+					<div class="calculation">
+						<p><strong>Contoh kiraan TPM time:</strong></p>
+						<p>Jumlah Masa kerja sebulan: <span class="highlight">23760 minit</span></p>
+						<p>Jumlah Ahli kumpulan: <span class="highlight">10 orang</span></p>
+					</div>
+
+					<div class="calculation">
+						<p><strong>Permulaan TPM peruntukan 5%</strong></p>
+						<p>Target masa maksimum (bulanan): 23760 x 10 x 5% = <span class="highlight">11880 minit</span>
+						</p>
+						<p>Jumlah masa 1 orang operator = 1188 minit sebulan @ 54 minit sehari</p>
+					</div>
+
+					<div class="calculation">
+						<p><strong>Selepas TPM dilakukan peruntukan 2%</strong></p>
+						<p>Target masa minimum (bulanan): 23760 x 10 x 2% = <span class="highlight">4752 minit</span>
+						</p>
+						<p>Jumlah masa 1 orang operator = 475.2 minit sebulan @ 21.6 minit sehari</p>
+					</div>
+
+					<p class="note">Nota: TPM time adalah melibatkan semua jumlah masa aktiviti pemeriksaan, KAIZEN,
+						pembersihan, dan mesyuarat kumpulan.</p>
+				</div>
+			</div>
+			<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+		</div>
+		<!-- Overlay -->
+		<div class="overlay" onclick="closePopup()"></div>
+	</section>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="js/tpm-script.js"></script>
+	<script>
+		function openPopup(popupId) {
+			// Hide all popups
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none';
+			});
+
+			// Show the specific popup
+			var selectedPopup = document.getElementById(popupId);
+			selectedPopup.style.display = 'block';
+
+			// Show the overlay
+			document.querySelector('.overlay').style.display = 'block';
+		}
+
+		function closePopup() {
+			// Get all popups and hide them
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none'; // Hide the popup
+			});
+
+			// Hide the overlay
+			document.querySelector('.overlay').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>PPS Step 4</title>
+    <link rel="stylesheet" href="css/pps-step2.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="abnormality-control" class="sh-section2">
+            <div class="containerrr">
+                <div class="dividerrr">
+                    <h3>Quiz Time!</h3>
+                    <p style="color:rgb(11, 30, 98);font-weight: bold;">Click the box to reveal answers.</p>
+                </div>
+            </div>
+            <div class="flex-contentt">
+                <div class="containerrr">
+                    <div class="content-box2">
+                        <h4 class="content-title3">
+                            ① What is Step 1?
+                        </h4>
+                        <div class="answer" style="margin-bottom:10px;">
+                            <p>● Clarify the problem (gap).</p>
+                        </div>
+                    </div>
+                    <div class="content-box2">
+                        <h4 class="content-title3">
+                            ② What is the 2P outcomes of Step 2?
+                        </h4>
+                        <div class="answer" style="margin-bottom:10px;">
+                            <p>● Prioritize problem</p>
+                            <p>● Point of occurrence</p>
+                        </div>
+                    </div>
+                    <div class="content-box2">
+                        <h4 class="content-title3">
+                            ③ Set target in the Step 3 case
+                            study worksheet should consider
+                        </h4>
+                        <div class="answer" style="margin-bottom:10px;">
+                            <p>● How much</p>
+                            <p>● By when</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerrr">
+                    <div class="content-box2">
+                        <h4 class="content-title3">
+                            ④ What is the result of Step 4?
+                        </h4>
+                        <div class="answer" style="margin-bottom:10px;">
+                            <p>● Root causes</p>
+                        </div>
+                    </div>
+                    <div class="content-box2">
+                        <h4 class="content-title3">
+                            ⑤ Tell us the concept of PPS.
+                        </h4>
+                        <div class="answer" style="margin-bottom:10px;">
+                            <p>● Process</p>
+                            <p>● People (Motivation)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons" id="header">
+        <button id="backButton">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="topButton">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../FMDS/js/new-fmds-script.js"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Clear any session data if needed
+            sessionStorage.clear();
+            localStorage.clear();
+
+            // Redirect to login page
+            window.location.href = "../index.html"; // Adjust path as needed
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all question elements
+            const questions = document.querySelectorAll('.content-title3');
+
+            // Add click event to each question
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    // Toggle active class for the question
+                    this.classList.toggle('active');
+
+                    // Get the answer element
+                    const answer = this.nextElementSibling;
+
+                    // Toggle the answer display
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

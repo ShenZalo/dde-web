@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Jidoka</title>
+    <link rel="stylesheet" href="css/tps-stylestructure.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        #jidoka-videos {
+            /* width: 80%; */
+            max-width: 1200px;
+            /* max-width: 1136px; */
+            margin: 10px auto;
+            padding: 40px;
+            background: linear-gradient(45deg, #97bcc9, #ffd1e4);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 45px;
+            /* Added margin to separate from other sections */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .simulation-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 7px;
+        }
+
+        .explanation-box {
+            background-color: #FFEDDF;
+            padding: 20px;
+            /* border: 2px solid #ffd4b2; */
+            border-radius: 8px;
+            margin: 7px;
+        }
+
+        .divider2 {
+            background: linear-gradient(45deg, #e06598, #FFEDDF);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .flex-video-container {
+            display: flex;
+        }
+
+        .vid-container {
+            /*flex: 1; /* Allow both containers to take equal width */
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 20px 6px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            justify-content: center;
+        }
+
+        .vid-container {
+            margin-top: 30px;
+            width: 100%;
+
+        }
+
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .subsection {
+            padding: 10px;
+        }
+
+        .subsection h3 {
+            font-size: 1.1rem;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .jidokaImage {
+            width: 100%;
+            /* height: auto;
+            max-width: 800px;  
+            border-radius: 4px; */
+            margin-top: 20px;
+        }
+
+        .bg-color {
+            background-color: #FFEDDF;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+                <a href="../FMDS/new-fmds.html">FMDS</a>
+                <a href="../4S/h-4S.html">4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+                <a href="../TPM/h-tpm.html">TPM</a>
+                <a href="../KARAKURI/h-karakuri.html">KARAKURI</a>
+                <a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+            <div class="user-controls">
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+            <!-- Introduction -->
+            <div class="introduction-container">
+                <div class="title-container">
+                    <img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+                    <h1>④ Jidoka</h1>
+                    <img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+
+        <section id="jidoka-videos" class="sh-section">
+            <div class="simulation-box">
+                <h3>Mesin boleh:</h3>
+                <p>
+                    ① Bina <span class="red-text">kualiti</span> dengan sendiri.<br>
+                    ② Tahu bila <span class="red-text">abnormal</span> berlaku.<br>
+                    ③ Berhenti apabila <span class="red-text">abnormal berlaku</span>.<br>
+                    ④ Berhenti apabila <span class="red-text">selesai operasi</span> kerja.
+                </p>
+            </div>
+            <div class="flex-video-container">
+                <div class="vid-container" style="margin-top: 30px;">
+                    <div class="divider2">
+                        <h3>Simulasi Manual</h3>
+                    </div>
+                    <div class="subsection">
+                        <div class="video-container">
+                            <div class="video-item">
+                                <div class="video-wrapper">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1Y0DbDn59wpuYBdPtNX6tkWaL9i-_y5cq/preview"
+                                        width="100%" height="480" allow="autoplay">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation-box">
+                        <h3>Sistem Manual:</h3>
+                        <p>
+                            Sangat <span class="red-text">lemah dalam mengesan abnormal</span>
+                            dan boleh menyebabkan
+                            <span class="red-text">
+                                abnormal/kecacatan terlepas kepada pelanggan
+                            </span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="vid-container" style="margin-top: 30px;">
+                    <div class="divider2">
+                        <h3>Simulasi Semi-Automation</h3>
+                    </div>
+                    <div class="subsection">
+                        <div class="video-container">
+                            <div class="video-item">
+                                <div class="video-wrapper">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1bz0vmk85HFtJcpc53_za7JGY6upqw1rg/preview"
+                                        width="100%" height="480" allow="autoplay">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation-box">
+                        <h3>Sistem Semi-Auto:</h3>
+                        <p>
+                            <span class="red-text">Baik</span> dalam
+                            <span class="red-text">mengesan abnormal</span> dan
+                            <span class="red-text">dapt mengawal abnormal</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="vid-container" style="margin-top: 30px;">
+                    <div class="divider2">
+                        <h3>Simulasi Automation</h3>
+                    </div>
+                    <div class="subsection">
+                        <div class="video-container">
+                            <div class="video-item">
+                                <div class="video-wrapper">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1Y0DbDn59wpuYBdPtNX6tkWaL9i-_y5cq/preview"
+                                        width="100%" height="480" allow="autoplay">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation-box">
+                        <h3>Sistem Automation:</h3>
+                        <p>
+                            <span class="red-text">Sangat baik</span> dalam
+                            <span class="red-text">mengesan abnormal</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jidoka-videos" class="sh-section">
+            <div class="simulation-box">
+                <div class="bg-color">
+                    <h3>Mesin @ Peralatan:</h3>
+                    <p>
+                        <span class="blue-text-noBold">Boleh mengesan</span> dan <span class="blue-text-noBold">berhenti
+                            sendiri secara
+                            automatik/dengan separa tenaga pekerja</span> jika berlaku
+                        abnormal terhadap:
+                    </p><br>
+                    <p>
+                        ① Mesin.<br>
+                        ② Kualiti.<br>
+                        ③ Kelewatan proses.
+                    </p>
+                </div>
+                <img src="img/mesinPeralatan.png" alt="Jidoka Image" class="jidokaImage">
+            </div>
+        </section>
+
+    </div>
+
+    <br><br>
+
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons" id="header">
+        <button id="backButton">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="topButton">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        function focusCard(card) {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                if (c !== card) {
+                    c.style.filter = 'blur(3px)';
+                    c.style.opacity = '0.7';
+                    c.style.transform = 'scale(0.95)';
+                } else {
+                    c.style.transform = 'translateY(-15px) scale(1.05)';
+                }
+            });
+        }
+
+        function unfocusCards() {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                c.style.filter = 'none';
+                c.style.opacity = '1';
+                c.style.transform = '';
+            });
+        }
+
+        // discipline, communication, teamwork
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animation triggers
+            const solutionsSection = document.querySelector('.solutions-section');
+            const imageRow = document.querySelector('.image-row');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        imageRow.classList.add('active');
+                        solutionsSection.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+
+            observer.observe(solutionsSection);
+        });
+    </script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Clear any session data if needed
+            sessionStorage.clear();
+            localStorage.clear();
+
+            // Redirect to login page
+            window.location.href = "../index.html"; // Adjust path as needed
+        });
+    </script>
+</body>
+
+</html>

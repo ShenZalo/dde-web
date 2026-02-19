@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Module</title>
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/module.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+			<img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+		
+		<div class="navigation-buttons" >
+			<button id="backButton">
+				<i class="fas fa-arrow-left"></i>
+			</button>
+			<button id="topButton">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+    </header>
+	
+	 <!-- Welcome Section -->
+    <section class="welcome-header">
+        <h1>MODUL TPS (Toyota Production System)</h1>
+        <p>Memahami prinsip TPS untuk meningkatkan kecekapan, mengurangkan pembaziran, dan memastikan keselamatan kerja.</p>
+
+        <!-- Navigation Buttons with Images -->
+        <div class="welcome-buttons">
+            <a href="#section1" class="nav-button">
+                <img src="img/intro-tps.png" alt="Introduction">
+                <span>Introduction Toyota</span>
+            </a>
+            <a href="#section2" class="nav-button">
+                <img src="img/tps-structure.png" alt="TPS Structure">
+                <span>Tps Structure & Functional</span>
+            </a>
+            <a href="#section3" class="nav-button">
+                <img src="img/memorize.png" alt="Memorize">
+                <span>Memorize, judgement & cyclic</span>
+            </a>
+            <a href="#section4" class="nav-button">
+                <img src="img/scw.png" alt="SCW">
+                <span>Stop, Call & Wait</span>
+            </a>
+            <a href="#section5" class="nav-button">
+                <img src="img/abnormality.png" alt="abnormality">
+                <span>Abnormality</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Target Sections -->
+    <section id="section1">
+        <h2>Pembersihan Awal</h2>
+        <p>Details about Step 1...</p>
+    </section>
+
+    <section id="section2">
+        <h2>Pemeriksaan Berterusan</h2>
+        <p>Details about Step 2...</p>
+    </section>
+
+    <section id="section3">
+        <h2>Pengesanan Awal</h2>
+        <p>Details about Step 3...</p>
+    </section>
+
+    <section id="section4">
+        <h2>Pencegahan Kemalangan</h2>
+        <p>Details about Step 4...</p>
+    </section>
+
+	<section id="section5">
+        <h2>Pencegahan Kemalangan</h2>
+        <p>Details about Step 4...</p>
+    </section>
+	
+
+	
+	
+	
+
+	<!-- Navigation Buttons -->
+		
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts (optional) -->
+    <script src="js/tps-script.js"></script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+</html>

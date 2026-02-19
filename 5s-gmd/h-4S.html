@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>5S Homepage</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/h-4S.css">
+	<style>
+		header#header {
+			transition: opacity 0.2s, visibility 0.2s, height 0.2s, margin 0.2s, padding 0.2s;
+		}
+
+		header#header.header-hidden {
+			display: none !important;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="hero-text">
+			<h1>Sisih, Susun, Suci, Seragam & Sentiasa Amal [5S]</h1>
+			<p>Selamat datang ke latihan berkaitan 5S</p>
+			<div class="button-container">
+				<button class="cta-button" onclick="showPopup()"><i class="fa fa-check"></i> Kehadiran</button>
+				<button class="cta-button" onclick="location.href='4s-trainer.html'"><i
+						class="fas fa-user-graduate"></i> Trainers</button> <!-- Button to navigate to Trainer Page -->
+			</div>
+			<button class="cta-button" id="openPopup" style="margin-top:10px"><i class="fa fa-info-circle"></i>Peranan &
+				Tanggungjawab</button>
+		</div>
+		<div class="hero-image">
+			<img src="img/main-4s.png" alt="4S Overview"> <!-- Update overview picture -->
+		</div>
+	</section>
+
+	<!-- Popup Section -->
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<!-- Header -->
+			<div class="popup1-header">
+				<img src="img/P2Logo10x10.png" alt="Logo Left" class="logo">
+				<h2>Kehadiran & Pre-Test QR Code</h2>
+				<!-- <img src="img/tpm-logo.png" alt="Logo Right" class="logo"> -->
+			</div>
+
+			<!-- Training Details -->
+			<div class="training-details">
+				<h3>Maklumat Latihan</h3>
+				<div class="training-content">
+					<div class="text-section">
+						<p><strong>Tajuk Latihan:</strong> 5S DOJO</p>
+						<p><strong>Tempat Latihan:</strong> Training Room </p>
+						<p><strong>Nama Pelatih:</strong> Idris Bin Ahmad & Mohd Adzman Bin Abd Aziz</p>
+					</div>
+					<div class="qr-section">
+						<img src="img/safety logo.jpg" class="clickable-image" alt="Mesti Selamat"
+							style="width:100%; height:auto;">
+					</div>
+				</div>
+			</div>
+			<!-- QR Code Section -->
+			<div class="popup1-body">
+				<div class="qr-container">
+					<div class="qr-section">
+						<h3>Kehadiran QR Code</h3>
+						<img src="img/4s kehadiran qr.png" class="clickable-image" alt="Kehadiran QR Code"
+							style="width:100%; height:auto;">
+					</div>
+					<div class="qr-section">
+						<h3>Kesihatan QR Code</h3>
+						<img src="img/4s kesihatan qr.png" class="clickable-image" alt="Kesihatan QR Code"
+							style="width:100%; height:auto;">
+					</div>
+					<div class="qr-section">
+						<h3>Pre-test QR Code</h3>
+						<img src="img/4s pre-test qr.png" class="clickable-image" alt="Pre-test QR Code"
+							style="width:100%; height:auto;">
+					</div>
+				</div>
+			</div>
+
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Tutup</button>
+		</div>
+	</div>
+
+	<br>
+
+	<section class="rules-section">
+		<!-- Section Title -->
+		<h2>📌 PERATURAN KELAS</h2>
+
+		<div class="rules-container">
+			<div class="rule-box popup-div">
+				<img src="img/time.png">
+				<p>Mematuhi <b>masa</b> latihan.</p>
+			</div>
+			<div class="rule-box popup-div">
+				<img src="img/silent phone.jpg">
+				<p>Pastikan Handphone dalam keadaan <b>silent mode</b>.</p>
+			</div>
+			<div class="rule-box popup-div">
+				<img src="img/perhatian-mengajar.jpg">
+				<p>Sentiasa memberikan <b>perhatian</b>.</p>
+			</div>
+			<div class="rule-box popup-div">
+				<img src="img/ask permission.png">
+				<p><b>Maklumkan</b> jika perlu meninggalkan kelas.</p>
+			</div>
+
+			<div class="rule-box popup-div">
+				<p>Pertanyaan kemukakan <b>selepas penerangan</b>.​</p>
+				<img src="img/raise-hand.jpg">
+			</div>
+			<div class="rule-box popup-div">
+				<p>Komunikasi dua hala​.</p>
+				<img src="img/2waycommunication.jpg">
+			</div>
+			<div class="rule-box popup-div">
+				<img src="img/ikut arahan.png">
+				<p>Ikut <b>arahan</b> <i>trainer</i>.</p>
+			</div>
+			<div class="rule-box popup-div">
+				<p>Jaga <b>adab</b> dan disiplin.​</p>
+				<img src="img/adab disiplin.png">
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<!-- Popup Image Modal with 3 Columns (SV, TM, TL) -->
+	<div id="imagePopup" class="popup-modal">
+		<div class="popup-content">
+			<span class="close-button" id="closePopup">&times;</span>
+			<div class="popup-columns">
+				<!-- SV Column -->
+				<div class="popup-column">
+					<h3>SV (Supervisor)</h3>
+					<img src="img/4s-sv.png" alt="SV" class="popup-image">
+					<h4>Role</h4>
+					<p>1. Buat peraturan & standard<br>2. Kawal abnormaliti.<br>3. Penyelesaian pentas abnormaliti.
+						<br>4. Membuat & menetapkan keputusan<br>5. Pembangunan manusia<br>6. Merancang jadual Genba
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TL & TM</li>
+						<li>Boleh mengajar TL & TM</li>
+						<li>Boleh jalankan pemerhatian proses TL & TM</li>
+						<li>Boleh memberi teguran & motivasi</li>
+						<li>Berfikiran kreatif & ada idea</li>
+						<li>Boleh menjalankan aktiviti TPM hasil sebelum & selepas</li>
+						<li>Boleh membuat TPM Standard & TPM Checksheet</li>
+					</ul>
+				</div>
+
+				<!-- TM Column -->
+				<div class="popup-column">
+					<h3>TL (Team Leader)</h3>
+					<img src="img/4s-tl.png" alt="TM" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Memastikan 4M mengikut standard
+						<br>2. Memberi arahan & memantau Team Member
+						<br>3. Melakukan follow up
+						<br>4. Melaporkan abnormaliti
+						<br>5. Turut serta melakukan aktiviti TPM
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TM</li>
+						<li>Boleh ajar TM</li>
+						<li>Boleh jalankan pemerhatian proses TM</li>
+						<li>Boleh memberikan teguran</li>
+					</ul>
+				</div>
+
+				<!-- TL Column -->
+				<div class="popup-column">
+					<h3>TM (Team Member)</h3>
+					<img src="img/4s-tm.png" alt="TL" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Patuhi peraturan & SOP
+						<br> 2. Mengamalkan Stop Call & Wait
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh hafal & ingat SOP</li>
+						<li>Boleh membuat penilaian kualiti</li>
+						<li>Boleh lakukan proses mengikut cycle time</li>
+						<li>Boleh mengekalkan 4S</li>
+						<li>Boleh melakukan penjagaan mesin</li>
+						<li>Boleh melakukan kerja lebih masa yang dirancang</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- Table Section -->
+	<div class="table-container">
+		<h1>Pengenalan</h1>
+		<table>
+			<thead>
+				<tr>
+					<th class="merged-cell">Masa</th>
+					<th class="merged-cell" colspan="4">Kandungan Pembelajaran</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="merged-cell">Perkara</td>
+					<td>
+						<ul>
+							<li>Pengenalan latihan</li>
+							<li>Kedatangan</li>
+							<li>Objektif latihan</li>
+							<li>Penerangan peraturan</li>
+							<li>Harapan pengurusan & DDE</li>
+							<li>Pre Test</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Pengenalan</li>
+							<li>Pengenalan Abnormaliti</li>
+							<li>Konsep</li>
+							<li>Matlamat</li>
+							<li>Objektif</li>
+							<li>Elemen</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Asas dalam Genba Manufacturing</li>
+							<li>Definisi dalam kawalan genba</li>
+							<li>Target step dan tindakan</li>
+							<li>Pengekalan dan perlaksanaan</li>
+							<li>Faedah pengekalan</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Tujuan perlunya</li>
+							<li>Konsep TPT</li>
+							<li>Genba Audit</li>
+							<li>Model Line</li>
+							<li>Abnormaliti finding exercise</li>
+							<li>Genba Simulation</li>
+							<li>Q & A</li>
+							<li>Post Test</li>
+							<li>Evaluation form</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<!-- Key Focus Section -->
+	<section class="deals-section">
+		<!-- Introduction -->
+		<div class="introduction-container">
+			<div class="title-container">
+				<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+				<h1>MARI MULA BELAJAR!</h1>
+				<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+			</div>
+			<p>Mulai dengan YOSH <b>mesti selamat</b> dan akhiri dengan YOSH <b>1 team 1 goal</b></p>
+		</div>
+
+		<div class="deals-container">
+			<div class="deal-box">
+				<img src="gif/book.gif" alt="General Information">
+				<h3>Pengenalan</h3>
+				<button onclick="location.href='4s-general.html'">Mula</button>
+			</div>
+			<div class="deal-box">
+				<img src="gif/question.gif" alt="5S, 4S & My4S">
+				<h3>Pengenalan 5S</h3>
+				<button onclick="location.href='4s-learnmore.html'">Mula</button>
+			</div>
+			<div class="deal-box">
+				<img src="gif/search abnormal.gif" alt="Abnormaliti">
+				<h3>Abnormaliti</h3>
+				<button onclick="location.href='4s-abnormaliti.html'">Mula</button>
+			</div>
+			<div class="deal-box">
+				<img src="gif/games.gif" alt="Latihan & Game">
+				<!-- <h3>Latihan & Permainan (<i>Game</i>)</h3> -->
+				<h3>Pengurusan Genba</h3>
+				<button onclick="location.href='4s-games.html'">Mula</button>
+			</div>
+			<div class="deal-box">
+				<img src="gif/kekalkan4s.gif" alt="Konsep Mengekalkan Aktiviti">
+				<h3>Konsep Mengekalkan Aktiviti</h3>
+				<button onclick="location.href='4s-mengekalkan.html'">Mula</button>
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<div class="eval-section">
+		<h2>SESI PENILAIAN</h2>
+		<!-- QR Codes for Post-Test and Evaluation Form -->
+		<div class="qr-section1">
+			<div class="qr-container1">
+				<img src="img/4s post-test qr.png" class="qr-image1 clickable-image" alt="Post-test QR Code">
+				<p>Post Test</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/1 team 1 gold.jpg" class="qr-image1 clickable-image" alt="1 Team 1 Goal">
+				<p>Sebelum Tamat Kelas</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/4s borang penilaian qr.png" class="qr-image1 clickable-image" alt="Pre-test QR Code">
+				<p>Borang Penilaian (<i>Evaluation Form</i>)</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Fullscreen Modal -->
+	<div id="fullscreen-modal" class="modal-1">
+		<span class="close-button-1">&times;</span>
+		<img class="modal-content-1" id="modal-image" alt="Fullscreen Image">
+	</div>
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!--HTML Popup Div-->
+	<div id="popup-overlay" class="popup-overlay"></div>
+	<div id="popup-modal" class="popup-modal">
+		<div class="popup-modal-content">
+			<span class="popup-close" onclick="closePopupDiv()">&times;</span>
+			<div id="popup-content"></div>
+		</div>
+	</div>
+
+
+	<script src="js/4s-script.js"></script>
+	<!-- Scripts -->
+	<script>
+		function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+		//JS Popup Div
+		window.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.popup-div').forEach(function (box) {
+				box.addEventListener('click', function () {
+					var popup = document.getElementById('popup-modal');
+					var overlay = document.getElementById('popup-overlay');
+					var content = document.getElementById('popup-content');
+					content.innerHTML = '';
+					content.appendChild(box.cloneNode(true));
+					popup.style.display = 'flex';
+					overlay.style.display = 'block';
+				});
+			});
+		});
+		function closePopupDiv() {
+			document.getElementById('popup-modal').style.display = 'none';
+			document.getElementById('popup-overlay').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+	<script>
+		// Hide/show header (including nav bar and white box) on scroll
+		(function () {
+			const header = document.getElementById('header');
+			let lastScrollY = window.scrollY;
+			let isHidden = false;
+			window.addEventListener('scroll', function () {
+				if (window.scrollY > lastScrollY && !isHidden && window.scrollY > 40) {
+					// Scrolling down, hide header and all space
+					header.classList.add('header-hidden');
+					isHidden = true;
+				} else if (window.scrollY < lastScrollY && isHidden) {
+					// Scrolling up, show header
+					header.classList.remove('header-hidden');
+					isHidden = false;
+				}
+				lastScrollY = window.scrollY;
+			});
+		})();
+	</script>
+</body>
+
+</html>

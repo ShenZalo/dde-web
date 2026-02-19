@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>TPM - Step 3</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/step3.css">
+</head>
+
+<body>
+
+
+	<!-- Welcome Header for Trainer Introduction -->
+	<section class="welcome-header">
+		<h1>Step 3</h1>
+		<p></p>
+	</section>
+
+	<section class="matlamat-section">
+		<div class="container">
+			<h2 class="section-title">MATLAMAT</h2>
+			<p class="section-description">1. Mengekalkan keadaan sebenar mesin dengan aktiviti pengisian minyak / gris
+				/ coolant
+				dilakukan berserta piawaian melakukan aktiviti.</p>
+			<p class="section-description">2. Melakukan Pengisian Minyak / gris / coolant / dengan mengikut peraturan
+				atau
+				standard yang telah ditetapkan.</p>
+			<div class="image-gallery">
+				<img src="img/step2-1.jpg" alt="TPM Image 1" class="gallery-image">
+				<img src="img/step2-2.png" alt="TPM Image 2" class="gallery-image">
+			</div>
+		</div>
+
+	</section>
+	<!-- Matlamat step 2 Section -->
+	<section class="matlamat">
+		<h2>Matlamat</h2>
+		<div class="section-content">
+			<p>1. Mengekalkan keadaan sebenar mesin dengan aktiviti pengisian minyak / gris / coolant
+				dilakukan berserta piawaian melakukan aktiviti.</p>
+			<p>2. Melakukan Pengisian Minyak / gris / coolant / dengan mengikut peraturan atau
+				standard yang telah ditetapkan.</p>
+			<div class="image-container">
+				<img src="img/step2-1.jpg" alt="TPM Image 1">
+				<img src="img/step2-2.png" alt="TPM Image 2">
+			</div>
+		</div>
+	</section>
+
+	<br><br>
+
+	<section class="tumpuan">
+		<h2>TUMPUAN AKTIVITI</h2>
+		<div class="tumpuan-container">
+			<div class="tumpuan-point">
+				<p>1. Melakukan pengisian minyak / gris / coolant dan membuat pembahagian kerja
+					dengan mencari masalah yang berlaku semasa pengisian dilakukan.</p>
+			</div>
+			<div class="tumpuan-point">
+				<p>2. Melekatkan label yang sesuai seperti yang telah ditetapkan berserta dengan S.O.P pengisian.</p>
+			</div>
+			<div class="tumpuan-point">
+				<p>3. Mengemaskini TPM standard dan checksheet untuk subjek pengisian minyak / gris / coolant .</p>
+			</div>
+		</div>
+	</section>
+
+	<br><br>
+
+	<section class="tumpuan problem-list">
+		<h2>MENYENARAIKAN DAN MEMBUAT PEMBAHAGIAN SERTA TEMPOH PENGISIAN</h2>
+		<div class="problem-grid">
+			<div class="problem-box">
+				<img src="img/FRL.jpg" alt="FRL">
+				<p>Filter - Regulator - Lubricator</p>
+			</div>
+			<div class="problem-box">
+				<img src="img/bearing.jpg" alt="Bearing Unit">
+				<p>Bearing unit</p>
+			</div>
+			<div class="problem-box">
+				<img src="img/greaser.jpg" alt="Auto Greaser">
+				<p>Auto Greaser</p>
+			</div>
+			<div class="problem-box">
+				<img src="img/hydralic.jpg" alt="Hydraulic Tank">
+				<p>Hydraulic Tank</p>
+			</div>
+			<div class="problem-box">
+				<img src="img/coolant-tank.jpg" alt="Coolant Tank">
+				<p>Coolant Tank</p>
+			</div>
+			<div class="problem-box">
+				<img src="img/cain.jpg" alt="Chain">
+				<p>Chain</p>
+			</div>
+			<div class="problem-box">
+				<p>Tempat Bermasalah</p>
+				<button class="btn-popup" onclick="openPopup('popup-TempatBermasalah')"> Lihat</button>
+			</div>
+			<div class="problem-box">
+				<p>Peyediaan Peralatan</p>
+				<button class="btn-popup" onclick="openPopup('popup-barang')"> Lihat</button>
+			</div>
+			<!-- div class="deal-box">
+				<h3>Tempat Bermasalah</h3>
+				<p></p>
+				 <button class="btn-popup" onclick="openPopup('popup-TempatBermasalah')"><i class="fas fa-calendar-alt"></i> Lihat</button>
+			</div>
+			
+			<div class="deal-box">
+				<h3>Peyediaan Peralatan</h3>
+				<p></p>
+				 <button class="btn-popup" onclick="openPopup('popup-barang')"><i class="fas fa-calendar-alt"></i> Lihat</button>
+			</div -->
+		</div>
+	</section>
+
+	<div class="popup" id="popup-TempatBermasalah">
+		<h3><i class="fas fa-filter"> </i> FRL (Filter - Regulator - Lubricator) terletak di bawah platform.</h3>
+		<img src="img/frl1.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-barang">
+		<h3><i class="fas fa-filter"> </i> Penyediaan Barang</h3>
+		<img src="img/penyediaan-peralatan.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<!-- Overlay -->
+	<div class="overlay" onclick="closePopup()"></div>
+
+	<br><br>
+
+	<section class="tumpuan">
+		<h2>AKTIVITI</h2>
+		<div class="container">
+			<div class="header">
+				<h1>Sebelum melakukan pengisian semula minyak/aris/coolant pembersihan perlu dilakukan
+					agar segala masalah yang ada pada peralatan boleh dikesan.</h1>
+			</div>
+
+			<div class="content">
+				<div class="left-section">
+					<h2>Pengisian semula minyak dilakukan pada peralatan mengikut tempoh
+						yang telah ditetapkan :</h2>
+					<div class="container-items">
+						<div class="item">
+							<img src="img/circle1W.png" alt="Minyak" class="item-image">
+							<button class="btn-popup" onclick="openPopup('popup-grease')"> Lihat</button>
+						</div>
+						<div class="item">
+							<img src="img/coolant.png" alt="Coolant" class="item-image">
+							<button class="btn-popup" onclick="openPopup('popup-grease')"> Lihat</button>
+						</div>
+						<div class="item">
+							<img src="img/grease.png" alt="Gris" class="item-image">
+							<button class="btn-popup" onclick="openPopup('popup-grease')"> Lihat</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-section">
+					<div class="circle-container">
+						<div class="circle">
+							<img src="img/circle1W.png" alt="Yellow Circle Image">
+						</div>
+						<div class="circle">
+							<img src="img/circle3W.png" alt="Red Circle Image">
+						</div>
+					</div>
+
+					<div class="details">
+						<h3>Production:</h3>
+						<p>Tempoh pembahagian: 1 bulan ke bawah (Harian, Mingguan)</p>
+						<h3>Maintenance:</h3>
+						<p>Tempoh pembahagian: 1 bulan ke atas (Bulanan, Tahunan)</p>
+					</div>
+				</div>
+			</div>
+			<img src="img/Equipment.png" alt="Equipment Image"
+				style="width: 100%; max-width: 1200px; border: 1px solid #ccc; padding: 10px;">
+		</div>
+		<br>
+		<div class="container">
+			<div class="header">
+				<h1>Melekatkan sticker oil gauge/oil filler port/oil level/arrow pada setiap peralatan :</h1>
+			</div>
+			<div class="problem-grid">
+				<div class="problem-box1">
+					<img src="img/oil-level.png" alt="Oil Level">
+					<div class="text-overlay">
+						<p>Oil Level</p>
+					</div>
+				</div>
+				<div class="problem-box1">
+					<img src="img/oil-gauge.png" alt="Oil Gauge">
+					<div class="text-overlay">
+						<p>Oil Gauge</p>
+					</div>
+				</div>
+				<div class="problem-box1">
+					<img src="img/arrow-right.png" alt="Arrow">
+					<div class="text-overlay">
+						<p>Arrow</p>
+					</div>
+				</div>
+				<div class="problem-box1">
+					<img src="img/oil-filter.jpg" alt="Olir Filter">
+					<div class="text-overlay">
+						<p>Olir Filter</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="header">
+				<h1>Perkara penting yang perlu diikuti semasa pelinciran dilakukan</h1>
+			</div>
+			<div class="problem-grid">
+				<div class="problem-box">
+					<p>1. Isi minyak yang bersih</p>
+					<img src="img/minyak-bersih.jpg" alt="Minyak Bersih">
+				</div>
+				<div class="problem-box">
+					<p>2. Pengisian melalui inlet yang betul</p>
+					<img src="img/pengisian-minyak.png" alt="Bearing Unit">
+				</div>
+				<div class="problem-box">
+					<p>3. Jumlah kuantiti minyak yang betul</p>
+					<img src="img/check-minyak.jpg" alt="Auto Greaser">
+				</div>
+				<div class="problem-box">
+					<p>4. Jenis minyak/ gris/ coolant yang betul</p>
+					<img src="img/jenis-minyak.jpg" alt="Hydraulic Tank">
+				</div>
+				<div class="problem-box">
+					<p>5. Menggunakan peralatan yang mempunyai sticker yang sama</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="popup" id="popup-grease">
+		<h3>Penukaran Gris dalam Auto Greaser</h3>
+		<p>Penukaran gris di dalam auto greaser mengikut tempoh yang ditetapkan:</p>
+		<div class="image-container">
+			<img src="img/penukaran-gris.png" alt="Coolant and Grease Info"
+				style="width: 100%; max-width: 600px; border: 1px solid #ccc; padding: 10px;">
+		</div>
+		<p><strong>Nota:</strong> Sila beri panduan kepada vendor yang terlibat dalam penukaran auto greaser.</p>
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+
+	<section class="checksheet">
+		<h2>Check Sheet and Diagnosis</h2>
+
+		<div class="outer-container">
+			<div class="container1">
+				<div class="image-container1">
+					<img src="img/checksheet1.png" alt="Temoat Bermasalah" class="image1">
+					<button class="btn-popup" onclick="openPopup('popup-checksheet1')"> Lihat</button>
+				</div>
+				<div class="image-container1">
+					<img src="img/checksheet2.png" alt="Temoat Bermasalah" class="image1">
+					<button class="btn-popup" onclick="openPopup('popup-checksheet2')"> Lihat</button>
+				</div>
+			</div>
+
+			<div class="container1">
+				<div class="image-container1">
+					<img src="img/diagnosis1.png" alt="Temoat Bermasalah" class="image1">
+					<button class="btn-popup" onclick="openPopup('popup-checksheet3')"> Lihat</button>
+				</div>
+				<div class="image-container1">
+					<img src="img/tpm-checksheet.png" alt="Temoat Bermasalah" class="image1">
+					<button class="btn-popup" onclick="openPopup('popup-checksheet4')"> Lihat</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Popups for images -->
+	<div class="popup" id="popup-checksheet1">
+		<img src="img/checksheet1.1.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-checksheet2">
+		<img src="img/checksheet2.1.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-checksheet3">
+		<img src="img/diagnosis1.1.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-checksheet4">
+		<img src="img/diagnosis2.1.png" alt="Temoat Bermasalah" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+
+
+
+
+
+
+
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="js/tpm-script.js"></script>
+
+	<script>
+		function openPopup(popupId) {
+			// Hide all popups
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none';
+			});
+
+			// Show the specific popup
+			var selectedPopup = document.getElementById(popupId);
+			selectedPopup.style.display = 'block';
+
+			// Show the overlay
+			document.querySelector('.overlay').style.display = 'block';
+		}
+
+		function closePopup() {
+			// Get all popups and hide them
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none'; // Hide the popup
+			});
+
+			// Hide the overlay
+			document.querySelector('.overlay').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+
+</body>
+
+</html>

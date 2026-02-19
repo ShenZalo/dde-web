@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Structure</title>
+    <link rel="stylesheet" href="css/tps-stylestructure.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+			<!-- Introduction -->
+			<div class="introduction-container">
+				<div class="title-container">
+					<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+					<h1>TPS Structure</h1>
+					<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+				</div>
+			</div>
+		</section>
+
+        <!-- Introduction Section -->
+        <!-- <section class="introduction-section">
+            <h2 class="section-title">APAKAH MATLAMAT TPS?</h2><br>
+            <div class="content-wrapper">
+                <div class="objective-point">
+                    <p>
+                        ① Produk dihasilkan berkualiti tinggi dengan harga yang murah dan  
+                        penghantaran yang cepat.
+                    </p>
+                </div>
+                <div class="objective-point">
+                    <p>
+                        ② Menghasilkan barang yang diperlukan pada masa yang diperlukan 
+                        dan dalam kuantiti diperlukan sahaja.
+                    </p>
+                </div>
+                <div class="objective-point">
+                    <p>
+                        ③ Menghapuskan pembaziran terhadap kos operasi dengan 
+                        melakukan penambahbaikan berterusan.
+                    </p>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- TPS Objectives Section -->
+
+        <!-- <section class="tps-objectives">
+            <h2 class="section-title pulse">APAKAH MATLAMAT TPS?</h2>
+            
+            <div class="objectives-grid">
+                Objective 1
+                <div class="objective-card" data-aos="flip-left">
+                    <div class="card-icon">🚗</div>
+                    <div class="card-content">
+                        <p>Produk berkualiti tinggi dengan <br>
+                        <span class="highlight">harga yang murah</span><br>
+                        penghantaran yang <span class="highlight">cepat.</span></p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+                
+                Objective 2
+                <div class="objective-card" data-aos="flip-up">
+                    <div class="card-icon">⏱️</div>
+                    <div class="card-content">
+                        <p>Menghasilkan<br>
+                        <span class="highlight">barang yang diperlukan</span><br>pada 
+                        <span class="highlight">masa yang diperlukan</span> dan<br>
+                        <span class="highlight">dalam kuantiti diperlukan</span> sahaja.</p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+                
+                Objective 3
+                <div class="objective-card" data-aos="flip-right">
+                    <div class="card-icon">♻️</div>
+                    <div class="card-content">
+                        <p>Menghapuskan <span class="highlight">pembaziran</span> terhadap <br>
+                        <span class="highlight">kos operasi</span> dengan<br>
+                        melakukan <span class="highlight">penambahbaikan</span><br>
+                        berterusan.</p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+            </div>
+            
+            <div class="interactive-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section> -->
+
+        <!-- TPS Objectives Section -->
+        <section class="tps-objectives">
+            <h2 class="section-title pulse">APAKAH MATLAMAT TPS?</h2>
+            
+            <div class="objectives-grid">
+                <!-- Objective 1 -->
+                <div class="objective-card" onmouseover="focusCard(this)" onmouseout="unfocusCards()">
+                    <div class="card-icon">🚗</div>
+                    <div class="card-content">
+                        <p>Produk berkualiti tinggi dengan <br>
+                            <span class="highlight">harga yang murah</span><br>
+                            penghantaran yang <span class="highlight">cepat.</span>
+                        </p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+                
+                <!-- Objective 2 -->
+                <div class="objective-card" onmouseover="focusCard(this)" onmouseout="unfocusCards()">
+                    <div class="card-icon">⏱️</div>
+                    <div class="card-content">
+                        <p>Menghasilkan<br>
+                            <span class="highlight">barang yang diperlukan</span><br>pada 
+                            <span class="highlight">masa yang diperlukan</span> dan<br>
+                            <span class="highlight">dalam kuantiti diperlukan</span> sahaja.
+                        </p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+                
+                <!-- Objective 3 -->
+                <div class="objective-card" onmouseover="focusCard(this)" onmouseout="unfocusCards()">
+                    <div class="card-icon">♻️</div>
+                    <div class="card-content">
+                        <p>Menghapuskan <span class="highlight">pembaziran</span> terhadap <br>
+                            <span class="highlight">kos operasi</span> dengan<br>
+                            melakukan <span class="highlight">penambahbaikan</span><br>
+                            berterusan.
+                        </p>
+                    </div>
+                    <div class="shine"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Struktur Binaan TPS -->
+        <section class="structure-container">
+            <h2 class="section-title pulse">STRUKTUR BINAAN TPS</h2>
+            <!-- Blue Triangle - Now matches rectangle width -->
+            <div class="triangle-container">
+                <div class="triangle" id="triangle">
+                    <!-- href="str-CustSatisfac.html" -->
+                    <a class="triangle-text">⑥ Customers Satisfaction<br>
+                        <span class="tooltip">[Kepuasan pelanggan]
+                            <!-- <span class="tooltiptext">Fokus utama pada kepuasan 
+                                pelanggan melalui kauliti produk dan layanan</span> -->
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- White Rectangle - Goals -->
+            <a href="str-Goal.html" class="goals-rect" id="goals">
+                ⑤ Goal/Sasaran : Berkualiti Tinggi, harga rendah, penghantaran cepat
+            </a>
+
+            <!-- First Red Divider -->
+            <div class="divider-1">
+                <div class="divider-line"></div>
+                <div class="divider-label">J.I.T & Jidoka</div>
+            </div>
+            
+            <!-- Two Boxes - side by side -->
+            <div class="two-boxes">
+                <!-- Left Box -->
+                <a href="str-JIT.html" class="box" id="jit-box">
+                    <div class="box-header">③ Just in Time</div>
+                    <div class="box-content">Hapuskan MUDA [Pembaziran]. Item/barang yang diperlukan, pada masa yang diperlukan dan kuantiti yang diperlukan sahaja.</div>
+                </a>
+                
+                <!-- Right Box -->
+                <a href="str-Jidoka.html" class="box" id="jidoka-box">
+                    <div class="box-header">④ Jidoka</div>
+                    <div class="box-content">Machine/Mesin boleh: Bina kualiti dengan sendiri, tahu bilamana Abnormal berlaku, berhenti bila Abnormal berlaku, berhenti apabila selesai operasi.</div>
+                </a>
+            </div>
+            
+            <!-- Black Rectangle - Three Columns - Now properly in one row -->
+            <a href="str-BasicSkill.html" class="three-columns" id="three-columns">
+                <div class="column">
+                    <div class="column-header">② Basic Skill</div>
+                    <div>[Knowledge]</div>
+                </div>
+                <div class="column">
+                    <div class="column-header">Standard Work</div>
+                    <div>Policy</div>
+                </div>
+                <div class="column">
+                    <div class="column-header">Visual Management</div>
+                </div>
+            </a>
+            
+            <!-- Second Red Divider -->
+            <div class="divider-2">
+                <div class="divider-line"></div>
+                <div class="divider-label">Tapak Asas</div>
+            </div>
+
+            <!-- Green Rectangle -->
+            <a href="str-DCT.html" class="green-rect" id="green-rect">
+                ① Discipline, Communication & Teamwork ⇨ Menghasilkan 5S yang Baik
+            </a>
+        </section>
+
+
+
+        <section class="why-tps-wujud">
+            <div class="main-border reveal">
+                <h3 class="tps-section-header">
+                    <span class="highlight">Kenapa Sistem TPS Diwujudkan?</span><br>
+                    <span class="highlight">Untuk Apa?</span>
+                </h3>
+                <div class="border objective-card pulse">
+                    <div class="icon-wrapper">✨</div>
+                    <p>Mencapai kepuasan pelanggan</p>
+                </div>
+            </div>
+            
+            <div class="main-border reveal">
+                <h3 class="tps-section-header">
+                    <span class="highlight">Apa akan berlaku sekiranya salah satu</span><br>
+                    <span class="highlight">sistem <b class="warning">TPS GAGAL</b>?</span>
+                </h3>
+                <div class="border-wrapper">
+                    <div class="border impact-card" data-tilt>
+                        <div class="icon-wrapper">
+                            <img src="img/customer.png" class="icon-tps" alt="Pelanggan">
+                        </div>
+                        <p>Pelanggan</p>
+                        <div class="impact-desc">Kekecewaan & kehilangan kepercayaan</div>
+                    </div>
+                    <div class="border impact-card" data-tilt>
+                        <div class="icon-wrapper">
+                            <img src="img/products.png" class="icon-tps" alt="Produk">
+                        </div>
+                        <p>Produk</p>
+                        <div class="impact-desc">Kualiti tidak konsisten</div>
+                    </div>
+                    <div class="border impact-card" data-tilt>
+                        <div class="icon-wrapper">
+                            <img src="img/company2.png" class="icon-tps" alt="Syarikat">
+                        </div>
+                        <p>Syarikat</p>
+                        <div class="impact-desc">Kerugian kewangan & reputasi</div>
+                    </div>
+                    <div class="border impact-card" data-tilt>
+                        <div class="icon-wrapper">
+                            <img src="img/workers.png" class="icon-tps" alt="Pekerja">
+                        </div>
+                        <p>Pekerja</p>
+                        <div class="impact-desc">Beban kerja meningkat</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-border reveal callout">
+                <div class="quote-mark">❝</div>
+                <p class="quote-text">
+                    Sebagai seorang pekerja, kita perlu 
+                    memberi yang terbaik untuk pelanggan & 
+                    syarikat.
+                </p>
+                <div class="quote-mark">❞</div>
+            </div>
+        </section>
+    </div> 
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        function focusCard(card) {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                if (c !== card) {
+                    c.style.filter = 'blur(3px)';
+                    c.style.opacity = '0.7';
+                    c.style.transform = 'scale(0.95)';
+                } else {
+                    c.style.transform = 'translateY(-15px) scale(1.05)';
+                }
+            });
+        }
+        
+        function unfocusCards() {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                c.style.filter = 'none';
+                c.style.opacity = '1';
+                c.style.transform = '';
+            });
+        }
+
+
+        
+        // Struktur TPS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click animations
+            const elements = [
+                document.getElementById('triangle'),
+                document.getElementById('goals'),
+                document.getElementById('jit-box'),
+                document.getElementById('jidoka-box'),
+                document.getElementById('three-columns'),
+                document.getElementById('green-rect')
+            ];
+            
+            elements.forEach(el => {
+                el.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = this.classList.contains('triangle') ? 'translateY(-5px)' : '';
+                    }, 200);
+                    
+                    // Add ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.backgroundColor = 'rgba(255,255,255,0.5)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.pointerEvents = 'none';
+                    
+                    // Position the ripple at click position
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${event.clientX - rect.left - size/2}px`;
+                    ripple.style.top = `${event.clientY - rect.top - size/2}px`;
+                    
+                    this.appendChild(ripple);
+                    
+                    // Remove ripple after animation
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+            
+            // Add hover sound effects
+            // const hoverSound = new Audio('audio/hover.wav');
+            // hoverSound.volume = 0.3;
+            
+            // elements.forEach(el => {
+            //     el.addEventListener('mouseenter', () => {
+            //         hoverSound.currentTime = 0;
+            //         hoverSound.play();
+            //     });
+            // });
+            
+            // Add style for ripple animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // discipline, communication, teamwork
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation triggers
+            const solutionsSection = document.querySelector('.solutions-section');
+            const imageRow = document.querySelector('.image-row');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        imageRow.classList.add('active');
+                        solutionsSection.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            observer.observe(solutionsSection);
+        });
+
+
+
+        // ********************* Kenapa Sistem TPS Diwujudkan? *********************
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll reveal animation
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const revealPoint = 150; // pixels from bottom
+                
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('active');
+                    } else {
+                        element.classList.remove('active'); // Optional: remove if you want animation only once
+                    }
+                });
+            }
+            
+            // Initial check
+            checkReveal();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkReveal);
+            
+            // For better performance, throttle the scroll event
+            let isScrolling;
+            window.addEventListener('scroll', function() {
+                window.clearTimeout(isScrolling);
+                isScrolling = setTimeout(checkReveal, 50);
+            }, false);
+        });
+
+    </script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+</html>

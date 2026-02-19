@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/P2Logo.png">
+    <title>TPM - Pengurusan I.C</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pic.css">
+</head>
+
+<body>
+
+
+    <!-- I.C Labels Section -->
+    <section class="ic-labels">
+        <h1>I.C LABELS</h1>
+        <div class="label-container">
+            <!-- Template for Each Label -->
+            <!-- Label A -->
+            <div class="label-item">
+                <img src="img/labelA.png" alt="Label A">
+                <h2>Label A</h2>
+                <p>Kegunaan: Digantung pada setiap valve yang harus ditutup / buka semasa operasi Normal.</p>
+            </div>
+            <!-- Label B -->
+            <div class="label-item">
+                <img src="img/labelB.png" alt="Label B">
+                <h2>Label B</h2>
+                <p>Kegunaan: Dilekatkan pada pressure gauge dengan bacaan standard.</p>
+            </div>
+            <!-- Label C -->
+            <div class="label-item">
+                <img src="img/labelC.png" alt="Label C">
+                <h2>Label C</h2>
+                <p>Kegunaan: Dilekatkan pada lampu atau suis untuk menunjukkan keadaan lampu yang harus menyala /
+                    suis yang seharusnya di'on'kan semasa Operasi normal.</p>
+            </div>
+            <!-- Add labels D to M in similar format -->
+            <!-- Label D -->
+            <div class="label-item">
+                <img src="img/labelD.png" alt="Label D">
+                <h2>Label D</h2>
+                <p>Kegunaan: Dilekatkan pada hose atau piping untuk menunjukkan arah aliran bendalir.</p>
+            </div>
+            <!-- Label E -->
+            <div class="label-item">
+                <img src="img/labelE.png" alt="Label E">
+                <h2>Label E</h2>
+                <p>Kegunaan: Dilekatkan / cat pada piping (atau dicat semua) untuk menunjukkan jenis
+                    bendalir di dalam piping. Dicat mengikut warna standard**</p>
+            </div>
+            <!-- Label F -->
+            <div class="label-item">
+                <img src="img/labelF.png" alt="Label F">
+                <h2>Label F</h2>
+                <p>Kegunaan: Dilekatkan pada tempat yang perlu diisi minyak / gris / coolant mengikut
+                    jenis dan tempoh pengisian.</p>
+            </div>
+            <!-- Label G -->
+            <div class="label-item">
+                <img src="img/labelG.png" alt="Label G">
+                <h2>Label G</h2>
+                <p>Kegunaan: Dilekatkan pada level bendalir pada keadaan operasi dan pada keadaan berhenti.</p>
+            </div>
+            <!-- Label H -->
+            <div class="label-item">
+                <img src="img/labelH.png" alt="Label H">
+                <h2>Label H</h2>
+                <p>Kegunaan: Dilekatkan pada lubricator untuk melihat aras kandungan pelincir.</p>
+            </div>
+            <!-- Label I -->
+            <div class="label-item">
+                <img src="img/labelI.png" alt="Label I">
+                <h2>Label I</h2>
+                <p>Kegunaan: Dilekatkan pada tepi penutup / penutup tempat pengisian semua minyak.</p>
+            </div>
+            <!-- Label J -->
+            <div class="label-item">
+                <img src="img/labelJ.png" alt="Label J">
+                <h2>Label J</h2>
+                <p>Kegunaan: Dilekatkan pada peralatan yang perlu diservis dalam tempoh tertentu..</p>
+            </div>
+            <!-- Label K -->
+            <div class="label-item">
+                <img src="img/labelK.png" alt="Label K">
+                <h2>Label K</h2>
+                <p>Kegunaan: Dilekatkan pada cover V-belt dan chain untuk menunjukkan jenis, bilangan dan sebagainya.
+                </p>
+            </div>
+            <!-- Label L -->
+            <div class="label-item">
+                <img src="img/labelL.png" alt="Label L">
+                <h2>Label L</h2>
+                <p>Kegunaan: Ditanda dengan warna kuning / biru pada bolt dan nut yang penting untuk mengesan
+                    kelonggaran.</p>
+            </div>
+            <!-- Label M -->
+            <div class="label-item">
+                <img src="img/labelM.png" alt="Label M">
+                <h2>Label M</h2>
+                <p>Kegunaan: Dilekatkan pada Model line plate sekiranya telah lulus diagnosis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button id="backButton">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="topButton">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts (optional) -->
+    <script src="js/tpm-script.js"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Clear any session data if needed
+            sessionStorage.clear();
+            localStorage.clear();
+
+            // Redirect to login page
+            window.location.href = "../index.html"; // Adjust path as needed
+        });
+    </script>
+</body>
+
+</html>

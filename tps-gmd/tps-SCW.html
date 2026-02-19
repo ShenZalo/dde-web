@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Stop Call Wait</title>
+    <link rel="stylesheet" href="css/tps-SCW.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+                <a href="../FMDS/new-fmds.html">FMDS</a>
+                <a href="../4S/h-4S.html">4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+                <a href="../TPM/h-tpm.html">TPM</a>
+                <a href="../KARAKURI/h-karakuri.html">KARAKURI</a>
+                <a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+            <div class="user-controls">
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+            <!-- Introduction -->
+            <div class="introduction-container">
+                <div class="title-container">
+                    <img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+                    <div>
+                        <h1>Stop, Call & Wait</h1>
+                        <h2><i>[Berhenti, Panggil & Tunggu]</i></h2>
+                    </div>
+                    <img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h1>Penerangan Asas <i>Stop, Call & Wait</i></h1>
+            <!-- Card 1 -->
+            <div class="history-card">
+                <!-- <div class="kaizen-tag">KAIZEN!</div> -->
+                <h2>Penerangan [Abnormal]</h2>
+                <p><span class="blue-text">Kerja <i>standard</i></span> tidak dapat dijalankan serta boleh melibatkan
+                </p>
+                <p>
+                    ① Kualiti produk<br>
+                    ② Keselamatan pekerja
+                </p>
+                <h4>Maksud kerja standard:-</h4>
+                <p>
+                    Contoh:<br>Pemasangan part tidak dapat dilakukan atas
+                    sebab peralatan rosak dan lain-lain.
+                </p>
+            </div>
+            <div class="history-grid">
+                <!-- Card 2 -->
+                <div class="history-card">
+                    <h2>Perkara Asas <i>Stop, Call & Wait</i></h2>
+                    <p>Gerakan tidak <i>normal</i> berlaku ketika operasi <i>normal</i>.</p>
+                    <p>Tidak dapat melakukan kerja kerana terdapat benda asing.</p>
+                    <p>
+                        Bau atau kebisingan yang luar biasa melebihi mengelilingi
+                        peralatan atau pergerakan oleh peralatan semasa pengeluaran.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-container">
+            <div class="divider">
+                <h3>Fungsi <i>Stop, Call & Wait</i></h3>
+            </div>
+
+            <div class="grid-container">
+                <div class="content-intro-tps">
+                    <h2 class="title-box">Tujuan Utama <i>Stop, Call & Wait</i></h2>
+                    <p>
+                        Untuk memastikan <i>abnormal</i> terhadap 4M yang menjejaskan
+                        kualiti tidak terlepas kepada proses seterusnya atau
+                        pelanggan.
+                    </p><br>
+                    <p>
+                        Sekiranya <i>abnormal</i> berlaku terhadap 4M, maka
+                        kita perlu lakukan <i>Stop, Call & Wait</i>.
+                    </p><br>
+                    <p>
+                        Sekiranya tidak melakukannya maka produk yang
+                        dihasilkan tidak akan mencapai kualiti mengikut
+                        <i>standard</i> yang telah ditetapkan.
+                    </p>
+                </div>
+                <div class="content-intro-tps">
+                    <h2 class="title-box">4M</h2>
+                    <p>① <i>Man</i> = Pekerja</p>
+                    <p>② <i>Machine</i> = Mesin</p>
+                    <p>③ <i>Material</i> = Bahan</p>
+                    <p>④ <i>Method</i> = Kaedah kerja</p>
+                </div>
+            </div>
+
+            <div class="content-intro-tps">
+                <h2 class="title-box">Kesan & akibat tidak mengamalkan <i>Stop, Call & Wait</i></h2>
+                <div class="box">
+                    <h3>a. Produk</h3>
+                    <p>
+                        Produk yang dihasilkan tidak akan
+                        berkualiti mengikut <i>standard</i> yang ditetapkan.
+                    </p>
+                    <div class="img-container">
+                        <div class="img-div">
+                            <img src="gif/nut.gif" alt="Nut bracket seat loose" class="defect-image">
+                            <p>Nut Bracket Seat <br>Loose</p>
+                        </div>
+                        <div class="img-div">
+                            <img src="gif/spoiler.gif" alt="Nut bracket seat loose" class="defect-image">
+                            <p>Spoiler <br>Gap</p>
+                        </div>
+                        <div class="img-div">
+                            <img src="gif/sideskirt.gif" alt="Nut bracket seat loose" class="defect-image">
+                            <p>Side Skirt <br>Gap</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container3">
+                    <div class="box">
+                        <h3>b. Proses seterusnya</h3>
+                        <p>
+                            Proses seterusnya mungkin akan menghadapi
+                            masalah pemasangan.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>c. Pelanggan</h3>
+                        <p>
+                            Pelanggan akan menerima produk yang tidak berkualiti dan mungkin
+                            boleh menjejaskan keselamatan pelanggan.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>d. Syarikat</h3>
+                        <p>
+                            Syarikat akan mendapat nama yang tidak baik
+                            disebabkan masalah kualiti yang berlaku.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>e. Pekerja</h3>
+                        <p>
+                            Anda akan diambil tindakan disebabkan
+                            kesilapan tidak melakukan <i>Stop, Call & Wait</i>.
+                        </p>
+                    </div>
+                </div>
+                <p class="message"><span class="red-text">
+                        Jangan Terima <i>Defect</i>, Jangan Buat <i>Defect</i>,
+                        Jangan Lepaskan <i>Defect</i>
+                    </span></p>
+            </div>
+
+            <br>
+
+            <div class="content-intro-tps">
+                <h2 class="title-box">
+                    Peranan dan tanggungjawab <i>Team
+                        Member</i> <br>terhadap <i>Stop, Call & Wait</i>
+                </h2>
+                <div class="box">
+                    <div class="img-container">
+                        <div class="img-div">
+                            <img src="gif/one.gif" alt="Number 1" class="number">
+                            <p>
+                                Sebagai seorang Team Member yang bertanggungjawab kita perlu
+                                lakukan <i>Stop, Call & Wait</i> apabila berlakunya <i>abnormal</i>.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="img-div">
+                            <img src="gif/two.gif" alt="Number 2" class="number">
+                            <p>
+                                Jangan abaikan <i>abnormal</i> yang berlaku yang
+                                boleh menjejaskan kualiti terhadap produk.
+                            </p>
+                            <br><br><br>
+                        </div>
+                        <div class="img-div">
+                            <img src="gif/three.gif" alt="Number 3" class="number">
+                            <p>
+                                Jangan disebabkan kita rakan seterusnya atau pelanggan
+                                menerima produk yang tidak berkualiti dan mungkin menerima
+                                musibah dari kesilapan kita.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="content-intro-tps">
+                <h2 class="title-box">
+                    Kaedah <i>Stop, Call & Wait</i>
+                </h2>
+                <!-- <div class="box">
+                    <div class="img-container">
+                        <div class="img-div">
+                            <h3>① Stop</h3>
+                            <img src="gif/stop.gif" alt="Stop sign" class="number">
+                        </div>
+                        <div class="img-div">
+                            <h3>② Call</h3>
+                            <img src="gif/call.gif" alt="Call" class="number">
+                        </div>
+                        <div class="img-div">
+                            <h3>③ Wait</h3>
+                            <img src="gif/wait.gif" alt="Wait" class="number">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="box">
+                    <h2 style="text-align: center; border: 2px solid #0000008d; border-radius: 8px">
+                        ① Stop
+                    </h2>
+                    <div class="img-info-container">
+                        <div class="img-div">
+                            <!-- <h3>① Stop</h3> -->
+                            <img src="gif/stop.gif" alt="Stop sign" class="number">
+                            <p>
+                                <b><i>STOP</i> [Berhenti]</b> operasi/<i>line</i> pembuatan apabila
+                                berlaku <i>abnormal</i>.
+                            </p>
+                            <br>
+                        </div>
+
+                        <div class="info-div" style="text-align: left">
+                            <div class="cth-div" style="text-align: left">
+                                <p><b>▶ Contoh <i>Abnormal</i></b></p>
+                                <p>
+                                    <img src="gif/one.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp Bahan mentah <i>[parts]</i>
+                                </p>
+                                <p>
+                                    <img src="gif/two.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp Peralatan
+                                </p>
+                                <p>
+                                    <img src="gif/three.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp Mesin
+                                </p>
+                                <p>
+                                    <img src="gif/four.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp Pemasangan
+                                </p>
+                            </div>
+                            <div class="cth-img">
+                                <img src="gif/stopimg1.gif" alt="image" class="stop-img">
+                                <img src="gif/stopimg2.gif" alt="image" class="stop-img">
+                                <img src="gif/stopimg3.gif" alt="image" class="stop-img">
+                                <img src="gif/stopimg4.gif" alt="image" class="stop-img">
+                                <img src="img/stopimg5.png" alt="image" class="stop-img">
+                                <img src="img/stopimg6.png" alt="image" class="stop-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2 style="text-align: center; border: 2px solid #0000008d; border-radius: 8px">
+                        ② Call
+                    </h2>
+                    <div class="img-info-container">
+                        <div class="img-div">
+                            <img src="gif/call.gif" alt="Call" class="number">
+                            <p>
+                                <b><i>CALL</i> [Hubungi]</b> <i>Team Leader/Supervisor</i>
+                                dan maklumkan <i>abnormal</i> yang berlaku.
+                            </p>
+                        </div>
+
+                        <div class="info-div" style="text-align: left; height: 270px">
+                            <div class="cth-div" style="text-align: left">
+                                <p><b>▶ Hubungi <i>T.Leader/Supervisor</i></b></p>
+                                <p>
+                                    <img src="gif/one.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <b>Maklumkan isu</b> yang berlaku.
+                                    Perlu ada komunikasi antara T.M dan T/L
+                                    atau S.Visor.
+                                </p>
+                                <p>
+                                    <img src="gif/two.gif" alt="1" class="num">
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                                    <b>Maklumat mestilah tepat.</b>
+                                </p>
+                            </div>
+                            <div class="cth-img2">
+                                <div class="cth-div" style="text-align: left">
+                                    <p><b>▶ Contoh:</b></p>
+                                    <p>
+                                        ● <b>Apa</b> yang berlaku?
+                                    </p>
+                                    <p>
+                                        ● <b>Dimana</b> lokasi <i>abnormal</i> berlaku?
+                                    </p>
+                                </div>
+                                <div class="img-flex">
+                                    <img src="gif/incoming-call.gif" alt="image" class="stop-img">
+
+                                    <img src="img/callSv.png" alt="image" class="stop-img" style="margin-top: 20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2 style="text-align: center; border: 2px solid #0000008d; border-radius: 8px">
+                        ③ Wait
+                    </h2>
+                    <div class="img-info-container">
+                        <div class="img-div" style="height: 300px; padding-top: 60px;">
+                            <img src="gif/wait.gif" alt="Wait" class="number">
+                            <p>
+                                <b><i>WAIT</i> [Tunggu]</b> arahan dari <i>Team
+                                    Leader/Supervisor</i>.
+                            </p>
+                        </div>
+
+                        <div class="info-div" style="text-align: left">
+                            <div class="cth-div2" style="text-align: left">
+                                <p><b>▶ Tunggu arahan dari T.Leader/Supervisor</b></p>
+                                <img src="gif/waitt.gif" alt="1" class="gmbrwait">
+                                <p>
+                                    T.Member lain yang terlibat <i>stop, call & wait</i> juga
+                                    perlu melakukan aktiviti seperti yang terdapat pada
+                                    garis panduan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1" style="margin-top: 30px;">
+                <div class="divider">
+                    <h3>Andon <i>Stop, Call & Wait</i></h3>
+                </div>
+                <div class="content-box">
+                    <h4 class="content-title">① Kaedah <i>Push Button</i></h4><br>
+                    <div class="img-andon-flex">
+                        <img src="img/kaedahandon1.png" alt="1" class="kaedahandon">
+                    </div>
+
+                    <div class="isi">
+                        <p><b>Kaedah ini digunakan oleh shop:</b></p>
+                        <p>
+                            ● Press<br>
+                            ● Body<br>
+                            ● Casting<br>
+                            ● Machining
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="content-box">
+                    <h4 class="content-title">② Kaedah Andon Cable</h4><br>
+
+                    <div class="img-andon-flex">
+                        <img src="img/kaedahandon2.png" alt="1" class="kaedahandon">
+                        <img src="img/kaedahandon3.png" alt="1" class="kaedahandon">
+                        <img src="img/kaedahandon4.png" alt="1" class="kaedahandon">
+                    </div>
+
+                    <div class="isi">
+                        <p><b>Kaedah ini digunakan oleh shop:</b></p>
+                        <p>
+                            ● Paint<br>
+                            ● Assembly<br>
+                            ● QC<br>
+                            ● Engine
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1" style="margin-top: 30px;">
+                <div class="divider">
+                    <h3>Bagaimana <span class="red-text2">Kaedah Andon Cable</span> Stop, Call & Wait Berfungsi?</h3>
+                </div>
+                <div class="content-box">
+                    <!-- <h4 class="content-title">Cara Toyota Berfikir</h4> -->
+                    <img src="gif/andonImg1.gif" alt="cara toyota berfikir" class="pic">
+                    <div class="flex-content2">
+                        <div class="isi">
+                            <img src="img/andonImg2.png" alt="cara toyota berfikir" class="pic2">
+                            <p>
+                                <span class="highlight">Tali Kuning</span> <b>[Call,Stop,Wait]</b> <br>
+                                Apabila <b>ditarik</b>, line akan <b>berhenti</b> pada bahagian
+                                <b>end proses</b> bahagian tersebut.
+                            </p>
+                        </div>
+                        <div class="isi">
+                            <img src="img/andonImg3.png" alt="cara toyota berfikir" class="pic2">
+                            <p>
+                                <span class="red-highlight">Tali Merah</span> <b>[Call,Stop,Wait]</b> <br>
+                                Apabila <b>ditarik</b>, line akan <b>berhenti serta merta</b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1" style="margin-top: 30px;">
+                <div class="divider">
+                    <h3><span class="red-text2">Kriteria 4M</span> <i>Stop, Call & Wait</i></h3>
+                </div>
+                <div class="content-box">
+                    <div class="flex-content3">
+                        <img src="gif/QrKriteria.gif" alt="QR Code Kriteria SCW" class="pic3">
+                        <img src="img/situasiAbnormal.png" alt="QR Code Kriteria SCW" class="pic4">
+                    </div>
+                </div>
+            </div>
+            <div class="container1" style="margin-top: 30px;">
+                <div class="content-box">
+                    <h4 class="content-title">Contoh Stop, Call & Wait</h4><br>
+                    <div class="flex-content4">
+                        <div class="img-wrapper">
+                            <img src="gif/QrFlow.gif" alt="QR Code Kriteria SCW" class="pic3">
+                        </div>
+
+                        <div class="video-container">
+                            <div class="video-item">
+                                <div class="video-wrapper">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1Mxe4vN0iZKc7tXQkYITo8DvZ-BVwwpyL/preview"
+                                        width="100%" height="480" allow="autoplay">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1" style="margin-top: 30px;">
+                <div class="content-box">
+                    <div class="text">
+                        <h3>
+                            Mari Lakukan <i>Practical Simulation Stop, Call & Wait</i> !
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons" id="header">
+        <button id="backButton">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="topButton">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        function focusCard(card) {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                if (c !== card) {
+                    c.style.filter = 'blur(3px)';
+                    c.style.opacity = '0.7';
+                    c.style.transform = 'scale(0.95)';
+                } else {
+                    c.style.transform = 'translateY(-15px) scale(1.05)';
+                }
+            });
+        }
+
+        function unfocusCards() {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                c.style.filter = 'none';
+                c.style.opacity = '1';
+                c.style.transform = '';
+            });
+        }
+
+
+
+        // Struktur TPS
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add click animations
+            const elements = [
+                document.getElementById('triangle'),
+                document.getElementById('goals'),
+                document.getElementById('jit-box'),
+                document.getElementById('jidoka-box'),
+                document.getElementById('three-columns'),
+                document.getElementById('green-rect')
+            ];
+
+            elements.forEach(el => {
+                el.addEventListener('click', function () {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = this.classList.contains('triangle') ? 'translateY(-5px)' : '';
+                    }, 200);
+
+                    // Add ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.backgroundColor = 'rgba(255,255,255,0.5)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.pointerEvents = 'none';
+
+                    // Position the ripple at click position
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+                    ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
+
+                    this.appendChild(ripple);
+
+                    // Remove ripple after animation
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Add hover sound effects
+            const hoverSound = new Audio('audio/hover.wav');
+            hoverSound.volume = 0.3;
+
+            elements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    hoverSound.currentTime = 0;
+                    hoverSound.play();
+                });
+            });
+
+            // Add style for ripple animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // discipline, communication, teamwork
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animation triggers
+            const solutionsSection = document.querySelector('.solutions-section');
+            const imageRow = document.querySelector('.image-row');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        imageRow.classList.add('active');
+                        solutionsSection.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+
+            observer.observe(solutionsSection);
+        });
+
+
+
+        // ********************* Kenapa Sistem TPS Diwujudkan? *********************
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Scroll reveal animation
+            const revealElements = document.querySelectorAll('.reveal');
+
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const revealPoint = 150; // pixels from bottom
+
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('active');
+                    } else {
+                        element.classList.remove('active'); // Optional: remove if you want animation only once
+                    }
+                });
+            }
+
+            // Initial check
+            checkReveal();
+
+            // Check on scroll
+            window.addEventListener('scroll', checkReveal);
+
+            // For better performance, throttle the scroll event
+            let isScrolling;
+            window.addEventListener('scroll', function () {
+                window.clearTimeout(isScrolling);
+                isScrolling = setTimeout(checkReveal, 50);
+            }, false);
+        });
+
+
+        // ********************* Product Images *********************
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.car-item');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+
+            let currentIndex = 0;
+            const itemWidth = items[0].offsetWidth + 20; // width + gap
+
+            function updateCarousel() {
+                // Move track
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+                // Update active item
+                items.forEach((item, index) => {
+                    item.classList.toggle('active', index === currentIndex);
+                });
+
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            // Navigation dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.dataset.index);
+                    updateCarousel();
+                });
+            });
+
+            // Arrow buttons
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+
+            // Auto-rotate (optional)
+            let autoRotate = setInterval(() => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            }, 3000);
+
+            // Pause auto-rotate on hover
+            track.addEventListener('mouseenter', () => {
+                clearInterval(autoRotate);
+            });
+
+            track.addEventListener('mouseleave', () => {
+                autoRotate = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateCarousel();
+                }, 3000);
+            });
+
+            // Touch/swipe support
+            let startX, moveX;
+            track.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                clearInterval(autoRotate);
+            });
+
+            track.addEventListener('touchmove', (e) => {
+                moveX = e.touches[0].clientX;
+            });
+
+            track.addEventListener('touchend', () => {
+                if (moveX < startX - 50) {
+                    // Swipe left
+                    currentIndex = (currentIndex + 1) % items.length;
+                } else if (moveX > startX + 50) {
+                    // Swipe right
+                    currentIndex = (currentIndex - 1 + items.length) % items.length;
+                }
+                updateCarousel();
+
+                // Restart auto-rotate
+                autoRotate = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateCarousel();
+                }, 3000);
+            });
+        });
+
+        // ***************** Pengasas Toyota History Section *****************
+        // interactive
+
+
+    </script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            // Clear any session data if needed
+            sessionStorage.clear();
+            localStorage.clear();
+
+            // Redirect to login page
+            window.location.href = "../index.html"; // Adjust path as needed
+        });
+    </script>
+</body>
+
+</html>

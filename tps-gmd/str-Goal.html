@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Goal</title>
+    <link rel="stylesheet" href="css/tps-stylestructure.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .disc-comm-team {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #97bcc9, #ffd1e4);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .disc-comm-team::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255,255,255,0) 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .wrap-container {
+            max-width: 1200px;
+            /* margin: 20px 50px; */
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .wrap-container h2 {
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            color:#423995
+        }
+
+        .wrap-container p {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .gifs {
+            width: 150px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .text-icon {
+            width: 20px;
+            height: auto;
+            /* margin-right: 10px; */
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .wrap-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+			<!-- Introduction -->
+			<div class="introduction-container">
+				<div class="title-container">
+					<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+					<h1>⑤ Goal/Sasaran</h1>
+					<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+				</div>
+			</div>
+		</section>
+
+        <br><br>
+
+        <section class="disc-comm-team">
+            <div class="wrap-container">
+                <h2>Berkualiti Tinggi, Harga Rendah & Penghantaran Cepat.</h3>
+            </div>
+        </section>
+
+        <section class="disc-comm-team">
+            <div class="wrap-container">
+                <br><br>
+                <img src="gif/high-quality.gif" alt="high quality" class="gifs">
+                <br>
+                <h3>Berkualiti Tinggi</h3>
+                <p>
+                    <img src="img/interior.png" alt="Car Interior" class="text-icon">
+                    &nbsp
+                    Interior [Dalaman]
+                </p>
+                <p>
+                    <img src="img/exterior.png" alt="Car Exterior" class="text-icon">
+                    &nbsp
+                    Exterior [Luaran]
+                </p>
+                <p>
+                    <img src="img/function.png" alt="Car Functions" class="text-icon">
+                    &nbsp
+                    Function [Fungsi]
+                </p>
+            </div>
+            <div class="wrap-container">
+                <img src="gif/low-cost.gif" alt="Harga Rendah" class="gifs">
+                <h3>Harga Rendah</h3>
+                <p>
+                    <img src="img/key-car.png" alt="Mampu Milik" class="text-icon">
+                    &nbsp
+                    Mampu milik.
+                </p>
+            </div>
+            <div class="wrap-container">
+                <img src="gif/fastDelivery.gif" alt="Fast Delivery Image" class="gifs">
+                <h3>Penghantaran Cepat</h3>
+                <p>
+                    <img src="img/takeTime.png" alt="Take Time Image" class="text-icon">
+                    &nbsp
+                    Membuat produk berdasarkan take time yang ditetapkan.
+                </p>
+            </div>
+        </section>
+    </div> 
+
+    <br><br>
+
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        function focusCard(card) {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                if (c !== card) {
+                    c.style.filter = 'blur(3px)';
+                    c.style.opacity = '0.7';
+                    c.style.transform = 'scale(0.95)';
+                } else {
+                    c.style.transform = 'translateY(-15px) scale(1.05)';
+                }
+            });
+        }
+        
+        function unfocusCards() {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                c.style.filter = 'none';
+                c.style.opacity = '1';
+                c.style.transform = '';
+            });
+        }
+
+        // discipline, communication, teamwork
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation triggers
+            const solutionsSection = document.querySelector('.solutions-section');
+            const imageRow = document.querySelector('.image-row');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        imageRow.classList.add('active');
+                        solutionsSection.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            observer.observe(solutionsSection);
+        });
+    </script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+</html>

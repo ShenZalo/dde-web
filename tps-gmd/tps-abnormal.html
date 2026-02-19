@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Abnormaliti</title>
+    <link rel="stylesheet" href="css/tps-abnormal.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+			<!-- Introduction -->
+			<div class="introduction-container">
+				<div class="title-container">
+					<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+                    <div>
+                        <h1>Abnormality</h1>
+                        <h2><i>[Kelainan]</i></h2>
+                    </div>
+					<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+				</div>
+			</div>
+		</section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1">
+                <div class="divider">
+                    <h3>Apa Itu <i>Abnormality</i> ?</h3>
+                </div>
+                <div class="content-box">
+                    <h4 class="content-title">Lain dari Kebiasaan</h4>
+                    <div class="isi" style="padding: 20px;">
+                        <p>
+                            ● Merujuk kepada sesuatu perkara /keadaan yang 
+                            berlaku lain dari kebiasaan.
+                        </p><br>
+                        <p>
+                            ● Keadaan dimana boleh <span class="blue-text">dikesan melalui</span>:
+                        </p>
+                        <br>
+                        <div class="flex-content3">
+                            <img src="gif/eye.gif" alt="accident" class="pic2">
+                            <img src="gif/hearing.gif" alt="accident" class="pic2">
+                            <img src="gif/nose.gif" alt="accident" class="pic2">
+                            <img src="img/getaran.png" alt="accident" class="pic2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="flex-content2">
+                <div class="container1">
+                    <div class="divider">
+                        <h3>Abnormal</h3>
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">Lain dari yang sepatutnya</h4>
+                        <div class="isi">
+                            <p style="margin: 20px;">
+                                ● <i>Abnormal</i> adalah sesuatu yang <b>tidak <i>normal</i></b> 
+                                atau <b>lain dari yang sepatutnya</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container1">
+                    <div class="divider">
+                        <h3>Normal</h3>
+                    </div>
+                    <div class="content-box">
+                        <h4 class="content-title">Sesuatu yang ditetapkan standard</h4>
+                        <div class="isi">
+                            <p style="margin: 20px;">
+                                ● <i>Normal</i> adalah sesuatu yang telah <b>ditetapkan</b> 
+                                didalam <b><i>standard</i>/ketetapan</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="divider">
+                    <h3><i>Normal/Abnormal</i> diukur dengan apa?</h3>
+                </div>
+                <div class="content-box">
+                    <div class="isi">
+                        <p style="margin: 20px;">
+                            ● <b><i>Normal/Abnormal</i></b> diukur dengan <b><i>Standard</i></b>.<br>
+                            ● Berdasarkan pengamatan anda, yang manakah <i>normal</i> 
+                            & yang manakah <i>abnormal</i>?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="content-box">
+                    <h4 class="content-title">Berdasarkan pengamatan anda, yang manakah <i>normal</i> 
+                            & yang manakah <i>abnormal</i>?</h4>
+                    <div class="isi" style="padding: 20px;">
+                        <div class="flex-content2">
+                            <img src="img/circle.png" alt="guess" class="circle">
+                            <div class="ans">
+                                <button class="guess-button" onclick="showAnswer()">Jawapan</button><br>
+                                <img src="img/circle2.png" alt="guess" class="circle2" style="display: none;">
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1">
+                <div class="divider">
+                    <h3>3 Zon <i>Abnormal</i></h3>
+                </div>
+                <div class="content-box">
+                    <h4 class="content-title"><i>Abnormal</i> &nbspboleh berlaku pada 3 <i>zone</i></h4>
+                    <div class="isi">
+                        <img src="gif/3zones.gif" alt="accident" class="pic2" style="width: 100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="abnormality-control" class="sh-section">
+            <div class="container1">
+                <div class="divider">
+                    <h3>4M</h3>
+                </div>
+                <div class="content-box">
+                    <h4 class="content-title"><i>Abnormal</i> yang boleh berlaku terhadap 4M</h4>
+                    <br>
+                    <div class="flex-content3">
+                        <div class="isi2">
+                            <div class="divider3">
+                                <h3>Man</h3>
+                            </div>
+                            <p>
+                                <img src="gif/one.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Kurang sihat/sakit.
+                            </p>
+                            <p>
+                                <img src="gif/two.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Pemakaian PPE tidak sempurna.
+                            </p>
+                            <p>
+                                <img src="gif/three.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Tidak mengikut peraturan.
+                            </p>
+                            <p>
+                                <img src="gif/four.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Suka berbual.
+                            </p><br>
+                            <img src="img/man.png" alt="1" class="pic3" style="margin-top:9px">
+                        </div>
+
+                        <div class="isi2">
+                            <div class="divider3">
+                                <h3>Machine</h3>
+                            </div>
+                            <p>
+                                <img src="gif/one.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp <i>Hose</i> angin bocor.
+                            </p>
+                            <p>
+                                <img src="gif/two.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp <i>Power supply</i> terputus.
+                            </p>
+                            <p>
+                                <img src="gif/three.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp <i>Jig/tools</i> rosak.
+                            </p>
+                            <p>
+                                <img src="gif/four.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp <i>Pressure gauge</i> rosak.
+                            </p><br>
+                            <img src="img/machine.png" alt="1" class="pic3">
+                        </div>
+
+                        <div class="isi2">
+                            <div class="divider3">
+                                <h3>Material</h3>
+                            </div>
+                            <p>
+                                <img src="gif/one.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Cukup/tidak.
+                            </p>
+                            <p>
+                                <img src="gif/two.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Kedudukannya.
+                            </p>
+                            <p>
+                                <img src="gif/three.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Susah/tidak.
+                            </p>
+                            <p>
+                                <img src="gif/four.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Jauh sangat.
+                            </p><br>
+                            <img src="img/material.png" alt="1" class="pic3" style="margin-top:70px">
+                        </div>
+
+                        <div class="isi2">
+                            <div class="divider3">
+                                <h3>Method</h3>
+                            </div>
+                            <p>
+                                <img src="gif/one.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Ikut sop.
+                            </p>
+                            <p>
+                                <img src="gif/two.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Ikut turutan.
+                            </p>
+                            <p>
+                                <img src="gif/three.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Proses betul.
+                            </p>
+                            <p>
+                                <img src="gif/four.gif" alt="1" class="num">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp Menunggu.
+                            </p><br>
+                            <img src="img/method.png" alt="1" class="pic3" style="margin-top:39px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div> 
+    <!-- End of Main Container -->
+
+    <!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        function focusCard(card) {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                if (c !== card) {
+                    c.style.filter = 'blur(3px)';
+                    c.style.opacity = '0.7';
+                    c.style.transform = 'scale(0.95)';
+                } else {
+                    c.style.transform = 'translateY(-15px) scale(1.05)';
+                }
+            });
+        }
+        
+        function unfocusCards() {
+            document.querySelectorAll('.objective-card').forEach(c => {
+                c.style.filter = 'none';
+                c.style.opacity = '1';
+                c.style.transform = '';
+            });
+        }
+
+
+        
+        // Struktur TPS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click animations
+            const elements = [
+                document.getElementById('triangle'),
+                document.getElementById('goals'),
+                document.getElementById('jit-box'),
+                document.getElementById('jidoka-box'),
+                document.getElementById('three-columns'),
+                document.getElementById('green-rect')
+            ];
+            
+            elements.forEach(el => {
+                el.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = this.classList.contains('triangle') ? 'translateY(-5px)' : '';
+                    }, 200);
+                    
+                    // Add ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.backgroundColor = 'rgba(255,255,255,0.5)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple 0.6s linear';
+                    ripple.style.pointerEvents = 'none';
+                    
+                    // Position the ripple at click position
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${event.clientX - rect.left - size/2}px`;
+                    ripple.style.top = `${event.clientY - rect.top - size/2}px`;
+                    
+                    this.appendChild(ripple);
+                    
+                    // Remove ripple after animation
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+            
+            // Add hover sound effects
+            const hoverSound = new Audio('audio/hover.wav');
+            hoverSound.volume = 0.3;
+            
+            elements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    hoverSound.currentTime = 0;
+                    hoverSound.play();
+                });
+            });
+            
+            // Add style for ripple animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+
+        // discipline, communication, teamwork
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation triggers
+            const solutionsSection = document.querySelector('.solutions-section');
+            const imageRow = document.querySelector('.image-row');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        imageRow.classList.add('active');
+                        solutionsSection.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            observer.observe(solutionsSection);
+        });
+
+
+
+        // ********************* Kenapa Sistem TPS Diwujudkan? *********************
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll reveal animation
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const revealPoint = 150; // pixels from bottom
+                
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('active');
+                    } else {
+                        element.classList.remove('active'); // Optional: remove if you want animation only once
+                    }
+                });
+            }
+            
+            // Initial check
+            checkReveal();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkReveal);
+            
+            // For better performance, throttle the scroll event
+            let isScrolling;
+            window.addEventListener('scroll', function() {
+                window.clearTimeout(isScrolling);
+                isScrolling = setTimeout(checkReveal, 50);
+            }, false);
+        });
+
+
+        // ********************* Product Images *********************
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const items = document.querySelectorAll('.car-item');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            
+            let currentIndex = 0;
+            const itemWidth = items[0].offsetWidth + 20; // width + gap
+            
+            function updateCarousel() {
+                // Move track
+                track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                
+                // Update active item
+                items.forEach((item, index) => {
+                    item.classList.toggle('active', index === currentIndex);
+                });
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Navigation dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.dataset.index);
+                    updateCarousel();
+                });
+            });
+            
+            // Arrow buttons
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+            
+            // Auto-rotate (optional)
+            let autoRotate = setInterval(() => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            }, 3000);
+            
+            // Pause auto-rotate on hover
+            track.addEventListener('mouseenter', () => {
+                clearInterval(autoRotate);
+            });
+            
+            track.addEventListener('mouseleave', () => {
+                autoRotate = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateCarousel();
+                }, 3000);
+            });
+            
+            // Touch/swipe support
+            let startX, moveX;
+            track.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                clearInterval(autoRotate);
+            });
+            
+            track.addEventListener('touchmove', (e) => {
+                moveX = e.touches[0].clientX;
+            });
+            
+            track.addEventListener('touchend', () => {
+                if (moveX < startX - 50) {
+                    // Swipe left
+                    currentIndex = (currentIndex + 1) % items.length;
+                } else if (moveX > startX + 50) {
+                    // Swipe right
+                    currentIndex = (currentIndex - 1 + items.length) % items.length;
+                }
+                updateCarousel();
+                
+                // Restart auto-rotate
+                autoRotate = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateCarousel();
+                }, 3000);
+            });
+        });
+
+        // ***************** reveal answer for which circle is normal *****************
+        function showAnswer() {
+            const circle2 = document.querySelector('.circle2');
+            circle2.style.display = 'block';
+            
+            // Optional: Hide the button after click
+            const button = document.querySelector('.guess-button');
+            button.style.display = 'block';
+        }
+    </script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>TPM - Step 2</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/step2.css">
+</head>
+
+<body>
+
+
+	<!-- Welcome Header for Trainer Introduction -->
+	<section class="welcome-header">
+		<h1>STEP 2</h1>
+		<p>TINDAKAN PADA TEMPAT YANG TERSOROK & PUNCA KEKOTORAN [ KAIZEN ]</p>
+	</section>
+
+	<section class="matlamat-section">
+		<div class="container">
+			<h2 class="section-title">MATLAMAT</h2>
+			<p class="section-description">Keputusan atau masalah yang didapati di dalam step 1 (Pembersihan Awal) boleh
+				dopromosikan di
+				dalam step 2 melalui aktiviti KAIZEN yang boleh menghasilkan keputusan yang lebih baik.</p>
+			<div class="image-gallery">
+				<img src="img/step2-1.jpg" alt="TPM Image 1" class="gallery-image">
+				<img src="img/step2-2.png" alt="TPM Image 2" class="gallery-image">
+			</div>
+		</div>
+
+		<!-- Additional Information -->
+		<div class="tumpuan-section" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Tumpuan Aktiviti</h2>
+			<div class="tumpuan-container">
+				<div class="tumpuan-point">
+					<img src="img/chip.jpg" alt="Kawasan mesin" class="tumpuan-image">
+					<p>1. Kawasan mesin yang cepat menjadi kotor & tersorok.</p>
+				</div>
+				<div class="tumpuan-point">
+					<img src="img/chip.jpg" alt="Masalah Mesin" class="tumpuan-image">
+					<p>2. Mesin yang menghadapi masalah berulang.</p>
+				</div>
+				<div class="tumpuan-point">
+					<img src="img/chip.jpg" alt="Downtime" class="tumpuan-image">
+					<p>3. Downtime dan masalah kualiti tiada penurunan.</p>
+				</div>
+				<div class="tumpuan-point">
+					<img src="img/chip.jpg" alt="TPM Standard" class="tumpuan-image">
+					<p>4. Menyemak TPM standard dan checksheet.</p>
+				</div>
+				<div class="tumpuan-point point-span" style="grid-column: span 2;">
+					<img src="img/chip.jpg" alt="Masa Pembersihan" class="tumpuan-image">
+					<p>5. Mengurangkan masa yang diambil didalam aktiviti pembersihan berbanding dengan aktiviti lain
+						seperti circle meeting, education, KAIZEN dll.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="tumpuan-section" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Mencari Tempat Masalah</h2>
+			<div class="tumpuan-point">
+				<ul class="main-sentences">
+					<li>Menyenaraikan masalah yang masih belum diambil tindakan dan masalah berulang didalam Step 1.
+					</li>
+					<li>Tempat berpuncanya masalah.</li>
+					<li>Tempat yang sukar untuk melakukan pembersihan, pemeriksaan, pelinciran dan pembaikkan.</li>
+					<li>Tempat yang banyak terdapat perkara untuk dibersihkan dan diperiksa.</li>
+				</ul>
+			</div>
+
+			<table>
+				<tr class="masalah-header">
+					<th>Masalah</th>
+					<th>Akibat yang Mungkin Berlaku</th>
+				</tr>
+				<tr>
+					<td>1 - Berminyak (pelincir, minyak hidrolik, coolant)</td>
+					<td>Keselamatan, kerugian, kerosakan, pembersihan yang kerap.</td>
+				</tr>
+				<tr>
+					<td>2 - Berhabuk (sawang, sampah, core)</td>
+					<td>Sukar melakukan pemeriksaan, kerosakan (level gauge tidak jelas / fotosensor tidak berfungsi).
+					</td>
+				</tr>
+				<tr>
+					<td>3 - Chip/spatter bertaburan</td>
+					<td>Kerosakan, pembersihan yang kerap (keadaan chip yang banyak boleh menghalang pergerakan mesin
+						yang menjurus kepada kerosakan).</td>
+				</tr>
+			</table>
+
+			<div class="images-container">
+				<div>
+					<img src="img/berminyak.jpg" alt="Berminyak">
+					<p>Berminyak</p>
+				</div>
+				<div>
+					<img src="img/chip.jpg" alt="Chip berkumpul">
+					<p>Chip berkumpul</p>
+				</div>
+				<div>
+					<img src="img/coolant.jpg" alt="Coolant melimpah">
+					<p>Coolant melimpah</p>
+				</div>
+			</div>
+
+			<div class="popup-buttons">
+				<button class="btn-popup" onclick="openPopup('popup-pembersihan')">Contoh Tempat Masalah
+					(PEMBERSIHAN)</button>
+				<button class="btn-popup" onclick="openPopup('popup-pelinciran')">Contoh Tempat Masalah
+					(PELINCIRAN)</button>
+				<button class="btn-popup" onclick="openPopup('popup-pemeriksaan')">Contoh Tempat Masalah
+					(PEMERIKSAAN)</button>
+			</div>
+
+		</div>
+		<div class="pelan-tindakan" style="min-width: 1000px; margin-top: 30px;">
+			<h2><i class="fas fa-tools"></i> Pelan Tindakan Pada Tempat Bermasalah</h2>
+			<ul>
+				<li><i class="fas fa-comments"></i> Perbincangan terhadap masalah di dalam Circle dengan kehadiran
+					maintenance.</li>
+				<li><i class="fas fa-search"></i> Mengenal pasti punca masalah (5W 1H).</li>
+				<li><i class="fas fa-lightbulb"></i> Mencari langkah penyelesaian (countermeasure).</li>
+				<li><i class="fas fa-clock"></i> Tentukan bahan dan masa untuk mengambil tindakan ke atas masalah.</li>
+				<li><i class="fas fa-calendar-check"></i> Menyenaraikan kesemua kaizen yang hendak dilakukan ke dalam
+					<button class="btn-popup" onclick="openPopup('popup-schedule')"><i class="fas fa-calendar-alt"></i>
+						Kaizen Schedule</button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="side-by-side-containers" style="min-width: 1000px; margin-top: 30px;">
+			<!-- First Container: Tumpuan Aktiviti -->
+			<div class="tumpuan-section">
+				<h2>i.C Label Implementation</h2>
+				<div class="ic-container">
+					<div class="ic-item">
+						<img src="img/sukatan-minyak.png" alt="Image 1">
+						<div class="ic-desc">Penunjuk Sukatan Minyak</div>
+					</div>
+					<div class="ic-item">
+						<img src="img/arrow.png" alt="Image 2">
+						<div class="ic-desc">Penunjuk Arah Angin, Minyak, Air, Stim</div>
+					</div>
+					<div class="ic-item">
+						<img src="img/normal-buka.png" alt="Image 3">
+						<div class="ic-desc">Dalam Keadaan Normal Valve Sentiasa Terbuka</div>
+					</div>
+				</div>
+				<div class="ic-container">
+					<div class="ic-item">
+						<img src="img/normal-tutup.png" alt="Image 4">
+						<div class="ic-desc">Dalam Keadaan Normal Valve Sentiasa Tertutup</div>
+					</div>
+					<div class="ic-item">
+						<img src="img/oilgauge.png" alt="Image 5">
+						<div class="ic-desc">Penunjuk Aras Normal Minyak</div>
+					</div>
+					<div class="ic-item">
+						<img src="img/pressure.png" alt="Image 6">
+						<div class="ic-desc">Penunjuk Bacaan Sukatan Pressure Gauge</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- Second Container: Images -->
+			<div class="tumpuan-section image-langkah">
+				<h2>Self Diagnosis</h2>
+				<div class="self-diagnosis-container">
+					<!-- Image Card 1 -->
+					<div class="self-diagnosis-card" onclick="openPopup('popup1')">
+						<img src="img/checksheet2.png" alt="TPM Standard dan Check Sheet">
+						<div class="card-overlay">
+							<h3>Menyemak TPM Standard dan Check Sheet</h3>
+						</div>
+					</div>
+
+					<!-- Image Card 2 -->
+					<div class="self-diagnosis-card" onclick="openPopup('popup2')">
+						<img src="img/genba1.jpg" alt="Self-Diagnosis">
+						<div class="card-overlay">
+							<h3>Melakukan Self-Diagnosis</h3>
+						</div>
+					</div>
+				</div>
+				<div class="self-diagnosis-container">
+					<!-- Popup Button -->
+					<button class="btn-popup" onclick="openPopup('popup3')">Perkara yang perlu ada</button>
+				</div>
+
+				<!-- The Popup Modal -->
+				<div id="popup1" class="popup">
+					<div class="popup-content">
+						<h3>Menyemak TPM Standard dan Check Sheet</h3>
+						<div class="point-container">
+							<div class="point">
+								<i class="fas fa-check"></i>
+								<p>Selepas percubaan dilakukan dan telah mencapai sasaran, TPM
+									standard akan disemak.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-clock"></i>
+								<p>TPM standard akan menentukan masa, tempat dan cara melakukannya.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-users-cog"></i>
+								<p>Perbincangan dari TPM Master, Committee, Maintenance dan Circle Leader
+									mesti dilakukan bagi mendapat TPM standard yang baik.</p>
+							</div>
+						</div>
+						<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+					</div>
+				</div>
+
+				<!-- The Popup Modal -->
+				<div id="popup2" class="popup">
+					<div class="popup-content">
+						<h3>Melakukan Self-Diagnosis</h3>
+						<div class="point-container">
+							<div class="point">
+								<i class="fas fa-calendar-alt"></i>
+								<p>Selepas semua telah dilakukan dan berpuas hati, self-diagnosis (permarkahan)
+									hendaklah dilakukan berdasarkan ‘kertas pemarkahan sendiri’ dan ‘standard
+									pemarkahan’ step 2.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-random"></i>
+								<p>Aliran self inspection</p>
+								<div class="flow-image-container">
+									<img src="img/self-inspection-flow.png" alt="Self Inspection Flow"
+										class="flow-image">
+								</div>
+							</div>
+						</div>
+						<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+					</div>
+				</div>
+
+				<!-- The Popup Modal -->
+				<div id="popup3" class="popup">
+					<div class="popup-content">
+						<h3>Melakukan Self Diagnosis</h3>
+						<p>Perkara yang perlu ada sebelum TPM Committiee diagnosis Step 2:</p>
+						<div class="point-container">
+							<div class="point">
+								<i class="fas fa-calendar-alt"></i>
+								<p>Kaizen Schedule.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-check-circle"></i>
+								<p>Kaizen item yang telah dibuat melebihi 70%.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-file-alt"></i>
+								<p>Semua dokumen dimonitoring board dikemaskini.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-users"></i>
+								<p>Circle telah diberi training berkenaan dengan Step 2.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-graduation-cap"></i>
+								<p>Pembelajaran 'One Point Lesson' telah diberi kepada Circle.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-tag"></i>
+								<p>I.C label telah dilekatkan dengan sepenuhnya.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-sync-alt"></i>
+								<p>Aktiviti Step 1 dilakukan berterusan.</p>
+							</div>
+							<div class="point">
+								<i class="fas fa-clipboard-check"></i>
+								<p>Permarkahan sendiri dilakukan dengan sempurna.</p>
+							</div>
+						</div>
+						<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+					</div>
+				</div>
+
+				<!-- Overlay -->
+				<div class="overlay" onclick="closePopup()"></div>
+			</div>
+		</div>
+
+
+	</section>
+
+
+
+	<div class="popup" id="popup-pembersihan">
+		<h3><i class="fas fa-calendar-alt"></i> Contoh Tempat Masalah (PEMBERSIHAN)</h3>
+		<img src="img/pembersihan.png" alt="Image description" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-pelinciran">
+		<h3><i class="fas fa-calendar-alt"></i> Contoh Tempat Masalah (PELINCIRAN)</h3>
+		<img src="img/pelinciran.png" alt="Image description" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+	<div class="popup" id="popup-pemeriksaan">
+		<h3><i class="fas fa-calendar-alt"></i> Contoh Tempat Masalah (PEMERIKSAAN)</h3>
+		<img src="img/pemeriksaan.png" alt="Image description" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+
+
+
+	<div class="popup" id="popup-schedule">
+		<h3><i class="fas fa-calendar-alt"></i> Kaizen Schedule</h3>
+		<img src="img/kaizen-schedule.png" alt="Kaizen Schedule" class="popup-image">
+		<button onclick="closePopup()"><i class="fas fa-times"></i> Tutup</button>
+	</div>
+	<!-- The Overlay (for blur effect) -->
+	<div class="overlay"></div>
+
+	<br>
+
+
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="js/tpm-script.js"></script>
+	<script>
+		function openPopup(popupId) {
+			// Hide all popups
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none';
+			});
+
+			// Show the specific popup
+			var selectedPopup = document.getElementById(popupId);
+			selectedPopup.style.display = 'block';
+
+			// Show the overlay
+			document.querySelector('.overlay').style.display = 'block';
+		}
+
+		function closePopup() {
+			// Get all popups and hide them
+			var popups = document.querySelectorAll('.popup');
+			popups.forEach(function (popup) {
+				popup.style.display = 'none'; // Hide the popup
+			});
+
+			// Hide the overlay
+			document.querySelector('.overlay').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+
+</html>

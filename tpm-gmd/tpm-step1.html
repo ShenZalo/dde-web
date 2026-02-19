@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>TPM - Step 1</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/step1.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+
+		<div class="navigation-buttons">
+			<button id="backButton">
+				<i class="fas fa-arrow-left"></i>
+			</button>
+			<button id="topButton">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+	</header>
+
+	<!-- Welcome Section -->
+	<section class="welcome-header">
+		<h1>STEP 1</h1>
+		<p>PEMBERSIHAN AWAL DAN PEMERIKSAAN BERTERUSAN PADA KESELURUHAN MESIN</p>
+	</section>
+
+	<section class="tumpuan-section">
+		<div class="container">
+			<h2 class="section-title">MATLAMAT</h2>
+			<p class="section-description">Aktiviti step 1 adalah pembersihan terhadap segala sampah dan kekotoran pada
+				mesin dengan
+				menyentuh sendiri mesin dengan tangan supaya masalah yang berlaku pada mesin dapat dikesan dan
+				tindakan susulan dilakukan.</p>
+			<div class="image-gallery">
+				<img src="img/tpm1.png" alt="TPM Image 1" class="gallery-image">
+				<img src="img/mesin-kotor.jpg" alt="Purpose Image 2" class="gallery-image">
+				<img src="img/kotor3.jpg" alt="Purpose Image 3" class="gallery-image">
+			</div>
+		</div>
+		<div class="side-by-side-containers">
+			<!-- First Container: Tumpuan Aktiviti -->
+			<div class="tumpuan-container">
+				<h2>TUMPUAN AKTIVITI</h2>
+				<div class="tumpuan" style="text-align: left;">
+					<p><i class="fas fa-broom"></i>Perlaksanaan aktiviti pembersihan oleh kumpulan kecil.</p>
+				</div>
+				<div class="tumpuan" style="text-align: left;">
+					<p><i class="fas fa-exclamation-triangle"></i> Mencari masalah (abnormaliti) pada mesin dengan
+						melekatkan
+						'blue tag' dan tindakan susulan diambil secara agresif.</p>
+				</div>
+				<div class="tumpuan" style="text-align: left;">
+					<p><i class="fas fa-box-open"></i> Mengasingkan barang yang perlu dan tidak perlu, dan barang yang
+						tidak perlu hendaklah dibuang.</p>
+				</div>
+			</div>
+			<!-- Second Container: Images -->
+			<div class="tumpuan-container image-langkah">
+				<h2>LANGKAH KESELAMATAN</h2>
+				<div onclick="openFullscreen('img/keselamatan.png')">
+					<img src="img/keselamatan.png" alt="Activity 1" class="image-langkah img">
+				</div>
+				<div id="full-screen-img" onclick="closeFullscreen()">
+					<button class="x-btn" onclick="closeFullscreen()">✖</button>
+					<img id="expanded-img" src="" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- Additional Information -->
+		<div class="tumpuan-container" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Aktiviti Pembersihan</h2>
+			<!-- p></p -->
+			<div style="width: 700px;" class="tumpuan">
+				<p>Melakukan pembersihan sambil mencari masalah pada mesin.</p>
+			</div>
+			<div style="width: 700px;" class="tumpuan">
+				<p>Melakukan pembersihan disegenap kawasan mesin luar dsn dalam.</p>
+			</div>
+			<div style="width: 700px;" class="tumpuan">
+				<p>Menyediakan tempat meletak peralatan pembersihan dengan sempurna.</p>
+			</div>
+		</div>
+
+		<!-- Additional Information -->
+		<div class="tumpuan-container" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Senarai Masalah</h2>
+			<div class="problem-grid">
+				<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+					<img src="img/sampah.avif" alt="Problem 1">
+					<p>Sampah</p>
+				</div>
+				<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+					<img src="img/mesin-kotor.jpg" alt="Problem 2">
+					<p>Berminyak</p>
+				</div>
+				<!--div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 3">
+				<p>Longgar</p>
+			</div-->
+				<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+					<img src="img/bocor.png" alt="Problem 4">
+					<p>Bocor</p>
+				</div>
+				<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+					<img src="img/pecah.png" alt="Problem 5">
+					<p>Pecah</p>
+				</div>
+				<!--div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 6">
+				<p>Tercabut</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 7">
+				<p>Bengkok</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 8">
+				<p>Berkarat</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 9">
+				<p>Kesan Calar</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 10">
+				<p>Teralih kedudukan</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 11">
+				<p>Gegaran yang luarbiasa</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 12">
+				<p>Bising yang luarbiasa</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 13">
+				<p>Panas yang terlampau</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 14">
+				<p>Bau yang luarbiasa</p>
+			</div>
+			<div class="problem-box" onclick="openFullscreen('img/keselamatan.png')">
+				<img src="problem3.jpg" alt="Problem 15">
+				<p>Berubah warna</p>
+			</div-->
+			</div>
+		</div>
+
+		<!-- Blue Tag -->
+		<div class="tumpuan-container" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Blue Tag</h2>
+			<div class="blue-tag-image-container">
+				<img src="img/blue-tag.png" alt="Blue Tag" class="blue-tag-image">
+			</div>
+		</div>
+
+		<!-- Check Sheet and Diagnosis -->
+		<div class="tumpuan-container" style="min-width: 1000px; margin-top: 30px;">
+			<h2>Check Sheet and Diagnosis</h2>
+
+			<div class="outer-container">
+				<!-- Top Row: First Two Images -->
+				<div class="container1">
+					<div class="image-container1">
+						<img src="img/sc1.png" alt="Tempat Bermasalah" class="image1"
+							onclick="openFullscreen('img/sc1.png')">
+						<p class="image-description">TPM Standart</p>
+					</div>
+					<div class="image-container1">
+						<img src="img/checksheet2.png" alt="Check Sheet" class="image1"
+							onclick="openFullscreen('img/checksheet2.png')">
+						<p class="image-description">TPM Check Sheet</p>
+					</div>
+					<div class="image-container1">
+						<img src="img/diagnosis1.png" alt="Diagnosis" class="image1"
+							onclick="openFullscreen('img/diagnosis1.png')">
+						<p class="image-description">Diagnosis </p>
+					</div>
+					<div class="image-container1">
+						<img src="img/tpm-checksheet.png" alt="TPM Check Sheet" class="image1"
+							onclick="openFullscreen('img/tpm-checksheet.png')">
+						<p class="image-description">Diagnosis</p> <!-- Combined description -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tumpuan-container" style="min-width: 1000px; margin-top: 30px;">
+			<h2 style="text-align : center;">Diagnosis Genba</h2>
+
+			<div class="categories-container">
+				<!-- First Category -->
+				<div class="category-item">
+					<h3 style="text-align:center;">Monitoring Board</h3>
+					<div class="image-wrapper">
+						<img src="img/monitoring-board.jpg" alt="Diagnosis Genba 1" class="category-image"
+							onclick="openFullscreen('img/monitoring-board.jpg')">
+					</div>
+				</div>
+
+				<!-- Second Category -->
+				<div class="category-item">
+					<h3 style="text-align:center;">Genba</h3>
+					<div class="image-wrapper">
+						<img src="img/genba1.jpg" alt="Diagnosis Genba 2" class="category-image"
+							onclick="openFullscreen('img/genba1.jpg')">
+						<img src="img/genba2.jpg" alt="Diagnosis Genba 3" class="category-image"
+							onclick="openFullscreen('img/genba2.jpg')">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	<!-- Navigation Buttons -->
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="js/tpm-script.js"></script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+
+</html>

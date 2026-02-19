@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>TPM Homepage</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/h-tpm.css">
+</head>
+
+<body>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="hero-text">
+			<h1>Total Productive Maintenance [TPM]</h1>
+			<p>Selamat Datang ke latihan berkaitan Total Productive Maintenance</p>
+			<div class="button-container">
+				<button class="cta-button" onclick="showPopup()"><i class="fa fa-check"></i> Kehadiran</button>
+				<button class="cta-button" onclick="location.href='information-trainer.html'"><i
+						class="fas fa-user-graduate"></i> Trainers</button> <!-- Button to navigate to Trainer Page -->
+			</div>
+			<button class="cta-button" id="openPopup" style="margin-top:10px"><i class="fa fa-info-circle"></i>Peranan &
+				Tanggungjawab</button>
+		</div>
+		<div class="hero-image">
+			<img src="img/man-maintenance.jpg" alt="TPM Overview">
+		</div>
+	</section>
+
+	<!-- Popup Section -->
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<!-- Header -->
+			<div class="popup1-header">
+				<img src="img/P2Logo10x10.png" alt="Logo Left" class="logo">
+				<h2>Kehadiran & Pre-Test QR Code</h2>
+				<img src="img/tpm-logo.png" alt="Logo Right" class="logo">
+			</div>
+
+			<!-- Training Details -->
+			<div class="training-details">
+				<h3>Maklumat Latihan</h3>
+				<div class="training-content">
+					<div class="text-section">
+						<p><strong>Tajuk Latihan:</strong> Effective TPM Practices</p>
+						<p><strong>Tempat Latihan:</strong> Training Room </p>
+						<p><strong>Nama Pelatih:</strong> </p>
+					</div>
+					<div class="qr-section">
+						<img src="img/safety logo.jpg" class="clickable-image" alt="Mesti Selamat"
+							style="width:100%; height:auto;">
+					</div>
+				</div>
+			</div>
+			<!-- QR Code Section -->
+			<div class="popup1-body">
+				<div class="qr-container">
+					<div class="qr-section">
+						<h3>Kehadiran QR Code</h3>
+						<img src="img/fmds_qr.png" class="clickable-image" alt="Kehadiran QR Code"
+							style="width:100%; height:auto;">
+					</div>
+					<div class="qr-section">
+						<h3>Kesihatan QR Code</h3>
+						<img src="img/fmds_qr.png" class="clickable-image" alt="Kesihatan QR Code"
+							style="width:100%; height:auto;">
+					</div>
+					<div class="qr-section">
+						<h3>Pre-test QR Code</h3>
+						<img src="img/fmds_qr.png" class="clickable-image" alt="Pre-test QR Code"
+							style="width:100%; height:auto;">
+					</div>
+				</div>
+			</div>
+
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Tutup</button>
+		</div>
+	</div>
+
+	<br>
+
+	<section class="objective-section">
+		<h2 class="section-title">📌 OBJEKTIF</h2><br>
+		<div class="content-wrapper">
+			<div class="objective-point">
+				<img src="img/assembly.png" alt="Objective 1" class="objective-image">
+				<p>Mampu kenal pasti mesin yang kerap terhenti operasi</p>
+			</div>
+			<div class="objective-point">
+				<img src="img/engineering.png" alt="Objective 2" class="objective-image">
+				<p>Mampu membuat pemeriksaan harian pada mesin.</p>
+			</div>
+			<div class="objective-point">
+				<img src="img/choice.png" alt="Objective 3" class="objective-image">
+				<p>Boleh mengenal pasti normal & abnormal.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<br>
+
+	<!-- Popup Image Modal with 3 Columns (SV, TM, TL) -->
+	<div id="imagePopup" class="popup-modal">
+		<div class="popup-content">
+			<span class="close-button" id="closePopup">&times;</span>
+			<div class="popup-columns">
+				<!-- SV Column -->
+				<div class="popup-column">
+					<h3>SV (Supervisor)</h3>
+					<img src="img/sv.png" alt="SV" class="popup-image">
+					<h4>Role</h4>
+					<p>1. Buat peraturan & standard<br>2. Kawal abnormaliti.<br>3. Penyelesaian pentas abnormaliti.
+						<br>4. Membuat & menetapkan keputusan<br>5. Pembangunan manusia<br>6. Merancang jadual Genba
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TL & TM</li>
+						<li>Boleh mengajar TL & TM</li>
+						<li>Boleh jalankan pemerhatian proses TL & TM</li>
+						<li>Boleh memberi teguran & motivasi</li>
+						<li>Berfikiran kreatif & ada idea</li>
+						<li>Boleh menjalankan aktiviti TPM hasil sebelum & selepas</li>
+						<li>Boleh membuat TPM Standard & TPM Checksheet</li>
+					</ul>
+				</div>
+
+				<!-- TM Column -->
+				<div class="popup-column">
+					<h3>TL (Team Leader)</h3>
+					<img src="img/TL.png" alt="TM" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Memastikan 4M mengikut standard
+						<br>2. Memberi arahan & memantau Team Member
+						<br>3. Melakukan follow up
+						<br>4. Melaporkan abnormaliti
+						<br>5. Turut serta melakukan aktiviti TPM
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TM</li>
+						<li>Boleh ajar TM</li>
+						<li>Boleh jalankan pemerhatian proses TM</li>
+						<li>Boleh memberikan teguran</li>
+					</ul>
+				</div>
+
+				<!-- TL Column -->
+				<div class="popup-column">
+					<h3>TM (Team Member)</h3>
+					<img src="img/TM.png" alt="TL" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Patuhi peraturan & SOP
+						<br> 2. Mengamalkan Stop Call & Wait
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh hafal & ingat SOP</li>
+						<li>Boleh membuat penilaian kualiti</li>
+						<li>Boleh lakukan proses mengikut cycle time</li>
+						<li>Boleh mengekalkan 4S</li>
+						<li>Boleh melakukan penjagaan mesin</li>
+						<li>Boleh melakukan kerja lebih masa yang dirancang</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<br>
+
+	<section class="rules-section">
+		<!-- Section Title -->
+		<h2>📌 PERATURAN TPM DOJO</h2>
+
+		<div class="rules-container">
+			<!-- Left Side Containers -->
+			<div class="rule-box">
+				<img src="img/arahan.jpg" alt="Rule 1 Image" />
+				<p>Sentiasa patuhi arahan daripada trainer yang bertugas.</p>
+			</div>
+			<div class="rule-box">
+				<img src="img/perhatian-mengajar.jpg" alt="Rule 2 Image" />
+				<p>Sila beri tumpuan spenuhnya semasa di dalam kelas.</p>
+			</div>
+
+			<!-- Right Side Containers -->
+			<div class="rule-box">
+				<p>Maklumkan kepada pengajar sekiranya ingin meninggalkan tempat latihan.</p>
+				<img src="img/2waycommunication.jpg" alt="Rule 3 Image" />
+			</div>
+			<div class="rule-box">
+				<p>Sentiasa memberi kerjasama semasa sesi latihan dijalankan.</p>
+				<img src="img/teamwork.jpg" alt="Rule 4 Image" />
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<!-- Key Focus Section -->
+	<section class="deals-section">
+		<!-- Introduction -->
+		<div class="introduction-container">
+			<div class="title-container">
+				<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+				<h1>MARI MULA BELAJAR!</h1>
+				<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+			</div>
+			<p>Mulai dengan YOSH <b>mesti selamat</b> dan akhiri dengan YOSH <b>1 team 1 goal</b></p>
+		</div>
+		<div class="deal-box-middle">
+			<img src="img/file-info.gif" alt="General">
+			<h3>General</h3>
+			<p></p>
+			<button onclick="location.href='tpm-general.html'">Mula</button> <!-- Button to navigate to TPM page -->
+		</div>
+		<div class="deals-container">
+
+			<div class="deal-box">
+				<img src="img/step-1.gif" alt="Step 1">
+				<h3>Step 1</h3>
+				<p></p>
+				<button onclick="location.href='tpm-step1.html'">Mula</button>
+				<!-- Button to navigate to Step 1 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="img/step-2.gif" alt="Step 2">
+				<h3>Step 2</h3>
+				<p></p>
+				<button onclick="location.href='tpm-step2.html'">Mula</button>
+				<!-- Button to navigate to Step 2 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="img/step-3.gif" alt="Step 3">
+				<h3>Step 3</h3>
+				<p></p>
+				<button onclick="location.href='tpm-step3.html'">Mula</button>
+				<!-- Button to navigate to Step 3 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="img/step-4.gif" alt="Step 4">
+				<h3>Step 4</h3>
+				<p></p>
+				<button onclick="location.href='tpm-step4.html'">Mula</button>
+				<!-- Button to navigate to Step 4 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="img/step-5.gif" alt="Step 5">
+				<h3>Step 5</h3>
+				<p></p>
+				<button onclick="location.href='tpm-step5.html'">Mula</button>
+				<!-- Button to navigate to Step 5 Page -->
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<div class="eval-section">
+		<h2>SESI PENILAIAN</h2>
+		<!-- QR Codes for Post-Test and Evaluation Form -->
+		<div class="qr-section1">
+			<div class="qr-container1">
+				<img src="img/fmds_qr.png" class="qr-image1 clickable-image" alt="Kehadiran QR Code">
+				<p>Post Test</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/1 team 1 gold.jpg" class="qr-image1 clickable-image" alt="1 Team 1 Goal">
+				<p>Sebelum tamat kelas</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/fmds_qr.png" class="qr-image1 clickable-image" alt="Pre-test QR Code">
+				<p>Evaluation Form</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Fullscreen Modal -->
+	<div id="fullscreen-modal" class="modal-1">
+		<span class="close-button-1">&times;</span>
+		<img class="modal-content-1" id="modal-image" alt="Fullscreen Image">
+	</div>
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="js/tpm-script.js"></script>
+	<!-- Scripts -->
+	<script>
+		function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+
+</html>

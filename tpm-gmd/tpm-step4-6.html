@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png" />
+    <title>TPM - Step 4.5</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/step4till6.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+
+
+        <div class="navigation-buttons">
+            <button id="backButton">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="topButton">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </header>
+    <section class="welcome-header">
+        <h1>STEP 4.6</h1>
+        <p>Bahagian Bergerak</p>
+    </section>
+    <br /><br />
+
+    <div class="container">
+        <section class="matlamat-section">
+            <h2 class="section-title">MATLAMAT</h2>
+            <div class="square-ol-container">
+                <ol>
+                    <li>Melakukan pemeriksaan keseluruhan secara berterusan pada <strong>Bahagian Bergerak</strong></li>
+                    <li>Memberi <strong>pengetahuan</strong> kepada operator mengenai struktur peralatan bergerak dan
+                        langkah-langkah keselamatan dalam pemeriksaan</li>
+                    <li>Melakukan <strong>Tindakan</strong> dan kaizen pada sebarang keadaan <strong>Abnormal Yang
+                            Dijumpai</strong></li>
+                    <li>Meningkatkan pengetahuan ahli circle supaya berkemampuan <strong>Membuat Penilaian
+                            Sendiri</strong> terhadap kerosakan mesin dan melakukan tindakan susulan</li>
+                </ol>
+            </div>
+        </section>
+        <div class="inner-container">
+            <section class="panduan-4.6-section">
+                <h2 class="section-black-title">Panduan Melakukan Step 4.6</h2>
+                <div class="modern-image-container">
+                    <img src="img/panduan-4-6.png" alt="Panduan Step 4.6" data-popup />
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="langkah-keselamatan-section">
+                <h2 class="section-black-title">Langkah Keselamatan Step 4.6</h2>
+                <div class="content-box">
+                    Langkah-langkah keselamatan semasa melakukan pemeriksaan pada peralatan yang bergerak, peraturan di
+                    bawah hendaklah dipatuhi:-
+                </div>
+                <ol class="numbered-list">
+                    <li>Hendaklah memberhentikan mesin sebelum melakukan pemeriksaan dengan melekatkan tag 'Inspection
+                        in progess' di control panel</li>
+                    <li>Untuk menjalankan pemeriksaan bunyi dan gegaran, <strong>dilarang menyentuh</strong>
+                        mesin/peralatan yang bergerak</li>
+                    <li>Pemeriksaan kepanasan perlu dilakukan sejurus peralatan diberhentikan dengan sempurna</li>
+                </ol>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="aktiviti-4.6-section">
+                <h2 class="section-black-title">Aktiviti Dalam Step 4.6</h2>
+                <ol class="numbered-list">
+                    <li>Memastikan Eye See Control diimplimentasikan pada semua bahagian bergerak dan pada semua
+                        bahagian mesin</li>
+                    <li>Melakukan <strong>pelinciran</strong> pada semua bahagian yang bergerak (1 bulan ke bawah)</li>
+                    <li>Melakukan <strong>pemeriksaan</strong> berdasarkan kepada Step 4.6 Inspection Checksheet</li>
+                </ol>
+                <h3 class="section-subtitle">Label yang digunakan dalam aktivit TPM Step 4.6</h3>
+                <div class="picture-side-card-large">
+                    <img src="img/4-6-arrow.png" alt="Label Step 4.6" data-popup />
+                    <div class="picture-side-content">
+                        <strong>Arrow</strong> Kegunaan untuk menunjukkan arah pergerakan bahagian yang bergerak
+                    </div>
+                </div>
+                <div class="picture-side-card-large">
+                    <img src="img/chain-spec-label.png" alt="Label Step 4.6" data-popup />
+                    <div class="picture-side-content">
+                        <strong>Chain Spec Label</strong>Kegunaan untuk menunjukkan jenis dan saiz chain
+                    </div>
+                </div>
+                <div class="picture-side-card-large">
+                    <img src="img/belt-spec-label.png" alt="Label Step 4.6" data-popup />
+                    <div class="picture-side-content">
+                        <strong>Belt Spec Label</strong>Kegunaan untuk menunjukkan jenis dan saiz V-Belt
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="coupling-section">
+                <h2 class="section-black-title">Bahagian Bergerak: Coupling</h2>
+                <h3 class="section-subtitle">Set Peralatan</h3>
+                <div class="modern-image-container">
+                    <img src="img/bahagian-bergerak-coupling.png" alt="Bahagian Bergerak Coupling" data-popup />
+                </div>
+                <h2 class="section-black-title" style="margin-top:2.5rem">Jenis-Jenis Coupling</h2>
+                <button class="dropdown-bar">
+                    Rigid Coupling
+                    <span class="dropdown-arrow"><i class="fa fa-chevron-right"></i></span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="medium-modern-image-container">
+                        <img src="img/rigid-coupling.png" alt="Rigid Coupling" data-popup />
+                    </div>
+                    <p>Sumber : Head Lamp Test [QC]</p>
+                </div>
+                <button class="dropdown-bar">
+                    Flange Coupling
+                    <span class="dropdown-arrow"><i class="fa fa-chevron-right"></i></span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="medium-modern-image-container">
+                        <img src="img/flange-coupling.png" alt="Flange Coupling" data-popup />
+                    </div>
+                    <p>Sumber : Sealer robot [Assembly]</p>
+                </div>
+                <button class="dropdown-bar">
+                    Flex Coupling
+                    <span class="dropdown-arrow"><i class="fa fa-chevron-right"></i></span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="medium-modern-image-container">
+                        <img src="img/flex-coupling.png" alt="Flex Coupling" data-popup />
+                    </div>
+                    <p>Sumber : Cooling Tower [Utilities]</p>
+                </div>
+                <h2 class="section-black-title" style="margin-top:2.5rem">Komponen Coupling</h2>
+                <ol class="numbered-step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Shaft</div>
+                            <img src="img/shaft.png" alt="Shaft" data-popup class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Sebagai penghubung satu bahagian dengan bahagian lain yang bergerak
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Shaft bengkok</td>
+                                        <td>Lihat</td>
+                                        <td>Pergerakan pusingan lancar/tidak bergegar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bercalar yang teruk</td>
+                                        <td>Lihat</td>
+                                        <td>Pergerakan pusingan lancar/tidak bunyi bising</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Key
+                                <img src="img/key.png" alt="Key" data-popup class="step-image" />
+                            </div>
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Sebagai kunci untuk memegang dua bahagian bergerak
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Key patah/hilang/rosak</td>
+                                        <td>Lihat pergerakan</td>
+                                        <td>Berpusing dengan lancar/tidak berpusing</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Coupling</div>
+                            <img src="img/coupling.png" alt="Coupling" data-popup class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Sebagai pengikat antara 2 shaft untuk memidahkan kuasa pusingan dari shaft
+                                    motor ke shaft pump
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bolt longgar</td>
+                                        <td>Lihat Eye See Mark</td>
+                                        <td>Eye See Mark tidak beralih</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bunyi yang luar biasa</td>
+                                        <td>Lihat</td>
+                                        <td>Tiada bunyi yang luar biasa</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="belting-section">
+                <h2 class="section-black-title">Bahagian Bergerak: Belting</h2>
+                <h3 class="section-subtitle">Set Peralatan</h3>
+                <div class="modern-image-container">
+                    <img src="img/bahagian-bergerak-belting.png" alt="Bahagian Bergerak Belting" data-popup />
+                </div>
+                <h2 class="section-black-title" style="margin-top:2.5rem">Komponen Belting</h2>
+                <ol class="numbered-step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Pulley</div>
+                            <img src="img/pulley.png" alt="Pulley" data-popup class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Memindahkan kuasa pusingan dari motor ke piston pulley dengan V belt
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bunyi bising</td>
+                                        <td>Dengar</td>
+                                        <td>Tiada bunyi bising</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">V-Belt & Timing Belt</div>
+                            <div class="picture-2x1-caption">
+                                <div class="picture-2x1-caption-item">
+                                    <img src="img/v-belt.png" alt="V-Belt" data-popup class="step-image" />
+                                    <div class="picture-2x1-caption-caption">V-Belt</div>
+                                </div>
+                                <div class="picture-2x1-caption-item">
+                                    <img src="img/timing-belt.png" alt="Timing Belt" data-popup class="step-image" />
+                                    <div class="picture-2x1-caption-caption">Timing Belt</div>
+                                </div>
+                            </div>
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi V-Belt: Menggerakkan piston pulley dari motor pulley<br>
+                                    Fungsi Timing Belt: Memindahkan daya pusingan mengikut sequence yang ditetapkan
+                                    (timing)
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bunyi bising</td>
+                                        <td>Dengar</td>
+                                        <td>Tiada bunyi bising</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Belt merekah</td>
+                                        <td>Lihat</td>
+                                        <td>Belt tidak merekah</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ketidakkenyalan</td>
+                                        <td>Sentuh</td>
+                                        <td>Tidak kendur</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haus (V-Belt)</td>
+                                        <td>Sentuh</td>
+                                        <td>Paras V-Belt lebih tinggi dari pully</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gigi belt haus</td>
+                                        <td>Lihat</td>
+                                        <td>Gigi belt tidak haus (Timing belt)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="roller-conveyor-section">
+                <h2 class="section-black-title">Bahagian Bergerak: Roller Conveyor</h2>
+                <h3 class="section-subtitle">Set Peralatan</h3>
+                <div class="modern-image-container">
+                    <img src="img/bahagian-bergerak-roller-conveyor.png" alt="Bahagian Bergerak Roller Conveyor"
+                        data-popup />
+                </div>
+                <h3 class="section-subtitle">Contoh-Contoh Roller Yang Digunakan</h3>
+                <div class="picture-row-container">
+                    <div class="picture-item">
+                        <img src="img/roller-1.png" alt="Roller 1" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/roller-2.png" alt="Roller 2" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/roller-3.png" alt="Roller 3" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/roller-4.png" alt="Roller 4" data-popup />
+                    </div>
+                </div>
+                <h2 class="section-black-title">Komponen Roller</h2>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Roller</div>
+                            <img src="img/roller.png" alt="Roller" data-popup class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Menggerakkan objek
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Kemek</td>
+                                        <td>Lihat/Sentuh</td>
+                                        <td>Tidak kemek</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tertanggal</td>
+                                        <td>Lihat/Sentuh</td>
+                                        <td>Berada dalam keadaan baik</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bunyi yang luar biasa</td>
+                                        <td>Dengar</td>
+                                        <td>Tiada bunyi yang luar biasa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Susunan roller senget</td>
+                                        <td>Lihat</td>
+                                        <td>Susunan roller selari</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <h3 class="section-subtitle">Contoh Jenis-jenis Roller</h3>
+                <div class="picture-row-container">
+                    <div class="picture-item">
+                        <img src="img/teflon-roller.png" alt="Teflon Roller" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/pu-roller-bearing.png" alt="PU Roller Bearing" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/rubber-roller.png" alt="Rubber Roller" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/front-dog-dolly.png" alt="Front Dog Dolly" data-popup />
+                    </div>
+                </div>
+                <div class="picture-row-container">
+                    <div class="picture-item">
+                        <img src="img/torque-limiter.png" alt="Torque Limiter" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/cable-trolley.png" alt="Cable Trolley" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/guide-roller.png" alt="Guide Roller" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/roller-conveyor.png" alt="Roller Conveyor" data-popup />
+                    </div>
+                </div>
+                <div class="picture-row-container">
+                    <div class="picture-item">
+                        <img src="img/con-roller.png" alt="Con Roller" data-popup />
+                    </div>
+                </div>
+                <h2 class="section-black-title">Aplikasi Roller</h2>
+                <div class="picture-2x1-grid">
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-roller-1.png" alt="Aplikasi Roller 1" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-roller-2.png" alt="Aplikasi Roller 2" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-roller-3.png" alt="Aplikasi Roller 3" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-roller-4.png" alt="Aplikasi Roller 4" data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="robot-section">
+                <h2 class="section-black-title">Bahagian Bergerak: Robot</h2>
+                <div class="step-list">
+                    <div class="step-content">
+                        <div class="picture-2x1-grid">
+                            <div class="picture-2x1-item">
+                                <img src="img/bahagian-bergerak-robot-1.png" alt="Bahagian Bergerak Robot 1"
+                                    data-popup />
+                            </div>
+                            <div class="picture-2x1-item">
+                                <img src="img/bahagian-bergerak-robot-2.png" alt="Bahagian Bergerak Robot 2"
+                                    data-popup />
+                            </div>
+                        </div>
+                        <div class="yellow-note">
+                            Fungsi: Membuat kerja yang telah diprogramkan bagi meningkatkan pengeluaran, ketepatan
+                            pembuatan & kualiti serta daya tahan
+                        </div>
+                        <table class="modern-table">
+                            <tr>
+                                <th>KEROSAKAN</th>
+                                <th>CARA PEMERIKSAAN</th>
+                                <th>STANDARD PENILAIAN</th>
+                            </tr>
+                            <tr>
+                                <td>Pergerakan robot tersekat-sekat</td>
+                                <td>Lihat</td>
+                                <td>Pergerakan lancar</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="motor-section">
+                <h2 class="section-black-title">Bahagian Bergerak: Motor & Aplikasi</h2>
+                <div class="yellow-note">
+                    Fungsi: Membekal daya gerakan (pusingan) kepada shaft dengan menghasilkan tenaga mekanikal untuk
+                    mengalirkan tenaga eletrik
+                </div>
+                <table class="modern-table">
+                    <tr>
+                        <th>KEROSAKAN</th>
+                        <th>CARA PEMERIKSAAN</th>
+                        <th>STANDARD PENILAIAN</th>
+                    </tr>
+                    <tr>
+                        <td>Bunyi yang luar biasa</td>
+                        <td>Dengar</td>
+                        <td>Tiada bunyi yang luar biasa</td>
+                    </tr>
+                    <tr>
+                        <td>Panas yang berlebihan</td>
+                        <td>Sentuh</td>
+                        <td>Tidak panas</td>
+                    </tr>
+                    <tr>
+                        <td>Gegaran yang luar biasa</td>
+                        <td>Sentuh</td>
+                        <td>Tiada gegaran yang kuat</td>
+                    </tr>
+                </table>
+                <h3 class="section-subtitle">Aplikasi Motor</h3>
+                <div class="picture-2x1-grid">
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-motor-1.png" alt="Aplikasi Motor 1" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-motor-2.png" alt="Aplikasi Motor 2" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-motor-3.png" alt="Aplikasi Motor 3" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-motor-4.png" alt="Aplikasi Motor 4" data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="lm-section">
+                <h2 class="section-black-title">Bahagian Bergerak: LM</h2>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Linear Motion Guide</div>
+                            <img class="step-image" src="img/bahagian-bergerak-lm.png" alt="Linear Motion Guide"
+                                data-popup />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Menyokong pergerakan linear mesin/part pada landasan
+                                </div>
+                            </div>
+                            <table class="modern-table">
+                                <tr>
+                                    <th>KEROSAKAN</th>
+                                    <th>CARA PEMERIKSAAN</th>
+                                    <th>STANDARD PENILAIAN</th>
+                                </tr>
+                                <tr>
+                                    <td>Pergerakan tersekat-sekat</td>
+                                    <td>Lihat</td>
+                                    <td>Pergerakan lancar</td>
+                                </tr>
+                                <tr>
+                                    <td>Gris meleleh</td>
+                                    <td>Lihat/Sentuh</td>
+                                    <td>Tiada lelehan gris</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="belt-conveyor-section">
+                <h2 class="section-title">Bahagian Bergerak: Belt Conveyor</h2>
+                <h3 class="section-subtitle">Set Peralatan</h3>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-content">
+                            <image src="img/bahagian-bergerak-belt-conveyor.png" alt="Belt Conveyor" data-popup
+                                class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Pembawa material dari satu titik ke titik lain & meneruskan pusingan/putaran
+                                    di atas roller supaya dapat bergerak dengan teratur
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Koyak</td>
+                                        <td>Lihat/Sentuh</td>
+                                        <td>Tidak koyak</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Belt kendur</td>
+                                        <td>Lihat/Sentuh</td>
+                                        <td>Tidak terlalu kendur/tegang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Belt alignment</td>
+                                        <td>Lihat</td>
+                                        <td>Pergerakan lurus</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <h3 class="section-subtitle">Aplikasi Belt Conveyor</h3>
+                <div class="picture-2x1-grid">
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-belt-conveyor-1.png" alt="Aplikasi Belt Conveyor 1" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-belt-conveyor-2.png" alt="Aplikasi Belt Conveyor 2" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-belt-conveyor-3.png" alt="Aplikasi Belt Conveyor 3" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-belt-conveyor-4.png" alt="Aplikasi Belt Conveyor 4" data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="chain-conveyor-section">
+                <h2 class="section-title">Bahagian Bergerak: Chain Conveyor</h2>
+                <h3 class="section-subtitle">Set Peralatan</h3>
+                <ol class="step-list">
+                    <li>
+                        <img src="img/bahagian-bergerak-chain-conveyor.png" alt="Bahagian Bergerak Chain Conveyor"
+                            class="step-image" data-popup />
+                        <div class="yellow-note">
+                            Fungsi: Mengerakkan roller dan memindahkan kuasa pusingan kepada sprocket lain
+                        </div>
+                        <table class="modern-table">
+                            <tr>
+                                <th>KEROSAKAN</th>
+                                <th>CARA PEMERIKSAAN</th>
+                                <th>STANDARD PENILAIAN</th>
+                            </tr>
+                            <tr>
+                                <td>Bunyi bising</td>
+                                <td>Dengar</td>
+                                <td>Tiada bunyi bising</td>
+                            </tr>
+                            <tr>
+                                <td>Tercabut</td>
+                                <td>Lihat</td>
+                                <td>Berada dalam keadaan baik</td>
+                            </tr>
+                            <tr>
+                                <td>Pergerakan tersekat-sekat</td>
+                                <td>Lihat</td>
+                                <td>Pergerakan lancar</td>
+                            </tr>
+                            <tr>
+                                <td>Rantai kendur</td>
+                                <td>Lihat/Sentuh</td>
+                                <td>Chain tidak terlalu kendur/tegang</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+                <h3 class="section-subtitle">Aplikasi Chain Conveyor</h3>
+                <div class="picture-row-container picture-row-3x1">
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-1.png" alt="Aplikasi Chain Conveyor 1" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-2.png" alt="Aplikasi Chain Conveyor 2" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-3.png" alt="Aplikasi Chain Conveyor 3" data-popup />
+                    </div>
+                </div>
+                <div class="picture-row-container picture-row-3x1">
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-4.png" alt="Aplikasi Chain Conveyor 4" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-5.png" alt="Aplikasi Chain Conveyor 5" data-popup />
+                    </div>
+                    <div class="picture-item">
+                        <img src="img/aplikasi-chain-conveyor-6.png" alt="Aplikasi Chain Conveyor " data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="ball-bearing-section">
+                <h2 class="section-title">Bahagian Bergerak: Ball Bearing Unit</h2>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-title">Ball Bearing 'Pillow Type'</div>
+                        <img src="img/ball-bearing-pillow-type.png" alt="Ball Bearing Pillow Type" data-popup
+                            class="step-image" />
+                        <div class="yellow-note">
+                            Fungsi: Pemegang shaft pada kedudukan yang tetap dan membenarkan pergerakan pusingan shaft
+                        </div>
+                        <br><br>
+                        <div class="step-title">Ball Bearing</div>
+                        <img src="img/ball-bearing.png" alt="Ball Bearing" data-popup class="step-image" />
+                        <div class="yellow-note">
+                            Fungsi: Mengurangkan geseran dan membenarkan pergerakan pusingan shaft
+                        </div>
+                        <table class="modern-table">
+                            <tr>
+                                <th>KEROSAKAN</th>
+                                <th>CARA PEMERIKSAAN</th>
+                                <th>STANDARD PENILAIAN</th>
+                            </tr>
+                            <tr>
+                                <td>Bunyi bising</td>
+                                <td>Dengar</td>
+                                <td>Tiada bunyi yang luar biasa</td>
+                            </tr>
+                            <tr>
+                                <td>Bolt/set skru longgar (Pillow Type)</td>
+                                <td>Lihat Eye See Mark</td>
+                                <td>Tidak Longgar</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+                <h3 class="section-subtitle">Aplikasi Ball Bearing</h3>
+                <div class="picture-2x1-grid">
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-ball-bearing-unit-1.png" alt="Aplikasi Ball Bearing 1" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-ball-bearing-unit-2.png" alt="Aplikasi Ball Bearing 2" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-ball-bearing-unit-3.png" alt="Aplikasi Ball Bearing 3" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-ball-bearing-unit-4.png" alt="Aplikasi Ball Bearing 4" data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="sprocket-section">
+                <h2 class="section-title">Bahagian Bergerak: Sprocket</h2>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="step-title">Sprocket</div>
+                            <img src="img/sprocket.png" alt="Sprocket" data-popup class="step-image" />
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Menggerakkan chain
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Gigi sprocket haus</td>
+                                        <td>Lihat</td>
+                                        <td>Tidak haus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pecah</td>
+                                        <td>Lihat</td>
+                                        <td>Berada dalam keadaan baik</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bunyi yang luar biasa</td>
+                                        <td>Dengar</td>
+                                        <td>Tiada bunyi yang luar biasa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tidak berpusing</td>
+                                        <td>Lihat</td>
+                                        <td>Berpusing</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <h3 class="section-subtitle">Aplikasi Sprocket</h3>
+                <div class="picture-2x1-grid">
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-sprocket-1.png" alt="Aplikasi Sprocket 1" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-sprocket-2.png" alt="Aplikasi Sprocket 2" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-sprocket-3.png" alt="Aplikasi Sprocket 3" data-popup />
+                    </div>
+                    <div class="picture-2x1-item">
+                        <img src="img/aplikasi-sprocket-4.png" alt="Aplikasi Sprocket 4" data-popup />
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="ball-screw-section">
+                <h2 class="section-title">Bahagian Bergerak: Ball Screw</h2>
+                <ol class="step-list">
+                    <li>
+                        <div class="step-content">
+                            <div class="picture-2x1-grid">
+                                <div class="picture-2x1-item">
+                                    <img src="img/bahagian-bergerak-ball-screw-1.png"
+                                        alt="Bahagian Bergerak Ball Screw 1" data-popup />
+                                </div>
+                                <div class="picture-2x1-item">
+                                    <img src="img/bahagian-bergerak-ball-screw-2.png"
+                                        alt="Bahagian Bergerak Ball Screw 2" data-popup />
+                                </div>
+                            </div>
+                            <div class="step-text">
+                                <div class="yellow-note">
+                                    Fungsi: Menggerakkan objek
+                                </div>
+                                <table class="modern-table">
+                                    <tr>
+                                        <th>KEROSAKAN</th>
+                                        <th>CARA PEMERIKSAAN</th>
+                                        <th>STANDARD PENILAIAN</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Pergerakan tersekat-sekat</td>
+                                        <td>Lihat</td>
+                                        <td>Pergerakan lancar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shaft bengkok</td>
+                                        <td>Lihat</td>
+                                        <td>Pergerakan lancar</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="aktiviti-step-4.6#2-section">
+                <h2 class="section-black-title">Aktiviti Dalam Step 4.6</h2>
+                <div class="content-box">
+                    <span class="content-head-title">Bagaimana Operator Melakukan Pemeriksaan Keseluruhan?</span>
+                    Menggunakan <strong>'STEP 4.6 INSPECTION CHECKSHEET'</strong> dan
+                    <strong>'EYE SEE CONTROL INSPECTION CHECKSHEET'.</strong>
+                    <div class="yellow-note">
+                        Tujuan: Checksheet ini adalah merupakan satu <strong>kaedah pembelajaran untuk melakukan
+                            pemeriksaan sendiri</strong> terhadap peralatan eletrik
+                    </div>
+                </div>
+                <button class="toggle-note-bar">
+                    Nota
+                    <span class="toggle-note-arrow"><i class="fas fa-chevron-right"></i></span>
+                </button>
+                <div class="toggle-note-content">
+                    Setiap T.Leader/Operator perlu dibekalkan dengan 1 sheet setiap seorang semasa melakukan pemeriksaan
+                    dan ianya dilakukan bersama-sama juruteknik Maintanance
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Floating navigation between steps button group -->
+    <div class=" floating-nav-group bottom-right-fixed" id="floatingNavGroup">
+        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-5.html'">
+            <i class="fas fa-arrow-left"></i> Previous
+        </button>
+        <button class="tpm-grid-btn" onclick="window.location.href='h-tpm.html'">
+            Home <i class="fas fa-home"></i>
+        </button>
+    </div>
+    <button class="toggle-nav-btn bottom-right-fixed" id="toggleNavBtn" onclick="toggleNavGroup()">
+        <span id="toggleNavLabel">Hide</span>
+    </button>
+    <script>
+        function toggleNavGroup() {
+            const nav = document.getElementById("floatingNavGroup");
+            const label = document.getElementById("toggleNavLabel");
+            const isHidden = nav.style.display === "none";
+            nav.style.display = isHidden ? "flex" : "none";
+            label.textContent = isHidden ? "Hide" : "Show";
+        }
+        //Hide nav group by default on mobile
+        if (window.innerWidth < 600) {
+            document.getElementById("floatingNavGroup").style.display = "none";
+            document.getElementById("toggleNavLabel").textContent = "Show";
+        }
+        function toggleHideableImage(btn) {
+            const img = btn.parentElement.querySelector(".hideable-image");
+            if (img.classList.contains("hidden")) {
+                img.classList.remove("hidden");
+                btn.innerHTML = '<i class="fa fa-eye-slash"></i>';
+                btn.title = "Hide image";
+            } else {
+                img.classList.add("hidden");
+                btn.innerHTML = '<i class="fa fa-eye"></i>';
+                btn.title = "Show image";
+            }
+        }
+        window.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".hideable-image-toggle").forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    toggleHideableImage(btn);
+                });
+            });
+        });
+        function toggleDropdownBar(btn) {
+            btn.classList.toggle("active");
+            const content = btn.nextElementSibling;
+            if (content) {
+                content.classList.toggle("show");
+            }
+        }
+        window.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".dropdown-bar").forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    toggleDropdownBar(btn);
+                });
+            });
+        });
+
+        // Toggle for toggle-note-bar (small yellow note)
+        function toggleNoteBar(btn) {
+            btn.classList.toggle("active");
+            const content = btn.nextElementSibling;
+            if (content) {
+                content.classList.toggle("show");
+            }
+        }
+        window.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".toggle-note-bar").forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    toggleNoteBar(btn);
+                });
+            });
+        });
+        function showFullImage(src, alt) {
+            const old = document.getElementById("stepImagePopupOverlay");
+            if (old) old.remove();
+            const overlay = document.createElement("div");
+            overlay.className = "step-image-popup-overlay";
+            overlay.id = "stepImagePopupOverlay";
+            overlay.onclick = function () {
+                overlay.remove();
+            };
+            const img = document.createElement("img");
+            img.className = "step-image-popup-img";
+            img.src = src;
+            img.alt = alt || "";
+            overlay.appendChild(img);
+            document.body.appendChild(overlay);
+        }
+        window.addEventListener("DOMContentLoaded", function () {
+            document
+                .querySelectorAll("img[data-popup], img.step-image")
+                .forEach((img) => {
+                    img.style.cursor = "zoom-in";
+                    img.addEventListener("click", function () {
+                        showFullImage(img.src, img.alt);
+                    });
+                });
+        });
+    </script>
+</body>
+
+</html>

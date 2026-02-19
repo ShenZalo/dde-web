@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>Trainer Information</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/trainer.css">
+</head>
+
+<body>
+
+	<!-- Welcome Header for Trainer Introduction -->
+	<section class="welcome-header">
+		<h1>Sesi Pengenalan</h1>
+		<p>Kenali trainers kami yang berpengalaman dan berdedikasi.</p>
+	</section>
+
+	<!-- Introduction >
+	<section id="fmds-overview-section">
+		<div class="introduction-container">
+			<div class="title-container">
+				<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+				<h1>SESI PENGENALAN</h1>
+				<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+			</div>
+		</div>
+	</section>
+	<!- Introduction -->
+
+	<!-- Trainer Information Section -->
+	<section class="trainer-section">
+		<h1>MAKLUMAT TRAINERS</h1>
+		<div class="trainer-container">
+			<!-- Trainer Card 1 -->
+			<div class="trainer-card">
+				<div class="trainer-image">
+					<img src="img/En.Bai.jpg" alt="Trainer 1">
+				</div>
+				<div class="trainer-info">
+					<table>
+						<tr>
+							<th>Nama</th>
+							<td>:</td>
+							<td>
+								<h3>Mohammad Faizal Bin Mohammad Arif @ (Bai)</h3>
+							</td>
+						</tr>
+						<tr>
+							<th>Umur</th>
+							<td>:</td>
+							<td>49 Tahun</td>
+						</tr>
+						<tr>
+							<th>D.O.J P2</th>
+							<td>:</td>
+							<td>01 Julai 1996</td>
+						</tr>
+						<tr>
+							<th>Jabatan</th>
+							<td>:</td>
+							<td>DDE</td>
+						</tr>
+						<tr>
+							<th>Status</th>
+							<td>:</td>
+							<td>Duda</td>
+						</tr>
+						<tr>
+							<th>Hobi @ Minat</th>
+							<td>:</td>
+							<td>Menonton</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- Trainer Card 2 -->
+			<div class="trainer-card">
+				<div class="trainer-image">
+					<img src="img/En.Zaidi.jpg" alt="Trainer 2">
+				</div>
+				<div class="trainer-info">
+					<table>
+						<tr>
+							<th>Nama</th>
+							<td>:</td>
+							<td>
+								<h3>Mohd Zaidi Bin Jaafar</h3>
+							</td>
+						</tr>
+						<tr>
+							<th>Umur</th>
+							<td>:</td>
+							<td>48 Tahun</td>
+						</tr>
+						<tr>
+							<th>D.O.J P2</th>
+							<td>:</td>
+							<td>14 November 1994</td>
+						</tr>
+						<tr>
+							<th>Jabatan</th>
+							<td>:</td>
+							<td>DDE</td>
+						</tr>
+						<tr>
+							<th>Status</th>
+							<td>:</td>
+							<td>Berkahwin</td>
+						</tr>
+						<tr>
+							<th>Hobi @ Minat</th>
+							<td>:</td>
+							<td>Memancing</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<button class="cta-button" onclick="showPopup()"><i class="fa fa-user"></i>Trainee</button>
+	</section>
+
+
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<div class="trainee-card">
+				<div class="trainee-image">
+					<img src="img/anonymous.png" alt="Anonymous Trainee" />
+				</div>
+				<div class="trainee-info">
+					<h3>Siapa Anda ? </h3>
+					<p><strong>Nama:</strong> </p>
+					<p><strong>Umur:</strong> </p>
+					<p><strong>D.O.J:</strong> </p>
+					<p><strong>Jabatan:</strong> </p>
+					<p><strong>Status:</strong> </p>
+					<p><strong>Hobi @ Minat:</strong> </p>
+				</div>
+			</div>
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Tutup</button>
+		</div>
+	</div>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+	<br><br>
+
+
+
+	<!-- Footer Section -->
+	<footer>
+		<p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+	<script src="js/tpm-script.js"></script>
+	<script>
+		function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+
+</html>

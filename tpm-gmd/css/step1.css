@@ -1,0 +1,502 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	 font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-red: #D32F2F;
+    --secondary-gray-dark: #424242;
+    --secondary-gray-light: #E0E0E0;
+    --accent-orange: #FF8A65;
+    --neutral-white: #FFFFFF;
+    --neutral-black: #333333;
+    --neutral-gray: #555555;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    background: url("../img/man-maintenance.jpg") center/cover no-repeat fixed;
+    margin: 0;
+    overflow-x: hidden;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56 14 14 / 70%); /* Muted Red Overlay */
+    z-index: -1; /* Ensures the overlay is beneath the content */
+}
+
+/* ============== Header and Navbar ============== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--neutral-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 6px;
+    border: 2px solid var(--primary-red);
+    position: sticky;
+    height: 70px;
+}
+
+.topnav a {
+    color: var(--primary-red);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.topnav a:hover {
+    background-color: var(--accent-orange);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav .image {
+    padding: 4px;
+    width: 70px;
+}
+
+/* ================== logout button ================== */
+/* Logout Button Styles */
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+/* ====== Welcome Header Styles =======*/
+
+.welcome-header {
+    background: linear-gradient(to bottom right, #ff5733, #ff8c69); /* Primary color gradient */
+    text-align: center;
+    padding: 60px 0; /* Space above and below the header */
+}
+
+.welcome-header h1 {
+    font-size: 2.5em;
+	color: white;
+}
+
+.welcome-header p {
+    font-size: 1.2em;
+	color: white;
+}
+
+/* ========== Side-by-Side Containers ========== */
+.side-by-side-containers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /*=====align-items: flex-start;=====*/
+}
+/* ========== General Styles ========== */
+.container {
+    max-width: 1300px;
+    margin: 40px;
+}
+
+.section-title {
+    font-size: 2rem; /* Standardized */
+    color: #ff5733; /* Primary color */
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.section-description {
+    font-size: 1rem; /* Standardized */
+    color: #333;
+    margin-bottom: 30px;
+	text-align: center;
+}
+
+/* ========== Image Gallery ========== */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between images */
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 400px; /* Limit the size of images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* ========== Tumpuan Section ========== */
+.tumpuan-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 85%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Arrange containers side-by-side */
+    gap: 40px; /* Add space between containers */
+    flex-wrap: wrap; /* Make responsive for smaller screens */
+}
+
+/* Tumpuan Containers */
+.tumpuan-container {
+    flex: 1; /* Containers share available space */
+    min-width: 300px; /* Prevent containers from becoming too narrow */
+    padding: 20px;
+    background: linear-gradient(120deg, #ffd199, #ff6666);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tumpuan-container h2 {
+    color: #333;
+    font-size: 1.75rem; /* Standardized */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Individual Tumpuan Items */
+.tumpuan {
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tumpuan p {
+    font-size: 1rem; /* Standardized */
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+.tumpuan i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #ff5733; /* Change icon color to match your theme */
+}
+
+/* ========== Langkah Keselamatan Images ========== */
+.image-langkah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-langkah h2 {
+    color: #333;
+    font-size: 1.75rem; /* Standardized */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.image-langkah img {
+    background-color: white;
+    width: 100%;
+    max-width: 400px; /* Limit image size */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* ========== Full-Screen Image Styles ========== */
+#full-screen-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#full-screen-img img {
+  max-width: none;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 24px 4px rgba(0,0,0,0.5);
+  background: #fff;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+#full-screen-img img.zoomed-original {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+/*========== Aktiviti Pembersihan ==============*/
+.section {
+    padding: 40px;
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+	text-align: center;
+    margin-bottom: 20px;
+	color: #007B8F;
+}
+.steps {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+	flex-wrap: wrap;
+}
+.step {
+	flex: 1;
+    background-color: #fff;
+    padding: 20px;
+	border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+.step:hover {
+    transform: translateY(-5px);
+}
+.step p {
+    font-size: 1rem;
+}
+.image-section {
+    margin-top: 30px;
+    text-align: center;
+}
+.image-section img {
+    max-width: 90%; /* Adjust the percentage as needed */
+    max-height: 400px; /* Set a maximum height */
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the image horizontally */
+}
+.image-section p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/*========== List of Problems Section ==========*/
+
+.problem-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.problem-box {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.problem-box img {
+    max-width: 100%;
+    max-height: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+	 cursor: pointer;
+}
+.problem-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/*======= Blue Tag Section ========*/
+.blue-tag-image-container {
+    display: flex; /* Center image horizontally */
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.blue-tag-image {
+    width: 100%; /* Responsive image width */
+    max-width: 600px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/*======= Check Sheet & Diagnosis Section ========*/
+.outer-container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px; /* Space above the section */
+}
+
+.container1 {
+    display: flex; /* Align images in a row */
+    justify-content: center; /* Center the row */
+    gap: 20px; /* Add space between image containers */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.image-container1 {
+    border: 2px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-container1:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.image1 {
+    width: 200px; /* Fixed width for uniformity */
+    max-width: 100%; /* Responsive adjustment */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicate interactivity */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.image-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Genba Categories */
+.categories-container {
+    display: flex; /* Use flexbox to arrange categories side by side */
+    justify-content: space-between; /* Space between categories */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.category-item {
+    flex: 1; /* Allow categories to grow equally */
+    margin: 10px; /* Space around each category */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+.image-wrapper {
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for the border */
+    padding: 10px; /* Padding inside the container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.category-image {
+    width: auto; /* Make images responsive */
+    height: 250px; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+
+/*======= Footer ========*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navigation-buttons {
+	background-color: var(--neutral-white);
+	border: 2px solid var(--secondary-gray-light);
+	border-radius: 10px;
+	padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation-buttons button:hover {
+    background-color: #b71c1c;
+}
+
+

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+	<title>PPS Homepage</title>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="css/h-pps.css">
+</head>
+
+<body>
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="hero-text">
+			<h1>Perodua Problem Solving [PPS]</h1>
+			<p>Welcome to Perodua Problem Solving training class</p>
+			<div class="button-container">
+				<button class="cta-button" onclick="showPopup()"><i class="fa fa-check"></i>Pre-test</button>
+				<button class="cta-button" onclick="location.href='pps-trainer.html'"><i
+						class="fas fa-user-graduate"></i> Trainers</button> <!-- Button to navigate to Trainer Page -->
+			</div>
+			<!-- <button class="cta-button" id="openPopup" style="margin-top:10px"><i class="fa fa-info-circle"></i> Roles & Responsibilities</button> -->
+		</div>
+		<div class="hero-image">
+			<img src="img/PPS-hero-img.png" alt="PPS Overview">
+		</div>
+	</section>
+	<!-- Popup Section -->
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<!-- Header -->
+			<div class="popup1-header">
+				<img src="img/P2Logo10x10.png" alt="Logo Left" class="logo">
+				<h2>Tests QR Code</h2>
+				<img src="img/Logo DDE V2.png" alt="Logo Right" class="logo">
+			</div>
+
+			<!-- Training Details -->
+			<div class="training-details">
+				<h3>Training Details</h3>
+				<div class="training-content">
+					<div class="text-section">
+						<p><strong>Training name:</strong> Perodua Problem Solving (PPS)</p>
+						<!-- <p><strong>Training place:</strong> QCC Training Room</p> -->
+						<p><strong>Trainer's name:</strong> Mohd Yusof Kalikurahman</p>
+					</div>
+					<div class="qr-section">
+						<img src="img/safety logo.jpg" class="clickable-image" alt="Mesti Selamat"
+							style="width:70%; height:auto;">
+					</div>
+				</div>
+			</div>
+			<!-- QR Code Section -->
+			<div class="popup1-body">
+				<div class="qr-container">
+					<div class="qr-section">
+						<h3>Pre-test QR Code</h3>
+						<img src="img/pps-pre-qr.jpg" class="clickable-image" alt="Pre-test QR Code"
+							style="width:100%; height:auto;">
+					</div>
+					<!-- <div class="qr-section">
+						<h3>Post-test QR Code</h3>
+						<img src="img/pps-post-qr.png" class="clickable-image" alt="Post-test QR Code" style="width:100%; height:auto;">
+					</div> -->
+					<!-- <div class="qr-section">
+						<h3>Evaluation Form QR Code</h3>
+						<img src="img/pps-eval-qr.png" class="clickable-image" alt="Evaluation Form QR Code" style="width:100%; height:auto;">
+					</div> -->
+				</div>
+			</div>
+
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Close</button>
+		</div>
+	</div>
+
+	<!-- Popup Image Modal with 3 Columns (SV, TM, TL) -->
+	<div id="imagePopup" class="popup-modal">
+		<div class="popup-content">
+			<span class="close-button" id="closePopup">&times;</span>
+			<div class="popup-columns">
+				<!-- SV Column -->
+				<div class="popup-column">
+					<h3>SV (Supervisor)</h3>
+					<img src="img/sv.png" alt="SV" class="popup-image">
+					<h4>Role</h4>
+					<p>1. Buat peraturan & standard<br>2. Kawal abnormaliti.<br>3. Penyelesaian pentas abnormaliti.
+						<br>4. Membuat & menetapkan keputusan<br>5. Pembangunan manusia<br>6. Merancang jadual Genba
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TL & TM</li>
+						<li>Boleh mengajar TL & TM</li>
+						<li>Boleh jalankan pemerhatian proses TL & TM</li>
+						<li>Boleh memberi teguran & motivasi</li>
+						<li>Berfikiran kreatif & ada idea</li>
+						<li>Boleh menjalankan aktiviti TPM hasil sebelum & selepas</li>
+						<li>Boleh membuat TPM Standard & TPM Checksheet</li>
+					</ul>
+				</div>
+
+				<!-- TM Column -->
+				<div class="popup-column">
+					<h3>TL (Team Leader)</h3>
+					<img src="img/TL.png" alt="TM" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Memastikan 4M mengikut standard
+						<br>2. Memberi arahan & memantau Team Member
+						<br>3. Melakukan follow up
+						<br>4. Melaporkan abnormaliti
+						<br>5. Turut serta melakukan aktiviti TPM
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh lakukan kerja TM</li>
+						<li>Boleh ajar TM</li>
+						<li>Boleh jalankan pemerhatian proses TM</li>
+						<li>Boleh memberikan teguran</li>
+					</ul>
+				</div>
+
+				<!-- TL Column -->
+				<div class="popup-column">
+					<h3>TM (Team Member)</h3>
+					<img src="img/TM.png" alt="TL" class="popup-image">
+					<h4>Role</h4>
+					<p>
+						1. Patuhi peraturan & SOP
+						<br> 2. Mengamalkan Stop Call & Wait
+					</p>
+					<h4>Skills</h4>
+					<ul>
+						<li>Boleh hafal & ingat SOP</li>
+						<li>Boleh membuat penilaian kualiti</li>
+						<li>Boleh lakukan proses mengikut cycle time</li>
+						<li>Boleh mengekalkan 4S</li>
+						<li>Boleh melakukan penjagaan mesin</li>
+						<li>Boleh melakukan kerja lebih masa yang dirancang</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<section class="rules-section">
+		<!-- Section Title -->
+		<h2>📌 Ground Rules for Training</h2>
+
+		<div class="rules-container">
+			<div class="rule-box">
+				<img src="img/readytolearn.png" alt="Rule 1 Image" />
+				<div>
+					<h3>Be Ready to Learn</h3>
+					<p>
+						● Have an open mind and be willing to absorb knowledge.
+					</p>
+				</div>
+			</div>
+			<div class="rule-box">
+				<img src="img/focus.png" alt="Rule 2 Image" />
+				<div>
+					<h3>Focus</h3>
+					<p>
+						● Clearly understand the training content for effective comprehension & practice.
+					</p>
+				</div>
+			</div>
+			<div class="rule-box">
+				<img src="img/ask.png" alt="Rule 3 Image" />
+				<div>
+					<h3>Asks Questions</h3>
+					<p>
+						● Do not hesitate to ask questions to clarify doubts and deepen understanding.
+					</p>
+				</div>
+			</div>
+			<div class="rule-box">
+				<img src="img/participate.png" alt="Rule 4 Image" />
+				<div>
+					<h3>Participate</h3>
+					<p>
+						● Engage in activities such as case study worksheets.
+					</p>
+				</div>
+			</div>
+		</div><br>
+		<div class="rule-box">
+			<img src="img/sharecheck.png" alt="Rule 5 Image" />
+			<div>
+				<h3>Share & Review</h3>
+				<p>
+					● Present your work and ensure the correct process is followed.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ***************** This is where the content started ***************** -->
+	<section class="rules-section">
+		<div class="container1">
+			<!-- <div class="divider">
+				<h3>Assembly Point: Football Field (AP1)</h3>
+			</div> -->
+			<img src="img/pps-img.png" alt="Perodua Problem Solving" class="integrity-image">
+		</div>
+	</section>
+
+	<!-- <section id="abnormality-control" class="sh-section">
+		<div class="container1">
+			<div class="divider">
+				<h3>Content Agenda</h3>
+			</div>
+			<div class="content-box">
+				<div class="flex-content2">
+					<div>
+						<div class="isi2">
+							<div class="divider3">
+								<h3>Introduction</h3>
+							</div>
+							<p>● Pre-Test & Understanding</p>
+							<p>● Syllabus & Learning Concept</p>
+							<p>● Background</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>Training Objective</h3>
+							</div>
+							<p>● Objectives & Outcome</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>Overview</h3>
+							</div>
+							<p>● 8 Steps Outcome</p>
+							<p>● Plan Phase</p>
+							<p>● PPS vs. QCC</p>
+							<p>● PPS vs. TBP</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>Concept of PPS</h3>
+							</div>
+							<p>● PDCA: Process vs. People</p>
+							<p>● Correct Action & Process vs. Motivational Guideline</p>
+						</div>
+					</div>
+					<div>
+						<div class="isi2">
+							<div class="divider3">
+								<h3>In Order to Find a Problem</h3>
+							</div>
+							<p>● Key Points</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>The 8 Steps of PPS</h3>
+							</div>
+							<p>● Detail Process & Key Points</p>
+							<p>● Worksheet Case Study</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>A3 Report & QC Story</h3>
+							</div>
+							<p>● A3 Report Format</p>
+							<p>● What is QC Story</p>
+						</div>
+
+						<div class="isi2">
+							<div class="divider3">
+								<h3>Summary Closing</h3>
+							</div>
+							<p>● A3 Report Submission</p>
+							<p>● Post-Test & Understanding After Training</p>
+							<p>● Evaluation</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- ========== Syllabus Perodua ========== -->
+	<section id="abnormality-control" class="sh-section">
+		<div class="container1">
+			<div class="divider">
+				<!-- <h3>Syllabus Perodua Problem Solving</h3> -->
+				<h3>Content Agenda</h3>
+			</div>
+			<div>
+				<h3 style="text-align:center"><b>
+						Learning Concept:<br>
+						<span class="red-text">20%</span> theory<br>
+						<span class="red-text">80%</span> practice</b>
+				</h3>
+			</div>
+			<div class="content-box">
+				<!-- <h4 class="content-title"><i>Abnormal</i> yang boleh berlaku terhadap 4M</h4> -->
+				<div class="flex-content2">
+					<div class="isi3-b" style="font-size:12px;">
+						<div class="divider3">
+							<h3>Day 1</h3>
+						</div>
+						<p class="blue-text"><b>Introduction</b></p>
+						<p style="margin-bottom:8px;"><b>Objectives & Outcome</b></p>
+						<p style="margin-bottom:5px;"><b>8 Steps Outcome</b></p>
+						<p style="margin-bottom:5px;"><b>Plan Phase</b></p>
+						<p style="margin-bottom:5px;"><b>PPS vs. QCC</b></p>
+						<p style="margin-bottom:5px;"><b>PPS vs. TBP</b></p>
+						<p style="margin-bottom:5px;"><b>Step 1: Clarify the Problem</b></p>
+						<p>
+							1) Clarify the Ultimate Goal of one’s work,
+							Ideal Situation of one’s work,
+							Current Situation,
+							gap & view the Current Situation as a problem
+						</p><br>
+						<!-- <p>
+							1) Clarify the Ultimate Goal of one’s work<br>
+							2) Clarify the Ideal Situation of one’s work<br>
+							3) Clarify the Current Situation<br>
+							4) Clarify the gap & view the Current Situation as a problem
+						</p><br> -->
+						<!-- <p><b>Step 2: Breakdown the Problem</b></p>
+						<p>1) Breakdown the Problem</p> -->
+					</div>
+
+					<div class="isi3-y" style="font-size:12px;">
+						<div class="divider3">
+							<h3>Day 2</h3>
+						</div>
+						<p><b>Step 5: Develop Countermeasure</b></p>
+						<p>
+							1) Develop as many potential countermeasure as possible<br>
+							2) Select the highest value added countermeasures<br>
+							3) Build consensus with others<br>
+							4) Create a concreate action plan
+						</p>
+					</div>
+				</div>
+				<div class="isi">
+					<p class="red-text" style="text-align:center;">10.30 - 10.45 am [Break]</p>
+				</div>
+				<div class="flex-content2">
+					<div class="isi4-b" style="font-size:12px;">
+						<p><b>Step 2: Breakdown the Problem</b></p>
+						<p>
+							1) Breakdown the Problem<br>
+							2) Clarify the Contribution to Ideal Situation<br>
+							3) Specify the Point of Occurrence by checking the process
+						</p>
+						<p><b>Step 3: Set Target</b></p>
+						<p>
+							1) Set a measureable and concrete target<br>
+							2) Clarify the contribution to the Ideal Situation
+						</p>
+					</div>
+
+					<div class="isi4-y" style="font-size:12px;">
+						<p>
+							<b>
+								Step 6. See Countermeasure<br><br>
+								Step 7. Monitor Both Results & Processes<br><br>
+								Step 8. Standardize Successful Processes
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="isi">
+					<p class="red-text" style="text-align:center;">1.00 - 2.00 pm [Lunch Break]</p>
+				</div>
+				<div class="flex-content2">
+					<div class="isi5-b" style="font-size:12px;">
+						<p><b>Step 4: Analyze the Root Cause</b></p>
+						<p>
+							1) Examine the Point of Occurrence &
+							think of possible causes without any prejudice
+						</p>
+					</div>
+
+					<div class="isi5-y" style="font-size:12px;">
+						<p><b>A3 report preparation</b></p>
+					</div>
+				</div>
+				<div class="isi">
+					<p class="red-text" style="text-align:center;">3.30 - 3.45 pm [Lunch Break]</p>
+				</div>
+				<div class="flex-content2">
+					<div class="isi4-b" style="font-size:12px;">
+						<p>2) Continue to question “Why ?” and identify the cause</p>
+						<br>
+						<p><b>“Why ?” analysis</b></p>
+						<p>
+							1) Procedure of the “Why ?” analysis<br>
+							2) Approach of the “Why ?” analysis<br>
+							3) Key points of the “Why ?” analysis
+						</p>
+					</div>
+
+					<div class="isi4-y" style="font-size:12px;">
+						<p><b>A3 report presentation</b></p>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- <div class="others">
+				<h3 style="text-align:center"><b>
+					Learning Concept:<br>
+					<span class="red-text">20%</span> theory<br>
+					<span class="red-text">80%</span> practice</b>
+				</h3>
+			</div> -->
+		</div>
+	</section>
+
+	<section class="learning-section">
+		<!-- Title -->
+		<h2 class="section-title">Training Objective & Learning Outcome</h2>
+
+		<!-- LEARNING PATH -->
+		<h3 class="sub-title">Learning Path</h3>
+		<div class="steps-container">
+			<div class="step-card">
+				<div class="step-icon">🧠</div>
+				<h3 class="step-title">Explain in a systematic and logical way</h3>
+				<p class="step-desc">
+					(good QC story) to reach consensus.
+				</p>
+			</div>
+
+			<div class="step-card">
+				<div class="step-icon">📄</div>
+				<h3 class="step-title">Prepare an A3 Report</h3>
+				<p class="step-desc">
+					that offers a simple and structured approach to reporting solutions to problems.
+				</p>
+			</div>
+
+			<div class="step-card">
+				<div class="step-icon">🛠</div>
+				<h3 class="step-title">Work through the problem-solving process</h3>
+				<p class="step-desc">
+					of clarifying the problem, breakdown problem, set
+					measurable target, do thorough why-why analysis to identify the root cause etc.
+				</p>
+			</div>
+		</div>
+		<br>
+		<!-- QUOTE BOX -->
+		<div class="quote-box" title="Hover to reveal quote">
+			<blockquote>
+				“If you can’t describe what you are doing as a process, you don’t know what you’re doing.”
+				<span class="quote-author">— W. Edwards Deming</span>
+			</blockquote>
+		</div>
+
+		<!-- EXPECTATION SECTION -->
+		<div class="expectation-box">
+			<h3 class="sub-title">Expectation</h3>
+			<ul class="expectation-list">
+				<li class="correct">✅ To continue <span class="highlight-blue">practicing the correct steps &
+						process</span> by applying at workplace.</li>
+				<li class="incorrect">⚠ Beware of <span class="highlight-red">incorrect action & process</span> ➝ wrong
+					why-why ➝ wrong root cause ➝ inaccurate countermeasure ➝ problem recurrence.</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- <section class="rules-section">
+		<div class="container1">
+			<div class="flex-content2">
+				<p>
+					The first 5 steps or the Plan phase of 
+					the Toyota Business Process is mapped 
+					to this funnel.
+				</p>
+				<img src="img/plan-phase.png" alt="Perodua Problem Solving" class="integrity-image">
+			</div>
+		</div>
+	</section> -->
+
+	<!-- <section id="abnormality-control" class="sh-section">
+		<div class="container1">
+			<div class="divider">
+				<h3>Problem Solving Funnel: Plan Phase</h3>
+			</div>
+			<div class="content-box">
+				<h4 class="content-title"><i>Abnormal</i> yang boleh berlaku terhadap 4M</h4>
+				<div class="flex-content2">
+					<div class="isi3" style="margin:auto auto;">
+						<p style="text-align:center; padding:130px 0 50px;">
+							The first 5 steps or the Plan phase of 
+							the Toyota Business Process is mapped 
+							to this funnel.
+						</p>
+					</div>
+					
+					<img src="img/plan-phase.png" alt="Perodua Problem Solving" class="integrity-image">
+				</div>
+			</div>
+		</div> 
+	</section> -->
+
+	<!-- Key Focus Section -->
+	<section class="deals-section">
+		<!-- Introduction -->
+		<div class="introduction-container">
+			<h1><span class="red-text">Day 1</span></h1>
+			<div class="title-container">
+				<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+				<h1>LET'S START LEARNING!</h1>
+				<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+			</div>
+			<p>Start with <i>'YOSH <b>mesti selamat</b>'</i> and end with <i>'YOSH <b>1 team 1 goal</b>'</i></p>
+		</div>
+
+		<div class="deals-container">
+			<div class="deal-box">
+				<img src="gif/book.gif" alt="Introduction">
+				<h3>Introduction</h3>
+				<p style="margin-bottom:50px;"></p>
+				<button onclick="location.href='pps-intro.html'">Explore</button>
+				<!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/1.gif" alt="Step 1">
+				<h3>Step 1:<br>Clarify the Problem</h3>
+				<p></p>
+				<button onclick="location.href='pps-step1.html'">Explore</button>
+				<!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/2.gif" alt="Step 2">
+				<h3>Step 2:<br>Breakdown the Problem</h3>
+				<p></p>
+				<button onclick="location.href='pps-step2.html'">Explore</button>
+				<!-- Button to navigate to Step 2 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/3.gif" alt="Step 3">
+				<h3>Step 3:<br>Set Target</h3>
+				<p></p>
+				<button onclick="location.href='pps-step3.html'">Explore</button>
+				<!-- Button to navigate to Step 3 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/4.gif" alt="Step 4">
+				<h3>Step 4:<br>Analyze the Root Cause</h3>
+				<p></p>
+				<button onclick="location.href='pps-step4.html'">Explore</button>
+				<!-- Button to navigate to TPM page -->
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========== DAY 2 ========== -->
+	<section class="deals-section">
+		<!-- Introduction -->
+		<div class="introduction-container">
+			<h1><span class="red-text">Day 2</span></h1>
+			<div class="title-container">
+				<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+				<h1>LET'S START LEARNING!</h1>
+				<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+			</div>
+			<p>Start with <i>'YOSH <b>mesti selamat</b>'</i> and end with <i>'YOSH <b>1 team 1 goal</b>'</i></p>
+		</div>
+
+		<div class="deals-container">
+			<div class="deal-box">
+				<img src="gif/book.gif" alt="Step 5">
+				<h3>Quiz</h3>
+				<p></p>
+				<button onclick="location.href='pps-Quiz.html'">Explore</button> <!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/5.gif" alt="Step 5">
+				<h3>Step 5:<br>Develop Countermeasure</h3>
+				<p></p>
+				<button onclick="location.href='pps-step5.html'">Explore</button>
+				<!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/6.gif" alt="Step 6">
+				<h3>Step 6:<br>See Countermeasure</h3>
+				<p></p>
+				<button onclick="location.href='pps-step6.html'">Explore</button>
+				<!-- Button to navigate to TPM page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/7.gif" alt="Step 7">
+				<h3>Step 7:<br>Monitor Both Results & Processes</h3>
+				<p></p>
+				<button onclick="location.href='pps-step7.html'">Explore</button>
+				<!-- Button to navigate to Step 2 Page -->
+			</div>
+			<div class="deal-box">
+				<img src="gif/8.gif" alt="Step 8">
+				<h3>Step 8:<br>Standardize Successful Processes</h3>
+				<p></p>
+				<button onclick="location.href='pps-step8.html'">Explore</button>
+				<!-- Button to navigate to Step 2 Page -->
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<div class="eval-section">
+		<h2>SESI PENILAIAN</h2>
+		<!-- QR Codes for Post-Test and Evaluation Form -->
+		<div class="qr-section1">
+			<div class="qr-container1">
+				<img src="img/pps-post-qr.png" class="qr-image1 clickable-image" alt="Post-test QR Code">
+				<p>Post Test</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/1 team 1 gold.jpg" class="qr-image1 clickable-image" alt="1 Team 1 Goal">
+				<p>Before class end</p>
+			</div>
+			<div class="qr-container1">
+				<img src="img/pps-eval-qr.png" class="qr-image1 clickable-image" alt="Evaluation Form QR Code">
+				<p>Evaluation Form</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+	<!-- Fullscreen Modal -->
+	<div id="fullscreen-modal" class="modal-1">
+		<span class="close-button-1">&times;</span>
+		<img class="modal-content-1" id="modal-image" alt="Fullscreen Image">
+	</div>
+	<!-- Footer -->
+	<footer>
+		<p>© 2025 Genba Management Dojo | All Rights Reserved.</p>
+	</footer>
+
+	<!-- Scripts (optional) -->
+	<script src="../FMDS/js/new-fmds-script.js"></script>
+	<!-- Scripts -->
+	<script>
+		function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+
+
+		// Scroll fade-in animation (optional)
+		document.addEventListener("DOMContentLoaded", () => {
+			const steps = document.querySelectorAll(".step-card");
+			const observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("fade-in");
+					}
+				});
+			}, { threshold: 0.3 });
+
+			steps.forEach(step => {
+				step.classList.add("invisible");
+				observer.observe(step);
+			});
+		});
+	</script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function () {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+
+</html>

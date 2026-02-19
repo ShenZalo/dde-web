@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Just in Time</title>
+    <link rel="stylesheet" href="css/tps-stylestructure.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+    <style>
+        .cars {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: white;
+        }
+
+        .content-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .question-text {
+            width: 200px;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            /* background: #c5e7ff; */
+            
+            left: 20%;
+        }
+
+        .showcase-container {
+            position: relative;
+            width: 700px;
+            height: 350px;
+            margin: 0 auto;
+            perspective: 1000px;
+
+            /* background: #c5e7ff; */
+        }
+
+        .oval-track {
+            position: absolute;
+            width: 800px;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: rotateOval 40s linear infinite;
+        }
+
+        .car {
+            position: absolute;
+            width: 280px;
+            height: 160px;
+            transition: all 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+            /* border-radius: 12px; */
+            overflow: hidden;
+            /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); */
+            filter: brightness(0.7) blur(3px);
+            transform-origin: center center;
+            z-index: 1;
+
+            /* background: #c5e7ff; */
+        }
+
+        .car img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .car.active {
+            filter: brightness(1) blur(0);
+            transform: scale(1.3);
+            z-index: 10;
+            /* box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8); */
+        }
+
+        .car-info {
+            position: absolute;
+            /* bottom: -50px; */
+            bottom: -9px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.7s ease;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            padding: 5px 0;
+        }
+
+        .car.active .car-info {
+            opacity: 1;
+        }
+
+        .cars h1 {
+            margin-bottom: 30px;
+            font-size: 3rem;
+            background: linear-gradient(90deg, #f5af19, #f12711);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes rotateOval {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* =================== Jumlah cars yg perlu dihasilkan =================== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .header-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .header-section h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #4b6f87;
+            border-radius: 2px;
+        }
+        
+        .header-section p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        
+        .dashboard {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #4b6f87;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background: #4b6f87;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        
+        .customer-service {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .customer-service::before {
+            content: 'Customer Service';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #e74c3c;
+            color: white;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .customer-service img {
+            width: 40%;
+            height: auto;
+            display: flex;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .demand-list {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .demand-item {
+            background: white;
+            border: 1px solid #dfe6e9;
+            border-radius: 10px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .demand-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #4b6f87;
+        }
+        
+        .demand-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: #4b6f87;
+        }
+        
+        .car-image {
+            
+            height: 60px;
+            width: 95px;
+            /* border-radius: 8px; */
+            object-fit: cover; /* prevent squished image */
+            /* box-shadow: 0 3px 10px rgba(0,0,0,0.1); */
+        }
+        
+        .car-info2 {
+            flex: 1;
+        }
+        
+        .car-name {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #2c3e50;
+        }
+        
+        .car-quantity {
+            font-size: 1.3rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .total-section {
+            flex: 1;
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .total-label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .total-value {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .total-unit {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .total-section {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .demand-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* ============ 7 MUDA ============ */
+        .dashboard2 {
+            max-width: 1136px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .container-flex {
+            /* display: flex;
+            gap: 2rem; */
+
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Equal columns */
+            gap: 2rem;
+        }
+        
+        .customer-service2 {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .cust-box {
+            background: #f8faff;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+
+        .customer-service2 img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            /* display: flex;
+            margin: 0 auto; */
+        }
+
+        .cust-flex {
+            display: flex;
+            grid-template-columns: 0fr 5fr;
+            gap: 0rem; 
+            /* flex: 1; */
+        }
+
+        .cust-flex img {
+            margin: 3rem;
+        }
+
+        .cust-flex p {
+            margin: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+            <img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <section id="fmds-overview-section">
+			<!-- Introduction -->
+			<div class="introduction-container">
+				<div class="title-container">
+					<img src="img/safety logo.jpg" alt="Safety Photo 1" class="clickable-image">
+					<h1>③ Just In Time</h1>
+					<img src="img/1 team 1 gold.jpg" alt="Safety Photo 2" class="clickable-image">
+				</div>
+			</div>
+		</section>
+
+        <br><br>
+
+        <section class="aktiviti-berkumpulan">
+            <div class="title-kaizen1">
+                <h2>AKTIVITI BERKUMPULAN</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="akiviti-container-wrapper">
+                <div class="aktiviti-container before-container">
+                    <div class="title-kaizen">
+                        <h2>Sebelum Kaizen [Penambahbaikan]</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <img src="img/aktivitiBerkumpulan.png" alt="Before Kaizen" class="before-kaizen-img">
+                </div>
+                <div class="aktiviti-container discussion-container">
+                    <div class="title-kaizen">
+                        <h2>Bincangkan apakah pembaziran yang anda rasa sedang berlaku.</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="aktiviti-controls">
+                        <button id="show-answers-btn">Lihat Jawapan</button>
+                    </div>
+                    <!-- hidden initially -->
+                    <div class="content-box">
+                        <p>Konsep kerja yang tidak teratur dan banyak pembaziran.</p>
+                        <div class="waste-items">
+                            <p class="waste-title">Pembaziran:</p>
+                            <div class="waste-item">① Bahan mentah</div>
+                            <div class="waste-item">② Lebihan bahan atas meja</div>
+                            <div class="waste-item">③ Stock banyak</div>
+                            <div class="waste-item">④ Jarak penghantaran</div>
+                            <div class="waste-item">⑤ Suasana kerja tidak selesa</div>
+                        </div>
+                        <p class="improvement-call"><span>Perlu lakukan penambahbaikan untuk meningkatkan operasi.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="akiviti-container-wrapper">
+                <div class="aktiviti-container before-container">
+                    <div class="title-kaizen">
+                        <h2>Selepas Kaizen [Penambahbaikan]</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <img src="gif/selepasKaizen2.gif" alt="Before Kaizen" class="before-kaizen-img">
+                </div>
+                <div class="aktiviti-container discussion-container">
+                    <div class="title-kaizen">
+                        <h2>Tiada lagi pembaziran.</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <!-- hidden initially -->
+                    <div class="content-box2">
+                        <p>Konsep kerja yang tidak teratur dan banyak pembaziran.</p>
+                        <div class="waste-items">
+                            <p class="waste-title">Sistem TPS:</p>
+                            <div class="waste-item">① Bahan mentah 1 bahagian</div>
+                            <div class="waste-item">② Produk siap 1 bahagian</div>
+                            <div class="waste-item">③ Proses kerja secara terus</div>
+                            <div class="waste-item">④ Setiap proses kerja mempunyai masa</div>
+                            <div class="waste-item">⑤ Tiada bahan lebih atas meja</div>
+                        </div>
+                        <p class="improvement-call"><span>Pekerja bekerja dengan selesa & gembira.</span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="cars">
+            <h1>Maksud Just In Time [J.I.T]</h1>
+            <p>
+                Apa maksud <b>item/barang yang diperlukan,</b> pada <b>
+                masa yang diperlukan</b> dan <b>kuantiti yang diperlukan</b>
+                 sahaja?
+            </p>
+            <br>
+            <div class="content-row">
+                
+                <div class="showcase-container">
+                    <div class="oval-track"></div>
+                    
+                    <div class="car active" data-car="1">
+                        <img src="img/avanza.png" alt="Avanza">
+                        <div class="car-info">Avanza</div>
+                    </div>
+                    <div class="car" data-car="2">
+                        <img src="img/Hilux.png" alt="Hilux">
+                        <div class="car-info">Hilux</div>
+                    </div>
+                    <div class="car" data-car="3">
+                        <img src="img/yarisHybrid.png" alt="Yaris Hybrid">
+                        <div class="car-info">Yaris Hybrid</div>
+                    </div>
+                    <div class="car" data-car="4">
+                        <img src="img/Yaris.png" alt="Yaris">
+                        <div class="car-info">Yaris</div>
+                    </div>
+                    <div class="car" data-car="5">
+                        <img src="img/vios.png" alt="Vios">
+                        <div class="car-info">Vios</div>
+                    </div>
+                </div>
+                <p class="question-text"><b>1.</b> Item/barang apa yang diperlukan?</p>
+            </div>
+            
+            <!-- <p>Bagaimana untuk mengetahui jumlah yang perlu dibuat?</p>
+            <p>Permintaan Pelanggan<br>[Customer Service]</p>
+            <img src="img/custService.png" alt="Customer Service" class="cust-service-img"> -->
+        </section>
+
+        <div class="container">
+            <div class="header-section">
+                <h1>Bagaimana untuk mengetahui jumlah yang perlu dibuat?</h1>
+                <!-- <p>Permintaan Pelanggan</p> -->
+            </div>
+            
+            <div class="dashboard">
+                <div class="customer-service">
+                    <div class="section-title">Permintaan Pelanggan</div>
+                    <img src="img/custService.png" alt="Customer Service" class="cust-service-img">
+                    <!-- <p>Berikut adalah permintaan terkini dari pelanggan:</p> -->
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="demand-list">
+                        <div class="demand-item">
+                            <img src="img/yaris.png" alt="Yaris" class="car-image">
+                            <div class="car-info2">
+                                <div class="car-name">Yaris</div>
+                                <div class="car-quantity">5 unit</div>
+                            </div>
+                        </div>
+                        
+                        <div class="demand-item">
+                            <img src="img/vios.png" alt="Vios" class="car-image">
+                            <div class="car-info2">
+                                <div class="car-name">Vios</div>
+                                <div class="car-quantity">2 unit</div>
+                            </div>
+                        </div>
+                        
+                        <div class="demand-item">
+                            <img src="img/avanza.png" alt="Avanza" class="car-image">
+                            <div class="car-info2">
+                                <div class="car-name">Avanza</div>
+                                <div class="car-quantity">1 unit</div>
+                            </div>
+                        </div>
+                        
+                        <div class="demand-item">
+                            <img src="img/yarisHybrid.png" alt="Yaris Hybrid" class="car-image">
+                            <div class="car-info2">
+                                <div class="car-name">Yaris H</div>
+                                <div class="car-quantity">1 unit</div>
+                            </div>
+                        </div>
+                        
+                        <div class="demand-item">
+                            <img src="img/hilux.png" alt="Hilux" class="car-image">
+                            <div class="car-info2">
+                                <div class="car-name">Hilux</div>
+                                <div class="car-quantity">1 unit</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="total-section">
+                        <div class="total-label">Jumlah Keseluruhan</div>
+                        <div class="total-value">10</div>
+                        <div class="total-unit">unit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="dashboard2">
+            <div class="customer-service2">
+                <p><b>Apakah <span class="red-text">kesan</span> sekiranya syarikat tidak tahu:</b></p>
+                <p>
+                    <span class="blue-text-noBold">
+                        ⒈ Item apa yang diperlukan?</span><br>
+                    <span class="blue-text-noBold">
+                        ⒉ Masa yang diperlukan?</span><br>
+                    <span class="blue-text-noBold">
+                        ⒊ Kuantiti yang diperlukan?</span></p>
+                <br>
+                <p><b>Kesan-kesannya adalah:</b></p><br>
+                <div class="cust-box">
+                    <p>◆ Boleh berlaku Pembaziran [MUDA]</p>
+                </div>
+                <div class="cust-box">
+                    <p>◆ Berlaku 7 Jenis Pembaziran [MUDA]</p>
+                </div>
+            </div>
+            <div class="container-flex">
+                <div class="customer-service2">
+                    <p><b>① Lebihan Pengeluaran [Over Production]</b></p>
+                    <img src="img/overProduction.png" alt="Over Production" class="lebih-pengeluaran-img">
+                    <p><b>Kesan Pembaziran:</b></p>
+                    <p>
+                        ▷▷ Lokasi penyimpanan/storage yang luas.<br>
+                        ▷▷ Barang boleh berlaku kecacatan/defect.<br>
+                        ▷▷ Boleh jadi lambakan sekiranya tiada permintaan.<br>
+                        ▷▷ Perlukan rak yang banyak.
+                    </p>
+                </div>
+                <div class="customer-service2">
+                    <p><b>② Lebihan Bahan/Penyimpanan [Inventory]</b></p>
+                    <img src="img/lebihanBahan.png" alt="Over Production" class="lebih-pengeluaran-img">
+                    <p><b>Kesan Pembaziran:</b></p>
+                    <p>
+                        ▷▷ Lokasi penyimpanan/storage yang luas.<br>
+                        ▷▷ Barang boleh berlaku kecacatan/defect.<br>
+                        ▷▷ Boleh jadi lambakan sekiranya tiada permintaan.<br>
+                        ▷▷ Perlukan rak yang banyak.
+                    </p>
+                </div>
+            </div>
+            <div class="container-flex">
+                <div class="customer-service2">
+                    <p><b>③ Menunggu [Inventory]</b></p>
+                    <img src="img/menunggu.png" alt="Over Production" class="lebih-pengeluaran-img">
+                    <p><b>Kesan Pembaziran:</b></p>
+                    <p>
+                        ▷▷ Team Member tiada aktiviti.<br>
+                        ▷▷ Berborak @ berbual kosong.<br>
+                        ▷▷ Menggunakan telefon bimbit.
+                    </p>
+                    <br><br>
+                    <p><b>Aktiviti Line Stop:</b></p>
+                    <p>
+                        ▷▷ Perlu ada garis panduan apabila line berhenti.<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="blue-text">1 ~ 5 minit</span> ?<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="blue-text">5 ~ 10 minit</span> ?<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="blue-text">10 ~ 0000 minit</span> ?
+                    </p>
+                </div>
+                <div class="customer-service2">
+                    <p><b>④ Penghantaran [Delivery]</b></p>
+                    <img src="img/delivery.jpg" alt="Over Production" class="lebih-pengeluaran-img">
+                    <p><b>Perkara:</b></p>
+                    <p>
+                        ▷▷ Jarak yang jauh akan melambatkan proses/production.<br>
+                        ▷▷ Penghantaran perlu menepati perjalanan ke lokasi.
+                    </p>
+                </div>
+            </div>
+            <div class="container-flex">
+                <div class="customer-service2">
+                <p><b>⑤ Pergerakan [Movement/Motion]</b></p>
+                <img src="img/pergerakan.png" alt="Over Production" class="lebih-pengeluaran-img">
+                <p><b>Perkara:</b></p>
+                <p>
+                    ▷▷ Jarak yang jauh akan melambatkan proses/production.<br>
+                    ▷▷ Pergerakan membongkok yang kerap boleh menyebabkan sakit.
+                </p>
+            </div>
+            <div class="customer-service2">
+                <p><b>⑥ Kerja yang Tiada Nilai [Unneeded Process @ Over Processing]</b></p>
+                <img src="img/unneeded.jpg" alt="Over Production" class="lebih-pengeluaran-img">
+                <p><b>Perkara:</b></p>
+                <p>
+                    ▷▷ Buka yang tidak sepatutnya dilakukan tetapi perlu.<br>
+                    Contoh:<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Buka kotak/plastik sebelum menggunakan bahan.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Mengasingkan bahan mentah.
+                </p>
+            </div>
+            </div>
+            
+            <!-- <div class="customer-service2">
+                <p><b>⑦ Kecacatan dan Baik Pulih [Defect and repair]</b></p>
+                <div class="cust-flex">
+                    <div class="box-flex">
+                        <img src="img/defect.jpg" alt="Over Production" class="lebih-pengeluaran-img">
+                    </div>
+                    <div class="box-flex">
+                        <p><b>Kesan Pembaziran:</b></p>
+                        <p>
+                            ▷▷ Penggunaan bahan mentah.<br>
+                            ▷▷ Tenaga kerja.<br>
+                            ▷▷ Tenaga elektrik.<br>
+                            ▷▷ Tenaga angin.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="customer-service2">
+                <p><b>⑦ Kecacatan dan Baik Pulih [Defect and repair]</b></p>
+                <div class="cust-flex">
+                    <img src="img/defect.jpg" alt="Over Production" class="lebih-pengeluaran-img">
+                    
+                    <p>
+                        <br><b>Kesan Pembaziran:</b><br><br>
+                        ▷▷ Penggunaan bahan mentah.<br>
+                        ▷▷ Tenaga kerja.<br>
+                        ▷▷ Tenaga elektrik.<br>
+                        ▷▷ Tenaga angin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- End of Main Container -->
+    <br><br>
+
+    <!-- Navigation Buttons -->
+	<div class="navigation-buttons" id="header">
+		<button id="backButton">
+			<i class="fas fa-arrow-left"></i>
+		</button>
+		<button id="topButton">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo | All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/tps-script.js"></script>
+    <script>
+        /* =========================== Aktiviti Berkumpulan =========================== */
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('show-answers-btn');
+            const contentBox = document.querySelector('.content-box');
+            
+            // Initialize - hide content immediately
+            contentBox.style.display = 'none';
+            
+            toggleBtn.addEventListener('click', function() {
+                if (contentBox.style.display === 'none') {
+                    // Show answers
+                    contentBox.style.display = 'block';
+                    // Trigger animation
+                    setTimeout(() => contentBox.classList.add('visible'), 10);
+                    toggleBtn.textContent = 'Sembunyikan Jawapan';
+                } else {
+                    // Hide answers
+                    contentBox.classList.remove('visible');
+                    // Wait for animation before hiding completely
+                    setTimeout(() => {
+                        contentBox.style.display = 'none';
+                    }, 400); // Match this with CSS transition duration
+                    toggleBtn.textContent = 'Tunjukkan Jawapan';
+                }
+            });
+        });
+
+        /* =========================== Cars =========================== */
+        document.addEventListener('DOMContentLoaded', function() {
+            const cars = document.querySelectorAll('.car');
+            const ovalTrack = document.querySelector('.oval-track');
+            
+            let currentActive = 0;
+            
+            // Oval path parameters - to control the position ogf the cars
+            const ovalWidth = 550; //700
+            const ovalHeight = 200; //350
+            const centerX = 100; //500
+            const centerY = 100;
+            
+            // Position cars along oval path
+            function positionCars() {
+                const totalCars = cars.length;
+                const angleIncrement = (2 * Math.PI) / totalCars;
+                
+                cars.forEach((car, index) => {
+                    // Calculate position on oval
+                    const angle = angleIncrement * index - (currentActive * angleIncrement);
+                    const x = centerX + (ovalWidth / 2) * Math.cos(angle);
+                    const y = centerY + (ovalHeight / 2) * Math.sin(angle);
+                    
+                    // Calculate scale and z-index based on position
+                    const frontPosition = (currentActive % totalCars + totalCars) % totalCars;
+                    const distanceToFront = Math.min(
+                        (index - frontPosition + totalCars) % totalCars,
+                        (frontPosition - index + totalCars) % totalCars
+                    );
+                    
+                    const scale = 1 - (distanceToFront * 0.15);
+                    const blurAmount = distanceToFront * 1.5;
+                    const opacity = 1 - (distanceToFront * 0.2);
+                    
+                    // Apply styles
+                    car.style.left = `${x}px`;
+                    car.style.top = `${y}px`;
+                    car.style.transform = `scale(${scale})`;
+                    car.style.filter = `brightness(${opacity}) blur(${blurAmount}px)`;
+                    car.style.zIndex = totalCars - distanceToFront;
+                    
+                    // Set active class
+                    if (index === currentActive) {
+                        car.classList.add('active');
+                    } else {
+                        car.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Animate cars along oval path
+            // function animateCars() {
+            //     if (!isPaused) {
+            //         currentActive = (currentActive + 1) % cars.length;
+            //         positionCars();
+            //     }
+            // }
+            
+            // Start animation
+            // function startAnimation() {
+            //     clearInterval(animationInterval);
+            //     animationInterval = setInterval(animateCars, 2000 - (rotationSpeed * 15));
+            // }
+
+            // Animate cars along oval path
+            function animateCars() {
+                currentActive = (currentActive + 1) % cars.length;
+                positionCars();
+            }
+            
+            // Start animation
+            function startAnimation() {
+                setInterval(animateCars, 2000);
+            }
+            
+            // Event listeners
+            // speedUpBtn.addEventListener('click', () => {
+            //     rotationSpeed = Math.min(rotationSpeed + 5, 100);
+            //     startAnimation();
+            // });
+            
+            // slowDownBtn.addEventListener('click', () => {
+            //     rotationSpeed = Math.max(rotationSpeed - 5, 10);
+            //     startAnimation();
+            // });
+            
+            // pauseBtn.addEventListener('click', () => {
+            //     isPaused = !isPaused;
+            //     pauseBtn.textContent = isPaused ? 'Resume' : 'Pause';
+            // });
+            
+            // Initialize
+            positionCars();
+            startAnimation();
+            
+            // Click on car to bring it to front
+            cars.forEach((car, index) => {
+                car.addEventListener('click', () => {
+                    currentActive = index;
+                    positionCars();
+                });
+            });
+        });
+
+        /* =========================== Jumlah Cars =========================== */
+        document.addEventListener('DOMContentLoaded', function() {
+            const demandData = [
+                { name: "Yaris", quantity: 5, image: "https://via.placeholder.com/80x60?text=Yaris" },
+                { name: "Vios", quantity: 2, image: "https://via.placeholder.com/80x60?text=Vios" },
+                { name: "Avanza", quantity: 1, image: "https://via.placeholder.com/80x60?text=Avanza" },
+                { name: "Yaris H", quantity: 1, image: "https://via.placeholder.com/80x60?text=Yaris+H" },
+                { name: "Hilux", quantity: 1, image: "https://via.placeholder.com/80x60?text=Hilux" }
+            ];
+            
+            const demandList = document.getElementById('demandList');
+            const totalValue = document.getElementById('totalValue');
+            
+            // Calculate total
+            const total = demandData.reduce((sum, item) => sum + item.quantity, 0);
+            
+            // Animate total counter
+            let counter = 0;
+            const animateTotal = setInterval(() => {
+                if (counter >= total) {
+                    clearInterval(animateTotal);
+                } else {
+                    counter++;
+                    totalValue.textContent = counter;
+                }
+            }, 100);
+            
+            // Populate demand items
+            demandData.forEach(item => {
+                const demandItem = document.createElement('div');
+                demandItem.className = 'demand-item';
+                demandItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="car-image">
+                    <div class="car-info">
+                        <div class="car-name">${item.name}</div>
+                        <div class="car-quantity">${item.quantity} unit</div>
+                    </div>
+                `;
+                demandList.appendChild(demandItem);
+                
+                // Add animation
+                setTimeout(() => {
+                    demandItem.style.opacity = '1';
+                    demandItem.style.transform = 'translateY(0)';
+                }, 200 * demandData.indexOf(item));
+            });
+        });
+
+    </script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</body>
+</html>

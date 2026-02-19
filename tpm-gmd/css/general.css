@@ -1,0 +1,717 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	 font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-red: #D32F2F;
+    --secondary-gray-dark: #424242;
+    --secondary-gray-light: #E0E0E0;
+    --accent-orange: #FF8A65;
+    --neutral-white: #FFFFFF;
+    --neutral-black: #333333;
+    --neutral-gray: #555555;
+}
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    background: url("../img/man-maintenance.jpg") center/cover no-repeat fixed;
+    margin: 0;
+    overflow-x: hidden;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56 14 14 / 70%); /* Muted Red Overlay */
+    z-index: -1; /* Ensures the overlay is beneath the content */
+}
+/* ============== Header and Navbar ============== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--neutral-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 6px;
+    border: 2px solid var(--primary-red);
+    position: sticky;
+    height: 70px;
+}
+
+.topnav a {
+    color: var(--primary-red);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.topnav a:hover {
+    /* background-color: var(--accent-orange); */
+    background-color: #cfa6b7;
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    transform: scale(1.1);
+}
+
+.topnav .image {
+    padding: 4px;
+    width: 70px;
+}
+
+/* ================== logout button ================== */
+/* Logout Button Styles */
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+/* ====== Welcome Header Styles =======*/
+.welcome-header {
+    background-color: var(--neutral-white);
+    text-align: center;
+    padding: 40px 0; /* Space above and below the header */
+}
+
+.welcome-header h1 {
+    font-size: 2.5em;
+}
+
+.welcome-header p {
+    font-size: 1.2em;
+}
+
+/*========== Matlamat TPM Section ==============*/
+.tpm-goals-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tpm-goals-section h2 {
+    text-align: center;
+    color: var(--neutral-black);
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 30px;
+}
+
+.goals-content {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Stack items on smaller screens */
+}
+
+.goal-item {
+    background-color: #ffffff; /* White background for each goal item */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px); /* Responsive flex item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text and icons */
+}
+
+.goal-icon {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.goal-item h3 {
+    font-size: 1.5rem; /* Font size for goal titles */
+    color: var(--neutral-black);
+}
+
+.goal-item p {
+    font-size: 1.2rem; /* Font size for goal descriptions */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goal-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+/*========= objective and polisi ==========*/
+.objective-and-polisi {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+	background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Objective Section Styling */
+.objective-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.objective-section h2 {
+    font-size: 24px;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+.objective-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.objective-point {
+    padding: 15px;
+    background-color: var(--neutral-white);
+    border: 1px solid var(--neutral-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	 font-size: 1.2rem; /* Font size for goal descriptions */
+}
+.objective-point:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.objective-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+    color: var(--neutral-black); /* Change color as needed */
+}
+
+/* Polisi Section Styling */
+.polisi-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.polisi-section h2 {
+    font-size: 24px;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+.polisi-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fullscreen Image */
+/* Polisi Image Styling */
+.polisi-image {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#full-screen-img {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+	 z-index: 1;
+}
+#full-screen-img img {
+    max-width: 80%;
+    max-height: 90%;
+}
+		
+.x-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Shrinking Animation */
+.shrink-down {
+    animation: zoom-out 0.4s ease forwards;
+}
+
+/* Keyframe Animations */
+@keyframes zoom-in {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(3);
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        transform: scale(3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/*========  Section styling ========== */
+.kerugian-section {
+	background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the section */
+.kerugian-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--neutral-black);
+    margin-bottom: 20px;
+}
+
+/* Description of the section */
+.kerugian-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Kerugian container */
+.kerugian-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual category styling */
+.kerugian-category {
+    width: 30%;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Arrow down styling */
+.arrow-down {
+    width: 25px;
+    height: 25px;
+    border-left: 3px solid #003366;
+    border-bottom: 3px solid #003366;
+    transform: rotate(45deg);
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) rotate(316deg);
+}
+
+/* Description container */
+.kerugian-description-container {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Category headings */
+.kerugian-category h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Category list */
+.kerugian-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.kerugian-category li {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* Image section */
+.kerugian-image {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.kerugian-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*=========== jenis maintenance ========= */
+.jenisMain-section {
+    background-color: var(--neutral-white);
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Title of the section */
+.jenisMain-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--neutral-black);
+    margin-bottom: 20px;
+}
+
+.box {
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Category headings */
+.box h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-gray-dark); /* Dark gray for headings */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 1.2rem; /* Set font size for paragraph text */
+    color: var(--neutral-black); /* Neutral gray for paragraph text */
+    text-indent: -1.5em; /* Move the bullet point to the left */
+    padding-left: 1.5em; /* Add padding to push the text in */
+    margin: 0; /* Remove default margin */
+}
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*=========== perlaksanaan TPM ========= */
+.perlaksanaan-section {
+	background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ /* Title of the section */
+.perlaksanaan-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--neutral-black);
+    margin-bottom: 20px;
+} 
+.content {
+	max-width: 900px;
+	margin: auto;
+	line-height: 1.6;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+	font-size: 1.2rem;
+}
+	
+.highlight-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+    color: var(--neutral-black); /* Change color as needed */
+}
+	
+
+.image-container {
+    text-align: center;
+	margin-top: 20px;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}    
+    
+.seven-steps-section {
+    padding: 50px;
+    background-color: var(--neutral-white); /* Soft gray background */
+    text-align: center;
+}
+
+.seven-steps-section h2 {
+    font-size: 28px;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.seven-steps-section p {
+    font-size: 16px;
+    color: var(--neutral-black);
+    margin-bottom: 30px;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step-box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--neutral-white);
+    border: 2px solid var(--primary-red);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.step-box h3 {
+    font-size: 14px;
+    color: var(--primary-red);
+    text-align: center;
+}
+
+	
+	
+	
+/* ========== Deals Section ============*/
+/* Key Focus Section */
+.deals-section {
+     flex-direction: column;
+    padding: 40px;
+    display: flex; /* Centers content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    max-width: 80%; /* Limits the section width */
+    margin: 40px auto; /* Centers the section horizontally on the page */
+    border-radius: 12px; /* Optional: Adds rounded corners to the section */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    background-color: var(--neutral-white);
+}
+
+.deals-section h2 {
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-bottom: 30px;
+}
+
+/* Deals Container - Grid Layout */
+.deals-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    gap: 20px; /* Spacing between boxes */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual Deal Boxes */
+.deal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between image, text, and button */
+    background: var(--neutral-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+	border:2px solid red;
+}
+
+/* Deal Images */
+.deal-box img {
+    width: 100px; /* Adjust image size */
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Deal Text */
+.deal-box h3 {
+    font-size: 1.2rem;
+    color: var(--primary-red);
+}
+
+.deal-box p {
+    font-size: 1rem;
+    color: var(--neutral-black);
+    text-align: center;
+}
+
+/* Button */
+.deal-box button {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.deal-box button:hover {
+    background-color: var(--accent-orange); /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .deals-container {
+        grid-template-columns: 1fr 1fr; /* Two columns on small screens */
+    }
+}	
+
+
+
+
+/*======= Footer ========*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navigation-buttons {
+	background-color: var(--neutral-white);
+	border: 2px solid var(--secondary-gray-light);
+	border-radius: 10px;
+	padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: var(--primary-red);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: #b71c1c;
+}
+
+

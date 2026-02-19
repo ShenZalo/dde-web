@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCC - QC Tools</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Font Awesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Boostrap Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Loader -->
+    <link rel="stylesheet" href="../css/loader.css">
+    <script src="../js/loader.js" defer></script>
+</head>
+
+<body>
+    <!-- Loader to hide content until fully loaded -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <span class="loader-text">DDE</span>
+        </div>
+    </div>
+    <div class="flex flex-col w-full px-10 py-20 bg-white rounded-b-xl">
+        <div class="flex justify-between">
+            <div class="">
+                <img src="img/mestiselamat.jpg" class="w-32 h-auto">
+            </div>
+            <div class="flex flex-col justify-center text-center align-middle">
+                <p class="mb-10 font-bold lg:text-5xl">MARI MULA BELAJAR<br>QCC</p>
+                <p class="font-bold lg:text-5xl">QC Tools
+                </p>
+            </div>
+            <div class="">
+                <img src="img/1team1goal.jpg" class="w-32 h-auto">
+            </div>
+        </div>
+        <p class="mt-10 text-lg text-center">Mulai dengan YOSH <b>mesti selamat</b> dan akhiri dengan YOSH <b>1 team 1
+                goal</b>
+        </p>
+    </div>
+    <main class="pop-seq">
+        <div class="content w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">7 QC Tools
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="bg-white border-2 border-green-400 rounded-md collapsible-bar">
+                    <div
+                        class="flex flex-row items-center justify-between p-4 font-bold text-center text-white bg-green-600 rounded-md cursor-pointer ">
+                        <p class="lg:text-2xl">Apa itu 7 QC Tools?</p>
+                        <p class="answer-indicator lg:text-4xl"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </div>
+                    <div class="p-4 collapsible-answer lg:text-2xl">
+                        <p class="border-b-2 border-dashed">Kaedah yang digunakan dalam pengurusan kualiti untuk
+                            mengenal
+                            pasti, menganalisis dan menyelesaikan masalah kualiti dalam proses pengeluaran dan
+                            perkhidmatan.
+                        </p>
+                        <div class="justify-center flex">
+                            <img src="img/type-qc-tools.png" class="w-4xl mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">7 Alat-Alat
+                Kualiti (Asas)
+            </h2>
+            <div class="bg-white p-4 rounded-2xl flex flex-col gap-5">
+                <div class="flex justify-center flex-row gap-2">
+                    <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                        <p class="underline"><i class="bi bi-1-circle-fill text-4xl"></i> Kertas Semak</p>
+                        <p>Memudahkan proses<br> pengumpulan data <br>agar lebih <br>sistematik, betul <br>dan mudah
+                            difahami</p>
+                    </div>
+                    <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                        <p class="underline"><i class="bi bi-7-circle-fill text-4xl"></i> Carta Kawalan</p>
+                        <p>Menilai dan <br>mengekalkan kestabilan<br> suatu proses</p>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-center gap-2">
+                    <div class="flex flex-col gap-2">
+                        <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                            <p class="underline"><i class="bi bi-2-circle-fill text-4xl"></i> Graf dan Carta</p>
+                            <p>Memberi gambaran yang jelas dalam<br>proses interpretasi<br>data dan memudahkan
+                                data difahami<br>(Graf bar, graf garis, carta pai, carta radar)</p>
+                        </div>
+                        <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                            <p class="underline"><i class="bi bi-3-circle-fill text-4xl"></i> Gambarajah Pareto</p>
+                            <p>Memberi kepentingan sesuatu item<br>mengikut susunan kekerapan berlaku<br>(jenis jenis
+                                kecacatan, punca, masalah kos, masa)</p>
+                            <div class="flex flex-row justify-center gap-2">
+                                <div class="rounded-2xl bg-blue-300 p-4 font-bold border-blue-700 border-2 hover:bg-blue-400 transition-all duration-200 cursor-pointer hover:scale-105 hover:text-white hover:shadow-blue-600"
+                                    onclick="show(`#tujuan-pareto-popup`)">
+                                    Tujuan
+                                </div>
+                                <div class="rounded-2xl p-4 font-bold bg-blue-300 border-blue-700 border-2 hover:scale-105 hover:text-white hover:bg-blue-500 hover:shadow-blue-600  transition-all duration-200 cursor-pointer"
+                                    onclick="show(`#contoh-pareto-popup`)">
+                                    Contoh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="img/7-qc-tools.png" class="w-xl">
+                    </div>
+                    <div class="flex flex-col justify-center gap-2">
+                        <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                            <p class="underline"><i class="bi bi-6-circle-fill text-4xl"></i> Histogram</p>
+                            <p>Menunjukkan taburan kekerapan bagi<br>sesuatu data</p>
+                        </div>
+                        <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                            <p class="underline"><i class="bi bi-5-circle-fill text-4xl"></i> Gambarajah Sebaran</p>
+                            <p>Menerangkan hubungkait, kolerasi antara<br>dua pembolehubah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-center">
+                    <div class="rounded-md bg-green-300 text-md p-2 flex flex-col gap-2">
+                        <p class="underline"><i class="bi bi-5-circle-fill text-4xl"></i> Gambarajah Sebab dan Akibat
+                        </p>
+                        <p>Menerangkan sebab-sebab (punca)<br>berlakunya masalah</p>
+                        <div class="flex flex-row justify-center gap-2">
+                            <div class="rounded-2xl bg-blue-300 p-4 font-bold border-blue-700 border-2 hover:bg-blue-400 transition-all duration-200 cursor-pointer hover:scale-105 hover:text-white hover:shadow-blue-600"
+                                onclick="show(`#tujuan-ishikawa-popup`)">
+                                Tujuan
+                            </div>
+                            <div class="rounded-2xl p-4 font-bold bg-blue-300 border-blue-700 border-2 hover:scale-105 hover:text-white hover:bg-blue-500 hover:shadow-blue-600  transition-all duration-200 cursor-pointer"
+                                onclick="show(`#contoh-ishikawa-popup`)">
+                                Contoh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">4M 1E
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="flex flex-row justify-center items-center gap-10">
+                    <div class="flex flex-col justify-center items-center gap-5">
+                        <div class="flex flex-row gap-10 justify-center">
+                            <div
+                                class="flex-col shadow-md shadow-green-700 p-2 justify-center bg-green-500 items-center">
+                                <div class="border-2 border-black bg-white rounded-full p-2 flex justify-center">
+                                    <img src="img/man-icon.gif" class="w-32 h-32 rounded-full object-cover border-2">
+                                </div>
+                                <p class="text-2xl font-bold text-center">Man</p>
+                                <div class="font-bold rounded-2xl p-2 text-center bg-blue-500 hover:bg-blue-800 hover:scale-105 transition-all duration-200 cursor-pointer text-white"
+                                    onclick="show(`#man-popup`)">
+                                    Lihat
+                                </div>
+                            </div>
+                            <div
+                                class="flex-col shadow-md shadow-green-700 p-2 justify-center bg-green-500 items-center">
+                                <div class="border-2 border-black bg-white rounded-full p-2 flex justify-center">
+                                    <img src="img/method-icon.gif" class="w-32 h-32 rounded-full object-cover border-2">
+                                </div>
+                                <p class="text-2xl font-bold text-center">Method</p>
+                                <div class="font-bold rounded-2xl p-2 text-center bg-blue-500 hover:bg-blue-800 hover:scale-105 transition-all duration-200 cursor-pointer text-white"
+                                    onclick="show(`#method-popup`)">
+                                    Lihat
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-10 justify-center">
+                            <div
+                                class="flex-col shadow-md shadow-green-700 p-2 justify-center bg-green-500 items-center">
+                                <div class="border-2 border-black bg-white rounded-full p-2 flex justify-center">
+                                    <img src="img/machine-icon.gif"
+                                        class="w-32 h-32 rounded-full object-cover border-2">
+                                </div>
+                                <p class="text-2xl font-bold text-center">Machine</p>
+                                <div class="font-bold rounded-2xl p-2 text-center bg-blue-500 hover:bg-blue-800 hover:scale-105 transition-all duration-200 cursor-pointer text-white"
+                                    onclick="show(`#machine-popup`)">
+                                    Lihat
+                                </div>
+                            </div>
+                            <div
+                                class="flex-col shadow-md shadow-green-700 p-2 justify-center bg-green-500 items-center">
+                                <div class="border-2 border-black bg-white rounded-full p-2 flex justify-center">
+                                    <img src="img/material-icon.gif"
+                                        class="w-32 h-32 rounded-full object-cover border-2">
+                                </div>
+                                <p class="text-2xl font-bold text-center">Material</p>
+                                <div class="font-bold rounded-2xl p-2 text-center bg-blue-500 hover:bg-blue-800 hover:scale-105 transition-all duration-200 cursor-pointer text-white"
+                                    onclick="show(`#material-popup`)">
+                                    Lihat
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-col shadow-md shadow-green-700 border-black p-2 justify-center bg-green-500 items-center">
+                        <div class="border-2 border-black bg-white rounded-full p-2 flex justify-center">
+                            <img src="img/environment-icon.gif" class="w-32 h-32 rounded-full object-cover border-2">
+                        </div>
+                        <p class="text-2xl font-bold text-center">Environment</p>
+                        <div class="font-bold rounded-2xl p-2 text-center bg-blue-500 hover:bg-blue-800 hover:scale-105 transition-all duration-200 cursor-pointer text-white"
+                            onclick="show(`#environment-popup`)">
+                            Lihat
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Teknik Mengisi
+                Rajah Tulang Ikan
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="bg-green-400 rounded-md p-2 flex flex-row justify-around gap-5">
+                    <div class="border-2 border-purple-500 bg-green-500 rounded-lg">
+                        <div class="border-b-2 border-dotted my-4 text-2xl">
+                            <i class="fa-solid fa-1 fa-2x p-2"></i> Brainstorming
+                        </div>
+                        <div class="border-white bg-white rounded-md m-4">
+                            <img src="img/brainstorm.png" class="w-xl h-96">
+                        </div>
+                    </div>
+                    <div class="border-2 border-purple-500 bg-green-500 rounded-lg">
+                        <div class="border-b-2 border-dotted my-4 text-2xl">
+                            <i class="fa-solid fa-2 fa-2x p-2"></i> Genchi Genbutsu (Pergi & Lihat Masalah)
+                        </div>
+                        <div class="border-white bg-white rounded-md m-4">
+                            <img src="img/genchi-genbutsu.jpg" class="w-xl h-96">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Rajah Tulang
+                Ikan/Ishikawa
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="flex justify-center">
+                    <img src="img/ishikawa.png" class="w-6xl">
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">7 Alat-Alat
+                Kualiti Baru
+            </h2>
+            <div class="flex flex-row shadow-md rounded-2xl">
+                <div
+                    class="flex flex-col justify-center bg-black rounded-tl-2xl rounded-bl-2xl text-white text-2xl p-20">
+                    <p class="font-bold border-b-2 border-white">Penjanaan Idea</p>
+                    <ul class="list-disc">
+                        <li>Perbincangan</li>
+                        <li><i>Brainstorming</i></li>
+                        <li>Soal jawab</li>
+                        <li>Imaginasi</li>
+                        <li>Rujukan</li>
+                        <li>Pengalaman</li>
+                        <li>Pemerhatian</li>
+                        <li>Memori</li>
+                        <li>Pemikiran</li>
+                    </ul>
+                </div>
+                <div class="point-wrapper">
+                    <div
+                        class="flex point-trigger p-4 flex-col justify-center rounded-tr-2xl rounded-br-2xl text-2xl bg-white">
+                        <div class="mb-4 point" data-order="1">
+                            <p class="m-4 font-black border bg-gray-400">Gambarajah Affiniti</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Digunakan untuk mengumpul idea tau data secara teratur dan mengelompokkan
+                                    mengikut
+                                    persamaan
+                                    hubungan</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="2">
+                            <p class="m-4 font-black border bg-amber-300">Gambarajah Hubungan</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Membantu mengenalpasti hubungan sebab dan akibat antara pelbagai faktor atau isu
+                                    yang
+                                    kompleks dengan kaedah penyusunan</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="3">
+                            <p class="m-4 font-black border bg-amber-400">Gambarajah Pokok</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Menyusun maklumat atau tindakan ke dalam struktur bercabang untuk mencapai
+                                    matlamat
+                                    tertentu</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="4">
+                            <p class="m-4 font-black border bg-amber-500">Gambarajah Matriks</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Menghubungkan pelbagai elemen untuk memahami hubungan dan tahap pengaruh antara
+                                    elemen
+                                    tersebut</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="5">
+                            <p class="m-4 font-black border bg-amber-600">Gambarajah Anak Panah</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Penjadualan yang terbaik supaya dapat mengendalikan rancangan dan pengawalan
+                                    kemajuan
+                                    rancangan dengan efektif, terutama dalam projek untuk mengenalpasti laluan
+                                    kritikal</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="6">
+                            <p class="m-4 font-black border bg-orange-400">Carta Program Memproses Keputusan</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Membantu Merancang langkah-langkah pencegahan dan tindak balas untuk mengatasi
+                                    risiko
+                                    dalam proses tertentu bagi mencapai keputusan yang baik</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 point" data-order="7">
+                            <p class="m-4 font-black border bg-orange-500">Analisis Data Matriks</p>
+                            <ul class="list-inside list-disc ml-10">
+                                <li>Digunakan untuk menentukan keutamaan berdasarkan kriteria tertentu, supaya semua
+                                    data
+                                    boleh dilihat dengan jelas dan membantu membuat keputusan yang lebih baik</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Contoh Alat-Alat
+                Kualiti Baru
+            </h2>
+            <div class="bg-white p-2 rounded-2xl">
+                <div class="flex flex-row gap-2 align-middle justify-center">
+                    <img src="img/contoh-qt-baru1.png" class="w-xl">
+                    <img src="img/contoh-qt-baru4.png" class="w-xl">
+                </div>
+                <div class="flex flex-row gap-2 align-middle mt-2 justify-center">
+                    <img src="img/contoh-qt-baru2.png" class="w-xl">
+                    <img src="img/contoh-qt-baru3.png" class="w-96">
+                    <img src="img/contoh-qt-baru5.png" class="w-96">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Why-Why Analysis
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="flex flex-row gap-5 align-middle justify-center">
+                    <div class="flex flex-col w-1/3 border-2 p-4 border-double border-green-950 rounded-md">
+                        <p><i class="fa-solid fa-square-caret-right"></i> menggunakan teknik interaksi dengan
+                            <b>bertanya MENGAPA (WHY)</b> <b>dan diulang beberapa kali</b> sehingga menemukan akar
+                            masalahnya
+                        </p>
+                        <p><i class="fa-solid fa-square-caret-right"></i> suatu kaedah yang digunakan dalam 'root cause
+                            analysis' dalam rangka untuk <b>menggali penyebab masalah</b> atau penyebab dari defect yang
+                            <b>lebih mendalam secara sistematik</b>
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row justify-around">
+                            <div class="bg-yellow-200 p-2 h-fit  my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Tidak terhad kepada "5 Why"</p>
+                                </div>
+                            </div>
+                            <div class="bg-blue-200 p-2 h-fit my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Gunakan pemikiran logik<br>- langkah demi langkah
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-5 justify-around">
+                            <div class="bg-yellow-300 p-2 h-fit  my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Periksa semula punca utama<br> tanda-tanda
+                                        masalah
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-blue-400 p-2 h-fit my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-2xl text-center underline text-red-500">Peraturan "Why-Why Analysis"
+                                    </p>
+                                    <p class="text-xl text-center">Gunakan faktor analisa (4M)</p>
+                                </div>
+                            </div>
+                            <div class="bg-amber-200 p-2 h-fit my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Gunakan teknik "Oleh itu" untuk semak
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-around">
+                            <div class="bg-amber-50 p-2 h-fit  my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Elakkan menggunakan punca yang bersifat sikap</p>
+                                </div>
+                            </div>
+                            <div class="bg-amber-400 p-2 h-fit my-auto">
+                                <div class="border-2 border-purple-400 p-2">
+                                    <p class="text-xl text-center">Tidak fikirkan andaian atau anggapan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="img/why-method.png" class="w-4xl mt-5">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Contoh Punca
+                Analisis
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <p class="text-2xl text-center">Masalah: Tiada gigi</p>
+                <div class="point-wrapper">
+                    <div class="flex flex-row gap-4 justify-around point-trigger">
+                        <div class="flex flex-col gap-2">
+                            <div class="p-2 text-center border-double border-2 border-black bg-amber-50">
+                                <p class="text-red-600 text-2xl">Symptom</p>
+                                <p class="text-2xl">Why 1</p>
+                            </div>
+                            <div class="p-2 text-center border-yellow-300 border-double border-4 shadow-2xl">
+                                <p class="text-2xl">Kena cabut</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 align-bottom justify-end">
+                            <div class="p-2 text-center shadow-md">
+                                <p class="text-2xl">Why 2</p>
+                            </div>
+                            <div class="p-2 text-center border-yellow-300 border-double border-4 shadow-2xl">
+                                <p class="text-2xl point" data-order="1">Rasa sakit</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 align-bottom justify-end">
+                            <div class="p-2 text-center shadow-md">
+                                <p class="text-2xl">Why 3</p>
+                            </div>
+                            <div class="p-2 text-center border-yellow-300 border-double border-4 shadow-2xl">
+                                <p class="text-2xl point" data-order="2">Gigi reput</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 align-bottom justify-end">
+                            <div class="p-2 text-center shadow-md">
+                                <p class="text-2xl">Why 4</p>
+                            </div>
+                            <div class="p-2 text-center border-yellow-300 border-double border-4 shadow-2xl">
+                                <p class="text-2xl point" data-order="3">Kuman bakteria</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="p-2 text-center border-double border-2 border-yellow-400 bg-amber-50">
+                                <p class="text-red-600 text-2xl">Root Cause</p>
+                                <p class="text-2xl">Why 5</p>
+                            </div>
+                            <div class="p-2 text-center border-yellow-300 border-double border-4 shadow-2xl">
+                                <p class="text-2xl point" data-order="4">Tidak berus gigi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Apa Keperluan
+                Data?
+            </h2>
+            <div class="p-4 bg-white border-double rounded-md">
+                <div class="point-wrapper">
+                    <div class="point-trigger">
+                        <div class="flex flex-row justify-center items-center">
+                            <div
+                                class="flex flex-col gap-2 border-4 border-double p-2 rounded-sm items-center justify-center">
+                                <img src="img/faham-keadaan.png" class="w-32 rounded-full border-2 border-dashed">
+                                <p class="text-2xl text-center point" data-order="1">Memahami<br>keadaan<br>sebenar</p>
+                            </div>
+                            <div class="w-1/12 border-2 border-dotted h-0"></div>
+                            <div
+                                class="flex flex-col gap-2 border-4 border-double p-2 rounded-sm items-center justify-center">
+                                <img src="img/analisis.png" class="w-32 rounded-full border-2 border-dashed">
+                                <p class="text-2xl text-center point" data-order="2">Analisis, memahami<br>trend &
+                                    baiki<br>proses</p>
+                            </div>
+                            <div class="w-1/12 border-2 border-dotted h-0"></div>
+                            <div
+                                class="flex flex-col gap-2 border-4 border-double p-2 rounded-sm items-center justify-center">
+                                <img src="img/kawal-proses.png" class="w-32 rounded-full border-2 border-dashed">
+                                <p class="text-2xl text-center point" data-order="3">Mengawal<br>proses</p>
+                            </div>
+                            <div class="w-1/12 border-2 border-dotted h-0"></div>
+                            <div
+                                class="flex flex-col gap-2 border-4 border-double p-2 rounded-sm items-center justify-center">
+                                <img src="img/ukur-piawai.png" class="w-32 rounded-full border-2 border-dashed">
+                                <p class="text-2xl text-center point" data-order="4">Mengukur<br>piawai<br>pengeluaran
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Kaedah
+                Pengumpulan Data
+            </h2>
+            <div class="bg-white p-4 rounded-2xl">
+                <div class="point-wrapper">
+                    <div class="point-trigger">
+                        <div class="flex flex-row justify-center gap-5 m-4">
+                            <div class="p-2 rounded-md border-2 point" data-order="1">
+                                <img src="img/history-data.png" class="w-32">
+                            </div>
+                            <div class="p-2 rounded-md border-2 point" data-order="2">
+                                <img src="img/perhati.png" class="w-32">
+                            </div>
+                        </div>
+                        <div
+                            class="text-2xl flex flex-col rounded-lg gap-5 border-double border-yellow-500 border-4 p-8 text-left w-fit mx-auto">
+                            <p class="point" data-order="1"><i class="fa-solid fa-check-to-slot"></i> Rekod-rekod yang
+                                lepas</p>
+                            <p class="point" data-order="2"><i class="fa-solid fa-check-to-slot"></i> Pemerhatian</p>
+                            <p class="point" data-order="3"><i class="fa-solid fa-check-to-slot"></i> Soal selidik</p>
+                            <p class="point" data-order="4"><i class="fa-solid fa-check-to-slot"></i> Temuduga</p>
+                            <p class="point" data-order="5"><i class="fa-solid fa-check-to-slot"></i> Ujikaji</p>
+                        </div>
+                        <div class="flex flex-row justify-center gap-5 m-4">
+                            <div class="p-2 rounded-md border-2 point" data-order="3">
+                                <img src="img/soal-selidik.png" class="w-32">
+                            </div>
+                            <div class="p-2 rounded-md border-2 point" data-order="4">
+                                <img src="img/interview.png" class="w-32">
+                            </div>
+                            <div class="p-2 rounded-md border-2 point" data-order="5">
+                                <img src="img/ujikaji.png" class="w-32">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Pengumpulan Data
+            </h2>
+            <div class="bg-white p-2 rounded-2xl">
+                <p class="text-2xl text-left">Kenapa data perlu dalam aktiviti QCC?</p>
+                <div class="point-wrapper">
+                    <div class="point-trigger">
+                        <div class="bg-blue-300 p-4 flex flex-row items-center justify-around">
+                            <div class="flex flex-col gap-5">
+                                <p class="text-2xl point" data-order="1"><i class="fa-solid fa-square"></i>
+                                    Kedudukan/keadaan sesuatu
+                                    masalah,
+                                    pengesahan
+                                    sebab-sebab paling mungkin</p>
+                                <p class="text-2xl point" data-order="2"><i class="fa-solid fa-square"></i> Mengukur
+                                    keberkesanan tindakan
+                                    penyelesaian
+                                    masalah atau penambahbaikan</p>
+                            </div>
+                            <img src="img/kumpul-data.png" class="w-xl point" data-order="3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+            <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Carta Aliran QCC
+            </h2>
+            <div class="flex justify-center">
+                <img src="img/qcc-flow.png" class="w-6xl">
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Structure Content -->
+    <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+        <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">
+        </h2>
+    </div>
+    <section id="tujuan-pareto-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Gambarajah
+                    Pareto
+                </h2>
+                <div class="mt-2 bg-white p-4 rounded-2xl">
+                    <div class="flex flex-col w-1/2 mx-auto">
+                        <div class="border-2 border-green-500 p-2">
+                            <div class="w-full">
+                                <img src="img/tujuan-pareto-icon.png"
+                                    class="rounded-full object-contain w-1/3 border-2 mx-auto">
+                            </div>
+                            <p class="text-2xl underline text-center">Tujuan</p>
+                            <p class="text-2xl text-center">Menentukan dan memilih masalah yang paling penting atau
+                                utama</p>
+                        </div>
+                        <div class="point-wrapper w-full border-green-500 p-2">
+                            <div class="flex justify-center point-trigger">
+                                <img src="img/tujuan-pareto-1.png" class="w-2xl point" data-order="1">
+                                <img src="img/tujuan-pareto-2.png" class="w-2xl point" data-order="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#tujuan-pareto-popup`)">Tutup</p>
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section id="contoh-pareto-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4 point-wrapper">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Contoh
+                    Pareto
+                </h2>
+                <div class="mt-2 bg-white p-4 rounded-2xl">
+                    <div class="flex justify-center">
+                        <img src="img/contoh-pareto-2.png" class="w-6xl">
+                    </div>
+                    <div class="flex flex-col w-4/5 mx-auto mt-4 point" data-order="1">
+                        <div class="border-2 border-green-500 p-2">
+                            <div class="w-full">
+                                <img src="img/contoh-pareto-1.png" class="w-1/2 border-2 mx-auto">
+                            </div>
+                            <p class="text-2xl border-b-2 text-center">Peraturan 80/20 bermaksud bahawa dalam apa
+                                keadaan, 20% daripada input atau aktiviti bertanggungjawab untuk 80% daripada hasil atau
+                                keputusan</p>
+                            <p class="text-2xl text-center">Dalam kes Pareto, beliau mengenalpasti 20% daripada
+                                kecacatan yang menyebabkan 20% masalah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#contoh-pareto-popup`)">
+                            Tutup</p>
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section id="tujuan-ishikawa-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Gambarajah
+                    Sebab & Akibat / Rajah Tulang Ikan
+                </h2>
+                <div class="mt-2 bg-white p-4 rounded-2xl">
+                    <div class="flex flex-row gap-5 justify-center w-4/5 mx-auto">
+                        <div class="flex flex-col border-2 border-green-500 p-2">
+                            <div class="w-full">
+                                <img src="img/tujuan-tulang-ikan.png"
+                                    class="rounded-full object-contain w-1/3 border-2 mx-auto">
+                            </div>
+                            <p class="text-2xl underline text-center">Tujuan</p>
+                            <p class="text-2xl text-center">Mengenalpasti punca-punca masalah berdasarkan
+                                faktor-faktor
+                                yang mempengaruhi kesan secara sistematik</p>
+                            <div class="flex justify-center">
+                                <img src="img/4m-1e.png" class="w-3xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#tujuan-ishikawa-popup`)">Tutup</p>
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section id="contoh-ishikawa-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Contoh
+                    Rajah Tulang Ikan/Ishikawa
+                </h2>
+                <div class="mt-2 bg-white p-4 rounded-2xl">
+                    <div class="flex justify-center">
+                        <img src="img/tulang-ikan.png" class="w-6xl">
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#contoh-ishikawa-popup`)">
+                            Tutup</p>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <section id="man-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Man - Manusia
+                </h2>
+                <div class="p-4 rounded-2xl flex items-center justify-center bg-slate-100">
+                    <!-- Perspective wrapper -->
+                    <div class="perspective-distant mx-auto">
+                        <!-- 3D Grid -->
+                        <div class="grid grid-cols-3 grid-rows-3 gap-6 w-[70vw] place-items-center
+                transform-gpu rotate-x-18
+                origin-center transform-style-preserve-3d">
+                            <!-- Top -->
+                            <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white pop-seq
+                  col-start-2 row-start-1
+                  translate-z-5">
+                                <p class="text-2xl text-center">Disiplin</p>
+                            </div>
+                            <!-- Left column -->
+                            <div class="flex flex-col gap-5 col-start-1 row-start-2 pop-seq
+                  transform-style-preserve-3d">
+                                <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white
+                    translate-z-3.75">
+                                    <p class="text-2xl text-center">Kemahiran</p>
+                                </div>
+                                <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white pop-seq
+                    translate-z-2.5">
+                                    <p class="text-2xl text-center">Pengetahuan</p>
+                                </div>
+                            </div>
+                            <!-- Center (highest depth) -->
+                            <div class="rounded-md shadow-xl bg-blue-800 p-6 text-white
+                  col-start-2 row-start-2
+                  translate-z-10">
+                                <p class="text-2xl text-center leading-tight">
+                                    Tahap<br>Kecekapan
+                                </p>
+                            </div>
+                            <!-- Right column -->
+                            <div class="flex flex-col gap-5 col-start-3 row-start-2 pop-seq
+                  transform-style-preserve-3d">
+                                <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white
+                    translate-z-3.75">
+                                    <p class="text-2xl text-center">Kesedaran</p>
+                                </div>
+                                <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white pop-seq
+                    translate-z-2.5">
+                                    <p class="text-2xl text-center">Sikap</p>
+                                </div>
+                            </div>
+                            <!-- Bottom -->
+                            <div class="rounded-md shadow-lg bg-blue-600 p-4 text-white pop-seq
+                  col-start-2 row-start-3
+                  translate-z-5">
+                                <p class="text-2xl text-center">Motivasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#man-popup`)">
+                            Tutup</p>
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section id="method-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Method -
+                    Kaedah
+                </h2>
+                <div class="bg-white p-4 rounded-2xl">
+                    <div class="flex flex-col justify-center items-center gap-5">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-row justify-center items-center gap-5 pop-seq">
+                                <div class="bg-sky-100 text-sky-900 p-4 rounded-md shadow-md text-2xl">Cara kerja</div>
+                                <div class="bg-indigo-100 text-indigo-900 p-4 rounded-md shadow-md text-2xl">Peraturan
+                                </div>
+                                <div class="bg-amber-100 text-amber-900 p-4 rounded-md shadow-md text-2xl">Teknik</div>
+                                <div class="bg-teal-100 text-teal-900 p-4 rounded-md shadow-md text-2xl">Arahan</div>
+                                <div class="bg-violet-100 text-violet-900 p-4 rounded-md shadow-md text-2xl">Prosedur
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-center items-center gap-5 pop-seq">
+                                <div class="bg-slate-100 text-slate-900 p-4 rounded-md shadow-md text-2xl">Standard
+                                </div>
+                                <div class="bg-cyan-100 text-cyan-900 p-4 rounded-md shadow-md text-2xl">Flow</div>
+                                <div class="bg-rose-100 text-rose-900 p-4 rounded-md shadow-md text-2xl">Panduan</div>
+                                <div class="bg-lime-100 text-lime-900 p-4 rounded-md shadow-md text-2xl">Dokumen</div>
+                                <div class="bg-neutral-100 text-neutral-900 p-4 rounded-md shadow-md text-2xl">Layout
+                                </div>
+                                <div class="bg-indigo-100 text-indigo-900 p-4 rounded-md shadow-md text-2xl">Sistem
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-center items-center gap-5 pop-seq">
+                                <div class="bg-amber-100 text-amber-900 p-4 rounded-md shadow-md text-2xl">Layout</div>
+                                <div class="bg-teal-100 text-teal-900 p-4 rounded-md shadow-md text-2xl">Sistem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center">
+                <button
+                    class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                    <p class="text-white text-2xl font-bold" onclick="hide(`#method-popup`)">
+                        Tutup</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="machine-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Machine -
+                    Mesin
+                </h2>
+                <div class="bg-white p-4 rounded-2xl">
+                    <div class="gap-10 flex flex-col justify-center items-center">
+                        <div class="bg-green-200 border rounded-md shadow-md pop-seq">
+                            <div class="flex flex-row items-center justify-center">
+                                <img src="img/machine-2.png" class="w-96">
+                                <img src="img/machine-3.jpg" class="w-96">
+                            </div>
+                            <div class="flex flex-row items-center justify-center">
+                                <img src="img/machine-4.png" class="w-96">
+                            </div>
+                        </div>
+                        <div class="bg-green-200 border rounded-md shadow-md pop-seq">
+                            <div class="flex flex-row justify-around">
+                                <img src="img/machine-1.gif" class="h-96">
+                                <img src="img/machine-6.png" class="h-96">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center">
+                <button
+                    class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                    <p class="text-white text-2xl font-bold" onclick="hide(`#machine-popup`)">
+                        Tutup</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="material-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Material -
+                    Bahan
+                </h2>
+                <div class="flex flex-row justify-center items-center gap-10 bg-white p-4 rounded-2xl pop-seq">
+                    <div class="bg-green-300 p-4">
+                        <img src="img/material-3.jpg" class="h-64 rounded-full object-cover border">
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex flex-row justify-between items-center">
+                            <img src="img/material-1.png" class="w-64 rounded-full border">
+                            <p class="text-4xl"><i class="bi bi-arrow-right"></i></p>
+                            <div class="border-dotted p-2 text-2xl">
+                                <p>Bahan mentah dalam kerja seharian</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-around items-center">
+                            <img src="img/material-4.png" class="w-64">
+                            <img src="img/material-2.png" class="w-64">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-center">
+                    <button
+                        class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                        <p class="text-white text-2xl font-bold" onclick="hide(`#material-popup`)">
+                            Tutup</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="machine-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Machine -
+                    Mesin
+                </h2>
+                <div class="bg-white p-4 rounded-2xl">
+                    <div class="gap-10 flex flex-col justify-center items-center">
+                        <div class="bg-green-200 border rounded-md shadow-md pop-seq">
+                            <div class="flex flex-row items-center justify-center">
+                                <img src="img/machine-2.png" class="w-96">
+                                <img src="img/machine-3.jpg" class="w-96">
+                            </div>
+                            <div class="flex flex-row items-center justify-center">
+                                <img src="img/machine-4.png" class="w-96">
+                            </div>
+                        </div>
+                        <div class="bg-green-200 border rounded-md shadow-md pop-seq">
+                            <div class="flex flex-row justify-around">
+                                <img src="img/machine-1.gif" class="h-96">
+                                <img src="img/machine-6.png" class="h-96">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center">
+                <button
+                    class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                    <p class="text-white text-2xl font-bold" onclick="hide(`#machine-popup`)">
+                        Tutup</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="environment-popup" class="popup hidden">
+        <div class="popup-content w-screen h-full bg-stone-200 rounded-2xl p-4">
+            <div class="w-full h-auto p-4 mt-5 bg-gray-200 rounded-xl point-trigger">
+                <h2 class="p-2 mb-5 text-3xl font-bold text-center text-white bg-green-700 rounded-t-full">Environment -
+                    Persekitaran
+                </h2>
+                <div class="bg-white p-4 rounded-2xl">
+                    <div class="bg-green-300 rounded-md flex gap-5 justify-between flex-row p-4 pop-seq">
+                        <div class="flex flex-col gap-2">
+                            <div class="bg-white rounded-2xl p-1">
+                                <div class="p-4 bg-red-600 text-yellow-500 text-center text-2xl rounded-2xl">
+                                    <p>KESELAMATAN</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <img src="img/environment-1.png" class="w-96">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="bg-white rounded-2xl p-1">
+                                <div class="p-4 bg-yellow-200 text-red-500 text-center text-2xl rounded-2xl">
+                                    <p>PENGUDARAAN</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <img src="img/environment-2.jpg" class="w-96">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="bg-white rounded-2xl p-1">
+                                <div class="p-4 bg-yellow-600 text-white text-center text-2xl rounded-2xl">
+                                    <p>KEBISINGAN</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <img src="img/environment-3.jpg" class="w-96">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex justify-center">
+                <button
+                    class="relative bottom-4 p-4 bg-red-600 rounded-xl shadow-2xl shadow-red-700 hover:bg-red-700 transition-all duration-200 cursor-pointer">
+                    <p class="text-white text-2xl font-bold" onclick="hide(`#environment-popup`)">
+                        Tutup</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Button -->
+    <div id="dragItem"
+        class="fixed items-center hidden h-12 gap-3 p-2 border shadow-2xl navigation-button w-22 lg:w-24 lg:h-28 lg:bottom-1 lg:left-1 lg:flex border-black/50 lg:flex-col">
+        <button class="flex items-center justify-center p-1 nav-button lg:p-3" id="topBtn">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <button class="flex items-center justify-center p-1 nav-button lg:p-3" id="backBtn">
+            <i class="fas fa-angle-left"></i>
+        </button>
+    </div>
+    <script src="js/global.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body>

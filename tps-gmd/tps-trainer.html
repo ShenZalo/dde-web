@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPS Trainer Information</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/trainer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="topnav">
+            <img src="img/P2Logo10x10.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+            <nav>
+                <a href="../home/homepage.html">Home</a>
+				<a href="../FMDS/new-fmds.html" >FMDS</a>
+                <a href="../4S/h-4S.html" >4S</a>
+                <a href="h-tps.html" class="active">TPS</a>
+				<a href="../TPM/h-tpm.html" >TPM</a>
+                <a href="../KARAKURI/h-karakuri.html" >KARAKURI</a>
+				<a href="../QCC/h-qcc.html">QCC</a>
+                <a href="../PPS/h-pps.html">PPS</a>
+            </nav>
+			<div class="user-controls">
+				<button id="logoutBtn" class="logout-btn">
+					<i class="fas fa-sign-out-alt"></i> Logout
+				</button>
+			</div>
+			<img src="img/Logo DDE V2.png" alt="GMD Logo" class="image"> <!-- Update with your logo path -->
+        </div>
+    </header>
+	
+	<!-- Welcome Header for Trainer Introduction -->
+    <section class="welcome-header">
+        <h1>Sesi Pengenalan</h1>
+        <p>Kenali trainers kami yang berpengalaman dan berdedikasi.</p>
+    </section>
+	
+
+	<!-- Trainer Information Section -->
+	<section class="trainer-section">
+		<h1>MAKLUMAT TRAINER</h1>
+		<div class="trainer-container">
+			<!-- Trainer Card 1 -->
+			<!-- <div class="trainer-card">
+				<div class="trainer-image">
+					<img src="img/Encik aye.png" alt="Trainer 1">
+				</div>
+				<div class="trainer-info">
+					<table>
+						<tr>
+							<th>Nama</th>
+							<td>:</td>
+							<td><h3>Muhammad Azzahari Bin Mohd Nadzri</h3></td>
+						</tr>
+						<tr>
+							<th>Jawatan</th>
+							<td>:</td>
+							<td>Dojo Trainer</td>
+						</tr>
+						<tr>
+							<th>Tempoh Perkhidmatan</th>
+							<td>:</td>
+							<td>19 Tahun(10thn Body Shop,9thn DDE) </td>
+						</tr>
+						<tr>
+							<th>Tempat Lahir</th>
+							<td>:</td>
+							<td>Triang, Pahang</td>
+						</tr>
+						<tr>
+							<th>Status</th>
+							<td>:</td>
+							<td>Berkahwin ( 3 Cahaya Mata)</td>
+						</tr>
+                        <tr>
+							<th>Minat</th>
+							<td>:</td>
+							<td>Permotoran, Perlancongan & Modifikasi Automotif</td>
+						</tr>
+						<tr>
+							<th>Hobi</th>
+							<td>:</td>
+							<td>Bermain Bola Tampar</td>
+						</tr>
+					</table>
+				</div>
+			</div> -->
+			<!-- Trainer Card 2 -->
+			<div class="trainer-card">
+				<div class="trainer-image">
+					<img src="img/wak jenal.png" alt="Trainer 2">
+				</div>
+				<div class="trainer-info">
+					<table>
+						<tr>
+							<th>Nama</th>
+							<td>:</td>
+							<td><h3>Mohd Zainal Bin Saroni</h3></td>
+						</tr>
+						<tr>
+							<th>Jawatan</th>
+							<td>:</td>
+							<td>Dojo Trainer (Executive)</td>
+						</tr>
+						<tr>
+							<th>Tempoh Perkhidmatan</th>
+							<td>:</td>
+							<td>28 Tahun(12thn Body Shop,16thn DDE) </td>
+						</tr>
+						<tr>
+							<th>Tempat Lahir</th>
+							<td>:</td>
+							<td>Sungai Manik, Teluk Intan</td>
+						</tr>
+						<tr>
+							<th>Status</th>
+							<td>:</td>
+							<td>Berkahwin ( 5 Cahaya Mata)</td>
+						</tr>
+                        <tr>
+							<th>Minat</th>
+							<td>:</td>
+							<td>Permotoran, Perikanan & Perhutanan</td>
+						</tr>
+						<tr>
+							<th>Hobi</th>
+							<td>:</td>
+							<td>Badminton</td>
+						</tr>
+					</table>
+				</div>
+			</div>   
+		</div>
+		<button class="cta-button" onclick="showPopup()"><i class="fa fa-user"></i>Trainee</button>
+	</section>
+	
+	
+	<div id="popup" class="popup1-container">
+		<div class="popup1-content">
+			<div class="trainee-card">
+				<div class="trainee-image">
+					<img src="img/anonymous.png" alt="Anonymous Trainee" />
+				</div>
+				<div class="trainee-info">
+					<h3>Siapa Anda ? </h3>
+					<p><strong>Nama:</strong> </p>
+                    <p><strong>Nama Panggilan:</strong> </p>
+					<p><strong>Umur:</strong> </p>
+					<p><strong>Asal:</strong> </p>
+					<p><strong>Adik-Beradik:</strong> </p>
+					<p><strong>Taraf Pendidikan:</strong> </p>
+					<p><strong>Status:</strong> </p>
+                    <p><strong>Pengalaman Bekerja:</strong> </p>
+                    <p><strong>Hobi:</strong> </p>
+                    <p><strong>Matlamat:</strong> </p>
+                    <p><strong>Harapan:</strong> </p>
+				</div>
+			</div>
+			<!-- Close Button -->
+			<button class="close1-button" onclick="hidePopup()">Tutup</button>
+		</div>
+	</div>	 
+
+	<!-- Navigation Buttons -->
+		<div class="navigation-buttons" >
+			<button id="backButton">
+				<i class="fas fa-arrow-left"></i>
+			</button>
+			<button id="topButton">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+	<br><br>
+	
+	
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Genba Management Dojo. All Rights Reserved.</p>
+    </footer>
+	 <script src="js/tps-script.js"></script>
+	 <script>
+	 	function showPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function hidePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	 </script>
+	<script>
+		document.getElementById('logoutBtn').addEventListener('click', function() {
+			// Clear any session data if needed
+			sessionStorage.clear();
+			localStorage.clear();
+			
+			// Redirect to login page
+			window.location.href = "../index.html"; // Adjust path as needed
+		});
+	</script>
+</html>

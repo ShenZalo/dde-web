@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/P2Logo10x10-no-text.png" sizes="16x16" type="image/png">
+    <title>TPM - Step 4</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/step4till6.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+
+
+        <div class="navigation-buttons">
+            <button id="backButton">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button id="topButton">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--Welcome section -->
+    <section class="welcome-header">
+        <h1>STEP 4</h1>
+        <p>PEMERIKSAAN KESELURUHAN (TOTAL INSPECTION)
+        </p>
+    </section>
+    <br><br>
+    <div class="container">
+
+        <section class="matlamat-section">
+            <h2 class="section-title">MATLAMAT</h2>
+            <p class="section-description">Pembelajaran & latihan dilaksanakan bagi memastikan kebolehan Team Member
+                meningkat dalam pemeriksaan.</p>
+            <ul class="goal-list">
+                <li><i class="fas fa-clipboard-check"></i> Boleh membuat penilaian</li>
+                <li><i class="fas fa-tools"></i> Merangka tindakan pembetulan</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Memberi pembelajaran</li>
+                <li><i class="fas fa-cogs"></i> Berpengetahuan tentang mesin</li>
+            </ul>
+        </section>
+
+        <div class="inner-container">
+            <section class="langkah-section">
+                <h2 class="section-black-title">LANGKAH-LANGKAH MELAKUKAN PEMERIKSAAN KESELURUHAN</h2>
+                <!-- Flow charts-->
+                <div class="flow-chart">
+                    <div class="flow-step" onclick="openPopup('popup1')">
+                        <i class="fas fa-book"></i>
+                        <div class="flow-step-title">Langkah 1</div>
+                        <div class="flow-step-desc">Penyediaan bahan pembelajaran</div>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step" onclick="openPopup('popup2')">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="flow-step-title">Langkah 2</div>
+                        <div class="flow-step-desc">Melaksanakan pembelajaran</div>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step" onclick="openPopup('popup3')">
+                        <i class="fas fa-search"></i>
+                        <div class="flow-step-title">Langkah 3</div>
+                        <div class="flow-step-desc">Melaksanakan pemeriksaan keseluruhan</div>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step" onclick="openPopup('popup4')">
+                        <i class="fas fa-clipboard-check"></i>
+                        <div class="flow-step-title">Langkah 4</div>
+                        <div class="flow-step-desc">Mengambil tindakan terhadap masalah di dalam pemeriksaan keseluruhan
+                        </div>
+                    </div>
+                </div>
+                <!-- Popups -->
+                <div class="popup" id="popup1" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>Langkah 1</h3>
+                    <h4>Penyediaan bahan pembelajaran</h4>
+                    <ul class="popup-list">
+                        <li>Total Inspection Checksheet</li>
+                        <li>Total Inspection Manual (Drawing Structure)</li>
+                        <li>Cut Model (contoh part yang dipotong)</li>
+                    </ul>
+                </div>
+                <div class="popup" id="popup2" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>Langkah 2</h3>
+                    <h4>Melaksanakan pembelajaran</h4>
+                    <ul class="popup-list">
+                        <li>Pembelajaran oleh TPM Master kepada Supervisor.</li>
+                        <li>Supervisor melakukan pembelajaran kepada Team Leader & Team member.</li>
+                    </ul>
+                </div>
+                <div class="popup" id="popup3" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>Langkah 3</h3>
+                    <h4>Melaksanakan pemeriksaan keseluruhan</h4>
+                    <ul class="popup-list">
+                        <li>Melakukan pemeriksaan keseluruhan berpandukan inspection checksheet <br>(Step 4.1 ~ 4.6).
+                        </li>
+                        <li>Mesyuarat untuk menyelesaikan abnormaliti [production & maintenance]</li>
+                        <li>Melakukan kaizen.</li>
+                    </ul>
+                </div>
+                <div class="popup" id="popup4" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>Langkah 4</h3>
+                    <h4>Mengambil tindakan terhadap masalah di dalam pemeriksaan keseluruhan</h4>
+                    <ul class="popup-list">
+                        <li>Semakan terhadap Standard Checksheet dan membuat penambahbaikan di dalam checksheet.</li>
+                        <li>Penilaian kepunyaan Team Member</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="sasaran-section">
+                <h2 class="section-black-title">SASARAN</h2>
+                <!-- Modern Horizontal Stepper Example -->
+                <div class="horizontal-stepper">
+                    <div class="stepper-row">
+                        <div class="stepper-col">
+                            <div class="stepper-text stepper-text-above">Boleh menentukan jumlah masa melakukan aktiviti
+                                TPM. <br> <strong>5%~2% jumlah waktu berkerja sebulan</strong></div>
+                            <div class="stepper-circle">1</div>
+                        </div>
+                        <div class="stepper-col">
+                            <div class="stepper-circle">2</div>
+                            <div class="stepper-text stepper-text-below">Setiap kumpulan kecil boleh melakukan aktiviti
+                                mengikut masa yang ditetapkan berpandukan standard checksheet di dalam Step 4.
+                            </div>
+                        </div>
+                        <div class="stepper-col">
+                            <div class="stepper-text stepper-text-above">Setiap kumpulan kecil berkebolehan membuat
+                                penilaian sendiri setelah aktiviti dilakukan.
+                            </div>
+                            <div class="stepper-circle">3</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="aliran-tpm-section">
+                <h2 class="section-black-title">ALIRAN TPM</h2>
+                <div class="modern-image-container">
+                    <img src="img/aliran-tpm.png" alt="Aliran TPM" class="aliran-tpm" data-popup>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="prosedur-section">
+                <h2 class="section-black-title">PROSEDUR PEMERIKSAAN KESELURUHAN</h2>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP1')">
+                        <i class="fas fa-hand-pointer"></i>
+                        <div class="flow-step-title">Pemilihan Subjek untuk Pemeriksaan Keseluruhan</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP2')">
+                        <i class="fas fa-newspaper"></i>
+                        <div class="flow-step-title">Penyediaan Bahan Pembelajaran</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP3')">
+                        <i class="fas fa-clock    "></i>
+                        <div class="flow-step-title">Jadual Latihan/Kelas</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP4')">
+                        <i class="fas fa-search    "></i>
+                        <div class="flow-step-title">Melakukan Pemeriksaan Keseluruhan</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP5')">
+                        <i class="fas fa-hard-hat"></i>
+                        <div class="flow-step-title">Penglibatan dari Pihak Maintenance</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP6')">
+                        <i class="fas fa-clipboard-list"></i>
+                        <div class="flow-step-title">Semakan untuk Standard Checksheet</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP7')">
+                        <i class="fas fa-clipboard-check"></i>
+                        <div class="flow-step-title">Membuat Checksheet</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP8')">
+                        <i class="fas fa-tasks"></i>
+                        <div class="flow-step-title">Penilaian Skill</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP9')">
+                        <i class="fas fa-percentage"></i>
+                        <div class="flow-step-title">Permakahan & Penilaian Sendiri</div>
+                    </div>
+                </div>
+                <div class="flow-arrow-vertical-big"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-chart-big">
+                    <div class="flow-step-big" onclick="openPopup('popupP10')">
+                        <i class="fas fa-user-cog"></i>
+                        <div class="flow-step-title">Melakukan permarkahan & penilaian (DIAGNOSIS) oleh Manager/HOD
+                        </div>
+                    </div>
+                </div>
+
+                <!--Popups 2-->
+                <div class="popup" id="popupP1" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>1</h3>
+                    <h4>Pemilihan Subjek untuk Pemeriksaan Keseluruhan</h4>
+                    <ul class="popup-list">
+                        <li>Perkara yang perlu diperiksa bagi menemui masalah yang berlaku</li>
+                        <li>Masalah yang perlu dianalisa</li>
+                        <li>Pemilihan subjek untuk pemeriksaan iaitu:
+                            <ul>
+                                <li>(i) Pelinciran/lubrication.</li>
+                                <li>(ii) Bolt dan nut.</li>
+                                <li>(iii) Tekanan angin.</li>
+                                <li>(iv) Tekanan minyak.</li>
+                                <li>(v) Elektrik.</li>
+                                <li>(vi) Peralatan yang bergerak</li>
+                            </ul>
+                        </li>
+                </div>
+                <div class="popup" id="popupP2" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>2</h3>
+                    <h4>Penyediaan Bahan Pembelajaran</h4>
+                    <ul class="popup-list">
+                        <li>Checksheet Pemeriksaan Keseluruhan dibuat berdasarkan kepada penilaian secara terperinci.
+                        </li>
+                        <li>Membuat manual pemeriksaan dan perkara yang perlu ada adalah :<br>
+                            fungsi asas &rarr; struktur &rarr; kombinasi peralatan &rarr; nama peralatan &rarr; standard
+                            penilaian<br>
+                            &rarr; cara melakukan pemeriksaan &rarr; fenomena berlakunya kerosakan &rarr; punca
+                            masalah<br>
+                            &rarr; cara memperbaiki dan lain-lain akan ditentukan.
+                        </li>
+                        <li>Bahan pembelajaran akan dibuat berdasarkan perbincangan diantara Maintenance, PSD dan TPM
+                            Master.
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup" id="popupP3" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>3</h3>
+                    <h4>Jadual Latihan/Kelas</h4>
+                    <ul class="popup-list">
+                        <li>Pembelajaran dilakukan kepada setiap individu dari kalangan TPM Master dan Maintenance serta
+                            dibuat penilaian kefahaman selepas latihan.</li>
+                        <li>Committee akan menentukan subjek untuk TPM Master memberi pembelajaran kepada Supervisor dan
+                            Team Member.</li>
+                        <li>Supervisor akan membuat perancangan dan pembelajaran kepada Team Leader & Team Member di
+                            dalam
+                            setiap seksyen untuk setiap Shop.</li>
+                    </ul>
+                    <div class="modern-image-container" style="margin-top: 16px; text-align: center;">
+                        <img src="img/jadual-tpm.png" alt="Jadual Latihan" class="image" data-popup>
+                    </div>
+                </div>
+                <div class="popup" id="popupP4" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>4</h3>
+                    <h4>Melakukan Pemeriksaan Keseluruhan</h4>
+                    <ul class="popup-list">
+                        <li>Pemeriksaan akan dilakukan terhadap mesin berpandukan kepada checksheet Pemeriksaan
+                            Keseluruhan.
+                            Perkara-perkara untuk memudahkan pemeriksaan dan abnormaliti yang dijumpai akan dipilih dan
+                            dibawa ke mesyuarat.
+                        </li>
+                        <li>
+                            Perkara yang boleh dipilih untuk tema kumpulan ialah:
+                            <ul>
+                                <li>Mengurangkan penggunaan minyak untuk pelinciran</li>
+                                <li>Pengurangan kerosakan (breakdown) disebabkan kekurangan minyak</li>
+                                <li>Mengurangkan kerosakan (breakdown) yang melibatkan limit switch</li>
+                                <li>Mengurangkan “short-stop”</li>
+                                <li>Mengurangkan miss-operation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="text-align:center; width:100%; margin-top:12px;">
+                        <strong>Setiap tindakan yang utama ialah meminta pihak Maintenance melakukan countermeasure,
+                            perlulah
+                            diadakan mesyuarat dan pertukaran informasi
+                        </strong>
+                    </div>
+                </div>
+                <div class="popup" id="popupP5" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>5</h3>
+                    <h4>Penglibatan dari Pihak Maintenance</h4>
+                    <ul class="popup-list">
+                        <li>
+                            Pihak Maintenance perlu menyelesaikan masalah pada tempat-tempat yang sukar sebelum Team
+                            Member
+                            melakukan pemeriksaan keseluruhan.
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup" id="popupP6" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>6</h3>
+                    <h4>Semakan untuk Standard Checksheet</h4>
+                    <ul class="popup-list">
+                        Bagi mengekalkan keadaan yang berterusan selepas <strong>pemeriksaan keseluruhan</strong>,
+                        semakan
+                        perlu dilakukan pada <strong>standard pembersihan</strong> dan <strong>standard
+                            pelinciran</strong>
+                        yang dilakukan di dalam Step 3.
+                    </ul>
+                    <div class="modern-image-container" style="margin-top: 16px; text-align: center;">
+                        <img src="img/standard-checksheet.png" alt="Standard Checksheet" class="image" data-popup>
+                    </div>
+                </div>
+                <div class="popup" id="popupP7" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>7</h3>
+                    <h4>Membuat Checksheet</h4>
+                    <ul class="popup-list">
+                        <li>Tempoh masa untuk melakukan aktiviti seperti hari, minggu dan bulan untuk subjek pemeriksaan
+                            ditentukan dan checksheet dibuat sebelum membuat semakan pada setiap subjek.</li>
+                        <li>Kaizen dilakukan pada abnormaliti yang didapati pada checksheet dengan memastikan masalah
+                            tidak
+                            akan berulang, tempoh pemeriksaan akan dipanjangkan dan kaizen dilakukan pada jumlah masa
+                            melakukan pemeriksaan.</li>
+                    </ul>
+                    <div class="modern-image-container" style="margin-top: 16px; text-align: center;">
+                        <img src="img/checksheet.png" alt="Standard Checksheet" class="image" data-popup>
+                    </div>
+                </div>
+                <div class="popup" id="popupP8" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>8</h3>
+                    <h4>Penilaian Skill</h4>
+                    <ul class="popup-list">
+                        <li>Penilaian Team Member dibuat melalui ujian pengetahuan dan kemahiran.
+                        </li>
+                        <li>Keputusan dari pembelajaran , kelas diambil untuk menaikkan skill kesemua ahli.</li>
+                    </ul>
+                    <div class="modern-image-container" style="margin-top: 16px; text-align: center;">
+                        <img src="img/penilaian-skill.png" alt="Penilaian Skill" class="image" data-popup>
+                    </div>
+                </div>
+                <div class="popup" id="popupP9" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>9</h3>
+                    <h4>Penilaian Skill</h4>
+                    <ul class="popup-list">
+                        <li>Supervisor membuat pemeriksaan untuk setiap subjek pada kertas permarkahan yang dikeluarkan
+                            oleh
+                            pihak Committee.
+                        </li>
+                        <li>Membuat penyusunan terhadap keadaan aktiviti dan membuat ketetapan semula pada maklumat yang
+                            ditunjukkan pada monitoring board.</li>
+                    </ul>
+                    <div class="modern-image-container" style="margin-top: 16px; text-align: center;">
+                        <img src="img/diagnosis.png" alt="Diagnosis" class="image" data-popup>
+                    </div>
+                </div>
+                <div class="popup" id="popupP10" style="display:none;">
+                    <button onclick="closePopup()"><i class="fas fa-times"></i></button>
+                    <h3>10</h3>
+                    <h4>Melakukan permarkahan & penilaian (DIAGNOSIS) oleh Manager/HOD</h4>
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; gap: 24px; margin: 24px 0;">
+                        <div
+                            style="background: #f6f8fa; border: 2px solid #3578e5; border-radius: 14px; padding: 18px 28px; min-width: 180px; text-align: center; font-weight: 500; color: #234; box-shadow: 0 2px 8px rgba(30,42,80,0.10);">
+                            Aktiviti penyelenggaraan sendiri<br><span style='font-size:0.95em;'>(Self-Maintenance
+                                activity)</span>
+                        </div>
+                        <span style="font-size: 2.2em; color: #3578e5; font-weight: bold;">&#8660;</span>
+                        <div
+                            style="background: #f6f8fa; border: 2px solid #3578e5; border-radius: 14px; padding: 18px 28px; min-width: 180px; text-align: center; font-weight: 500; color: #234; box-shadow: 0 2px 8px rgba(30,42,80,0.10);">
+                            Keseluruhan Pemeriksaan dilakukan<br>pada Kawasan pemeriksaan yang telah ditetapkan sahaja.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="inner-container">
+            <section class="steps-section">
+                <div class="tpm-grid">
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.1.gif" class="tpm-grid-img" alt="Step 4.1">
+                        <div class="tpm-grid-title">Pelinciran</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-1.html'">Lihat!</button>
+                    </div>
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.2.gif" class="tpm-grid-img" alt="Step 4.2">
+                        <div class="tpm-grid-title">Bolt & Nut</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-2.html'">Lihat!</button>
+                    </div>
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.3.gif" class="tpm-grid-img" alt="Step 4.3">
+                        <div class="tpm-grid-title">Tekanan Angin (Pneumatik)</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-3.html'">Lihat!</button>
+                    </div>
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.4.gif" class="tpm-grid-img" alt="Step 4.4">
+                        <div class="tpm-grid-title">Tekanan Minyak</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-4.html'">Lihat!</button>
+                    </div>
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.5.gif" class="tpm-grid-img" alt="Step 4.5">
+                        <div class="tpm-grid-title">Eletrikal</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-5.html'">Lihat!</button>
+                    </div>
+                    <div class="tpm-grid-item">
+                        <img src="img/step-4.6.gif" class="tpm-grid-img" alt="Step 4.6">
+                        <div class="tpm-grid-title">Bahagian yang Bergerak</div>
+                        <button class="tpm-grid-btn" onclick="window.location.href='tpm-step4-6.html'">Lihat!</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts-->
+    <!-- Overlay for popups -->
+    <div class="overlay" style="display:none;"></div>
+    <script>
+        function openPopup(popupId) {
+            // Hide all popups
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function (popup) {
+                popup.style.display = 'none';
+            });
+
+            // Show the specific popup
+            var selectedPopup = document.getElementById(popupId);
+            if (selectedPopup) {
+                selectedPopup.style.display = 'block';
+            }
+
+            // Show the overlay
+            var overlay = document.querySelector('.overlay');
+            if (overlay) {
+                overlay.style.display = 'block';
+            }
+        }
+
+        function closePopup() {
+            // Get all popups and hide them
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function (popup) {
+                popup.style.display = 'none'; // Hide the popup
+            });
+
+            // Hide the overlay
+            var overlay = document.querySelector('.overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+        }
+        function showFullImage(src, alt) {
+            const old = document.getElementById('stepImagePopupOverlay');
+            if (old) old.remove();
+            const overlay = document.createElement('div');
+            overlay.className = 'step-image-popup-overlay';
+            overlay.id = 'stepImagePopupOverlay';
+            overlay.onclick = function () { overlay.remove(); };
+            const img = document.createElement('img');
+            img.className = 'step-image-popup-img';
+            img.src = src;
+            img.alt = alt || '';
+            overlay.appendChild(img);
+            document.body.appendChild(overlay);
+        }
+        window.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('img[data-popup], img.step-image').forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', function () {
+                    showFullImage(img.src, img.alt);
+                });
+            });
+        });
+    </script>
+    <script>
+        // Back and Top button functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const back = document.getElementById('backButton');
+            const top = document.getElementById('topButton');
+            if (back) back.addEventListener('click', function () { window.history.back(); });
+            if (top) top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        });
+    </script>
+</body>
+
+</html>
